@@ -349,7 +349,7 @@ export class Scout {
       zhipu: 'ZHIPU_API_KEY',
       moonshot: 'MOONSHOT_API_KEY',
       huggingface: 'HF_API_KEY',
-      'github-models': 'GITHUB_MODELS_API_KEY',
+      'github-models': 'GH_MODELS_API_KEY',
       'deepseek-account': 'DEEPSEEK_API_KEY',
     };
     return process.env[envMap[provider]] || '';

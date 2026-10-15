@@ -71,7 +71,7 @@ pnpm scout
 | 平台 | 环境变量 | 免费档 | 获取地址 |
 |------|----------|--------|----------|
 | **OpenRouter** | `OPENROUTER_API_KEY` | ✅ 50 请求/天（充 $10 → 1000/天） | [openrouter.ai/keys](https://openrouter.ai/keys) |
-| **GitHub Models** | `GITHUB_MODELS_API_KEY` | ✅ 用 GitHub Token 即可调用 GPT-4.1/DeepSeek-R1/Llama-4 等 | [github.com/settings/tokens](https://github.com/settings/tokens)（勾 `models:read`） |
+| **GitHub Models** | `GH_MODELS_API_KEY` | ✅ 用 GitHub Token 即可调用 GPT-4.1/DeepSeek-R1/Llama-4 等 | [github.com/settings/tokens](https://github.com/settings/tokens)（经典令牌免勾选即可用） |
 | SiliconFlow | `SILICONFLOW_API_KEY` | ✅ | [siliconflow.cn](https://siliconflow.cn) |
 | ModelScope | `MODELSCOPE_API_KEY` | ✅ | [modelscope.cn](https://modelscope.cn) |
 | 百炼 | `BAILIAN_API_KEY` | ✅ 试用额度 | [bailian.aliyun.com](https://bailian.aliyun.com) |
