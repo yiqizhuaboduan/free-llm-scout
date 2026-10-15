@@ -1,6 +1,6 @@
 # free-llm-scout generated fleet chain
-# Generated at: 2026-10-15T17:56:58.254Z
-# Source models: 6 models, minScore=60
+# Generated at: 2026-10-15T18:18:20.452Z
+# Source models: 8 models, minScore=60
 #
 # To use: copy this into your cordis.patch.yml under model-fleet.config.chain
 # Or include via YAML anchor/merge
@@ -14,6 +14,10 @@ chain:
           - provider: siliconflow
             model: "deepseek-ai/DeepSeek-V4-Flash"
           - provider: siliconflow
+            model: "Qwen/Qwen3-8B"
+          - provider: siliconflow
             model: "Qwen/Qwen3.5-9B"
+          - provider: siliconflow
+            model: "Qwen/Qwen3.5-4B"
           - provider: bailian
             model: "qwen-long"

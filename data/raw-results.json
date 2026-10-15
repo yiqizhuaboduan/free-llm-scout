@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-15T17:56:58.262Z",
+  "timestamp": "2026-10-15T18:18:20.459Z",
   "config": {
     "sources": [
       "openrouter",
@@ -53,7 +53,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-15T17:54:47.623Z",
+      "discoveredAt": "2026-10-15T18:16:52.575Z",
       "raw": {
         "id": "qwen-long",
         "object": "model",
@@ -83,7 +83,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-15T17:54:44.088Z",
+      "discoveredAt": "2026-10-15T18:16:49.985Z",
       "raw": {
         "description": "NVIDIA Nemotron 3.5 Super VL is an open multimodal mixture-of-experts model from NVIDIA, with 12B active parameters out of 120B total. It takes text, images, documents, GUI screenshots, and video...",
         "architecture": {
@@ -123,7 +123,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-15T17:54:44.088Z",
+      "discoveredAt": "2026-10-15T18:16:49.985Z",
       "raw": {
         "description": "NVIDIA Nemotron 3.5 Lightning is an open mixture-of-experts model from NVIDIA, with 3B active parameters out of 30B total. It is suited for high-throughput agentic workloads and specialized tasks that...",
         "architecture": {
@@ -161,7 +161,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-15T17:54:44.088Z",
+      "discoveredAt": "2026-10-15T18:16:49.985Z",
       "raw": {
         "description": "NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active parameters out of 550B total (MoE). Built on a hybrid Transformer-Mamba mixture-of-experts architecture, it...",
         "architecture": {
@@ -199,7 +199,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-15T17:54:47.623Z",
+      "discoveredAt": "2026-10-15T18:16:52.575Z",
       "raw": {
         "id": "qwen-turbo-2024-11-01",
         "object": "model",
@@ -227,7 +227,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-15T17:54:47.623Z",
+      "discoveredAt": "2026-10-15T18:16:52.575Z",
       "raw": {
         "id": "qwen-turbo-0919",
         "object": "model",
@@ -256,7 +256,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-15T17:54:44.088Z",
+      "discoveredAt": "2026-10-15T18:16:49.985Z",
       "raw": {
         "description": "Dots3-Note Preview is an open-weight mixture-of-experts model from Dots Studio, with 16B active parameters out of 280B total. It is the lightest model in the Dots 3 family and is...",
         "architecture": {
@@ -295,7 +295,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-15T17:54:44.088Z",
+      "discoveredAt": "2026-10-15T18:16:49.985Z",
       "raw": {
         "description": "Laguna S 2.1 is the latest coding agent model from [Poolside](<https://poolside.ai/>). Laguna S 2.1 is a 118B total parameter model with 8B active parameters, scoring 70.2% on Terminal-Bench 2.1 and...",
         "architecture": {
@@ -333,7 +333,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-15T17:54:44.088Z",
+      "discoveredAt": "2026-10-15T18:16:49.985Z",
       "raw": {
         "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines...",
         "architecture": {
@@ -371,7 +371,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-15T17:54:44.088Z",
+      "discoveredAt": "2026-10-15T18:16:49.985Z",
       "raw": {
         "description": "NVIDIA Nemotron 3 Super is a 120B-parameter open hybrid MoE model, activating just 12B parameters for maximum compute efficiency and accuracy in complex multi-agent applications. Built on a hybrid Mamba-Transformer...",
         "architecture": {
@@ -409,7 +409,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-15T17:54:49.028Z",
+      "discoveredAt": "2026-10-15T18:16:53.883Z",
       "quota": {
         "kind": "daily-reset",
         "amount": 50
@@ -432,7 +432,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-15T17:54:44.088Z",
+      "discoveredAt": "2026-10-15T18:16:49.985Z",
       "raw": {
         "description": "North Mini Code is Cohere's first agentic coding model and the debut of its North family. A sparse mixture-of-experts model with 30B total parameters and 3B active, it is optimized...",
         "architecture": {
@@ -473,7 +473,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-15T17:54:44.088Z",
+      "discoveredAt": "2026-10-15T18:16:49.985Z",
       "raw": {
         "description": "NVIDIA Nemotron™ 3 Nano Omni is a 30B-A3B open multimodal model designed to function as a perception and context sub-agent in enterprise agent systems. It accepts text, image, video, and...",
         "architecture": {
@@ -514,7 +514,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-15T17:54:45.115Z",
+      "discoveredAt": "2026-10-15T18:16:50.989Z",
       "raw": {
         "id": "deepseek-ai/DeepSeek-V4.1-Flash",
         "object": "model",
@@ -543,7 +543,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-15T17:54:45.115Z",
+      "discoveredAt": "2026-10-15T18:16:50.989Z",
       "raw": {
         "id": "zai-org/GLM-5.3-Flash",
         "object": "model",
@@ -572,7 +572,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-15T17:54:45.115Z",
+      "discoveredAt": "2026-10-15T18:16:50.989Z",
       "raw": {
         "id": "deepseek-ai/DeepSeek-V4-Flash",
         "object": "model",
@@ -601,7 +601,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-15T17:54:45.115Z",
+      "discoveredAt": "2026-10-15T18:16:50.989Z",
       "raw": {
         "id": "Qwen/Qwen3.5-9B",
         "object": "model",
@@ -630,7 +630,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-15T17:54:45.115Z",
+      "discoveredAt": "2026-10-15T18:16:50.989Z",
       "raw": {
         "id": "Qwen/Qwen3.5-4B",
         "object": "model",
@@ -659,7 +659,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-15T17:54:45.115Z",
+      "discoveredAt": "2026-10-15T18:16:50.989Z",
       "raw": {
         "id": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
         "object": "model",
@@ -688,7 +688,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-15T17:54:45.115Z",
+      "discoveredAt": "2026-10-15T18:16:50.989Z",
       "raw": {
         "id": "Qwen/Qwen3-8B",
         "object": "model",
@@ -713,7 +713,7 @@
           "passed": true,
           "score": 100,
           "details": "OpenAI-compatible response structure",
-          "latencyMs": 756,
+          "latencyMs": 605,
           "rawResponse": {
             "choices": [
               {
@@ -732,10 +732,10 @@
               "completion_tokens": 5,
               "total_tokens": 6
             },
-            "created": 1792086890,
+            "created": 1792088214,
             "system_fingerprint": null,
             "model": "qwen-long",
-            "id": "chatcmpl-4ddf0428-f0fd-9168-ad2a-e513acf84a51"
+            "id": "chatcmpl-f388b37e-3f24-95af-a868-f76b0a220070"
           }
         },
         {
@@ -743,7 +743,7 @@
           "passed": true,
           "score": 100,
           "details": "2/2 trials returned valid tool_calls",
-          "latencyMs": 1149,
+          "latencyMs": 1047,
           "rawResponse": {
             "choices": [
               {
@@ -753,7 +753,7 @@
                   "tool_calls": [
                     {
                       "index": 0,
-                      "id": "call_c4d8c5c14fb444c8b86d01",
+                      "id": "call_f13aed7351b14554a461aa",
                       "type": "function",
                       "function": {
                         "name": "get_weather",
@@ -773,10 +773,10 @@
               "completion_tokens": 27,
               "total_tokens": 51
             },
-            "created": 1792086892,
+            "created": 1792088217,
             "system_fingerprint": null,
             "model": "qwen-long",
-            "id": "chatcmpl-375f01e4-2428-93ea-90c4-e0a3c5507012"
+            "id": "chatcmpl-820d3e6a-9c73-9732-b885-61d682f352fa"
           }
         },
         {
@@ -784,7 +784,7 @@
           "passed": true,
           "score": 100,
           "details": "Valid JSON matching schema",
-          "latencyMs": 664,
+          "latencyMs": 658,
           "rawResponse": {
             "choices": [
               {
@@ -803,14 +803,14 @@
               "completion_tokens": 21,
               "total_tokens": 52
             },
-            "created": 1792086893,
+            "created": 1792088218,
             "system_fingerprint": null,
             "model": "qwen-long",
-            "id": "chatcmpl-b93ff72c-51dd-9ceb-954e-bf85b8e0c1bc"
+            "id": "chatcmpl-106f7551-1246-98e9-a82d-14a6ec123740"
           }
         }
       ],
-      "validatedAt": "2026-10-15T17:54:53.248Z"
+      "validatedAt": "2026-10-15T18:16:57.746Z"
     },
     {
       "modelId": "qwen-turbo-2024-11-01",
@@ -822,25 +822,25 @@
           "name": "openai-compat",
           "passed": false,
           "score": 0,
-          "details": "HTTP 403: {\"error\":{\"message\":\"Access denied. For details, see: https://help.aliyun.com/zh/model-studio/error-code#access-denied\",\"type\":\"access_denied\",\"param\":null,\"code\":\"access_denied\"},\"id\":\"chatcmpl-eca7e",
-          "latencyMs": 771
+          "details": "HTTP 403: {\"error\":{\"message\":\"Access denied. For details, see: https://help.aliyun.com/zh/model-studio/error-code#access-denied\",\"type\":\"access_denied\",\"param\":null,\"code\":\"access_denied\"},\"id\":\"chatcmpl-b5902",
+          "latencyMs": 605
         },
         {
           "name": "tool-calling",
           "passed": false,
           "score": 0,
-          "details": "0/2 trials returned valid tool_calls — last error: HTTP 403: {\"error\":{\"message\":\"Access denied. For details, see: https://help.aliyun.com/zh/model-studio/error-code#access-denied\",\"type\":\"access_denied\",\"param\":null,\"code\":\"access_denied\"},\"id\":\"chatcmpl-e52b6",
-          "latencyMs": 265
+          "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"You have exceeded your current request limit. For details, see: https://help.aliyun.com/zh/model-studio/error-code#rate-limit\",\"type\":\"limit_requests\",\"param\":null,\"code\":\"limit_r",
+          "latencyMs": 206
         },
         {
           "name": "structured-output",
           "passed": false,
           "score": 0,
-          "details": "HTTP 429: {\"error\":{\"message\":\"You have exceeded your current request limit. For details, see: https://help.aliyun.com/zh/model-studio/error-code#rate-limit\",\"type\":\"limit_requests\",\"param\":null,\"code\":\"limit_r",
-          "latencyMs": 246
+          "details": "HTTP 403: {\"error\":{\"message\":\"Access denied. For details, see: https://help.aliyun.com/zh/model-studio/error-code#access-denied\",\"type\":\"access_denied\",\"param\":null,\"code\":\"access_denied\"},\"id\":\"chatcmpl-90fff",
+          "latencyMs": 237
         }
       ],
-      "validatedAt": "2026-10-15T17:54:50.581Z"
+      "validatedAt": "2026-10-15T18:16:55.142Z"
     },
     {
       "modelId": "qwen-turbo-0919",
@@ -852,25 +852,25 @@
           "name": "openai-compat",
           "passed": false,
           "score": 0,
-          "details": "HTTP 404: {\"error\":{\"message\":\"The model `qwen-turbo-0919` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"model_not_found\"},\"request_id\":\"3e1b4ede-ec47-93f4",
-          "latencyMs": 730
+          "details": "HTTP 404: {\"error\":{\"message\":\"The model `qwen-turbo-0919` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"model_not_found\"},\"request_id\":\"63d4d5ee-70f2-9f60",
+          "latencyMs": 557
         },
         {
           "name": "tool-calling",
           "passed": false,
           "score": 0,
-          "details": "0/2 trials returned valid tool_calls — last error: HTTP 404: {\"error\":{\"message\":\"The model `qwen-turbo-0919` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"model_not_found\"},\"request_id\":\"ec944889-be08-956a",
-          "latencyMs": 249
+          "details": "0/2 trials returned valid tool_calls — last error: HTTP 404: {\"error\":{\"message\":\"The model `qwen-turbo-0919` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"model_not_found\"},\"request_id\":\"815d265f-6327-927d",
+          "latencyMs": 193
         },
         {
           "name": "structured-output",
           "passed": false,
           "score": 0,
-          "details": "HTTP 404: {\"error\":{\"message\":\"The model `qwen-turbo-0919` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"model_not_found\"},\"request_id\":\"6b609c71-cf44-9c7e",
-          "latencyMs": 247
+          "details": "HTTP 404: {\"error\":{\"message\":\"The model `qwen-turbo-0919` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"model_not_found\"},\"request_id\":\"ae872ab8-9396-958f",
+          "latencyMs": 189
         }
       ],
-      "validatedAt": "2026-10-15T17:54:50.511Z"
+      "validatedAt": "2026-10-15T18:16:55.020Z"
     },
     {
       "modelId": "nvidia/nemotron-3.5-super-vl:free",
@@ -883,24 +883,24 @@
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 157
+          "latencyMs": 132
         },
         {
           "name": "tool-calling",
           "passed": false,
           "score": 0,
           "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 61
+          "latencyMs": 84
         },
         {
           "name": "structured-output",
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 48
+          "latencyMs": 46
         }
       ],
-      "validatedAt": "2026-10-15T17:54:53.575Z"
+      "validatedAt": "2026-10-15T18:16:58.091Z"
     },
     {
       "modelId": "nvidia/nemotron-3.5-lightning:free",
@@ -913,24 +913,24 @@
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 136
+          "latencyMs": 203
         },
         {
           "name": "tool-calling",
           "passed": false,
           "score": 0,
           "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 105
+          "latencyMs": 62
         },
         {
           "name": "structured-output",
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 54
+          "latencyMs": 66
         }
       ],
-      "validatedAt": "2026-10-15T17:54:53.651Z"
+      "validatedAt": "2026-10-15T18:16:58.143Z"
     },
     {
       "modelId": "nvidia/nemotron-3-ultra-550b-a55b:free",
@@ -943,24 +943,24 @@
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 187
+          "latencyMs": 140
         },
         {
           "name": "tool-calling",
           "passed": false,
           "score": 0,
           "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 45
+          "latencyMs": 68
         },
         {
           "name": "structured-output",
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 72
+          "latencyMs": 45
         }
       ],
-      "validatedAt": "2026-10-15T17:54:53.601Z"
+      "validatedAt": "2026-10-15T18:16:58.067Z"
     },
     {
       "modelId": "dots-studio/dots-3-note-preview:free",
@@ -973,24 +973,24 @@
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 46
+          "latencyMs": 512
         },
         {
           "name": "tool-calling",
           "passed": false,
           "score": 0,
           "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 43
+          "latencyMs": 49
         },
         {
           "name": "structured-output",
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 46
+          "latencyMs": 27
         }
       ],
-      "validatedAt": "2026-10-15T17:54:53.753Z"
+      "validatedAt": "2026-10-15T18:16:58.706Z"
     },
     {
       "modelId": "poolside/laguna-s-2.1:free",
@@ -1003,24 +1003,24 @@
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 43
+          "latencyMs": 41
         },
         {
           "name": "tool-calling",
           "passed": false,
           "score": 0,
           "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 41
+          "latencyMs": 112
         },
         {
           "name": "structured-output",
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 55
+          "latencyMs": 31
         }
       ],
-      "validatedAt": "2026-10-15T17:54:53.783Z"
+      "validatedAt": "2026-10-15T18:16:58.390Z"
     },
     {
       "modelId": "poolside/laguna-xs-2.1:free",
@@ -1033,24 +1033,24 @@
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 42
+          "latencyMs": 37
         },
         {
           "name": "tool-calling",
           "passed": false,
           "score": 0,
           "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 36
+          "latencyMs": 82
         },
         {
           "name": "structured-output",
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 45
+          "latencyMs": 48
         }
       ],
-      "validatedAt": "2026-10-15T17:54:53.812Z"
+      "validatedAt": "2026-10-15T18:16:58.394Z"
     },
     {
       "modelId": "nvidia/nemotron-3-super-120b-a12b:free",
@@ -1063,41 +1063,41 @@
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 70
+          "latencyMs": 36
         },
         {
           "name": "tool-calling",
           "passed": false,
           "score": 0,
           "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 50
+          "latencyMs": 140
         },
         {
           "name": "structured-output",
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 49
+          "latencyMs": 55
         }
       ],
-      "validatedAt": "2026-10-15T17:54:53.971Z"
+      "validatedAt": "2026-10-15T18:16:58.764Z"
     },
     {
       "modelId": "inclusionai/ling-3.1-flash",
       "provider": "openrouter",
       "passed": true,
-      "score": 79,
+      "score": 100,
       "checks": [
         {
           "name": "openai-compat",
           "passed": true,
           "score": 100,
           "details": "OpenAI-compatible response structure",
-          "latencyMs": 822,
+          "latencyMs": 1065,
           "rawResponse": {
-            "id": "gen-1792086893-R4rTsHAqPHGAfyj1KPhu",
+            "id": "gen-1792088218-ZlQt7NXqmzLKYm3XuKdS",
             "object": "chat.completion",
-            "created": 1792086893,
+            "created": 1792088218,
             "model": "inclusionai/ling-3.1-flash",
             "provider": "Novita",
             "system_fingerprint": null,
@@ -1154,11 +1154,11 @@
           "passed": true,
           "score": 100,
           "details": "2/2 trials returned valid tool_calls",
-          "latencyMs": 988,
+          "latencyMs": 855,
           "rawResponse": {
-            "id": "gen-1792086896-UGyOYJ7Ijp5ALStWOv4o",
+            "id": "gen-1792088221-fdXxko2Uvl82zP7XjKnA",
             "object": "chat.completion",
-            "created": 1792086896,
+            "created": 1792088221,
             "model": "inclusionai/ling-3.1-flash",
             "provider": "Novita",
             "system_fingerprint": null,
@@ -1178,7 +1178,7 @@
                     {
                       "type": "function",
                       "index": 0,
-                      "id": "call_d1d76e7b62cc4686b7cb9d40",
+                      "id": "call_02cf61af89fd4b2cafdc69cc",
                       "function": {
                         "name": "get_weather",
                         "arguments": "{\"location\": \"Beijing\"}"
@@ -1223,13 +1223,67 @@
         },
         {
           "name": "structured-output",
-          "passed": false,
-          "score": 0,
-          "details": "HTTP 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"inclusionai/ling-3.1-flash is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate you",
-          "latencyMs": 111
+          "passed": true,
+          "score": 100,
+          "details": "Valid JSON matching schema",
+          "latencyMs": 199,
+          "rawResponse": {
+            "id": "gen-1792088222-YFPuJrr7t66whQo4UpWt",
+            "object": "chat.completion",
+            "created": 1792088222,
+            "model": "inclusionai/ling-3.1-flash",
+            "provider": "DeepInfra",
+            "system_fingerprint": null,
+            "service_tier": "default",
+            "choices": [
+              {
+                "index": 0,
+                "logprobs": null,
+                "finish_reason": "stop",
+                "native_finish_reason": "stop",
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n  \"name\": \"Alice\",\n  \"age\": 30,\n  \"skills\": [\"TypeScript\", \"Python\"],\n  \"active\": true\n}",
+                  "refusal": null,
+                  "reasoning": "The user wants a JSON object with specific fields: name \"Alice\", age 30, skills array with \"TypeScript\" and \"Python\", and active true. Simple task.",
+                  "reasoning_details": [
+                    {
+                      "type": "reasoning.text",
+                      "text": "The user wants a JSON object with specific fields: name \"Alice\", age 30, skills array with \"TypeScript\" and \"Python\", and active true. Simple task.",
+                      "format": "unknown",
+                      "index": 0
+                    }
+                  ]
+                }
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 52,
+              "completion_tokens": 78,
+              "total_tokens": 130,
+              "cost": 0.00006006,
+              "is_byok": false,
+              "prompt_tokens_details": {
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "audio_tokens": 0,
+                "video_tokens": 0
+              },
+              "cost_details": {
+                "upstream_inference_cost": 0.00006006,
+                "upstream_inference_prompt_cost": 0.00001092,
+                "upstream_inference_completions_cost": 0.00004914
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 37,
+                "image_tokens": 0,
+                "audio_tokens": 0
+              }
+            }
+          }
         }
       ],
-      "validatedAt": "2026-10-15T17:54:57.953Z"
+      "validatedAt": "2026-10-15T18:17:03.995Z"
     },
     {
       "modelId": "cohere/north-mini-code:free",
@@ -1242,24 +1296,24 @@
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 46
+          "latencyMs": 67
         },
         {
           "name": "tool-calling",
           "passed": false,
           "score": 0,
           "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 50
+          "latencyMs": 58
         },
         {
           "name": "structured-output",
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 44
+          "latencyMs": 66
         }
       ],
-      "validatedAt": "2026-10-15T17:54:54.002Z"
+      "validatedAt": "2026-10-15T18:16:58.955Z"
     },
     {
       "modelId": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
@@ -1272,24 +1326,24 @@
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 403
+          "latencyMs": 101
         },
         {
           "name": "tool-calling",
           "passed": false,
           "score": 0,
           "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 44
+          "latencyMs": 53
         },
         {
           "name": "structured-output",
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 46
+          "latencyMs": 121
         }
       ],
-      "validatedAt": "2026-10-15T17:54:54.510Z"
+      "validatedAt": "2026-10-15T18:16:59.092Z"
     },
     {
       "modelId": "deepseek-ai/DeepSeek-V4.1-Flash",
@@ -1302,11 +1356,11 @@
           "passed": true,
           "score": 100,
           "details": "OpenAI-compatible response structure",
-          "latencyMs": 1545,
+          "latencyMs": 1349,
           "rawResponse": {
-            "id": "01a140b421a1c5ee3f374e8e97feec33",
+            "id": "01a140c85d6ba098e7ff04cf05b92178",
             "object": "chat.completion",
-            "created": 1792086909,
+            "created": 1792088235,
             "model": "deepseek-ai/DeepSeek-V4.1-Flash",
             "choices": [
               {
@@ -1314,7 +1368,7 @@
                 "message": {
                   "role": "assistant",
                   "content": "pong 🏓",
-                  "reasoning_content": "The user just said \"ping\". This is a\n\n\nA simple, friendly response. They're likely testing if I'm responsive. I should reply briefly and warmly, maybe with \"pong\" and an offer to help."
+                  "reasoning_content": "The user just said \"ping\". This is aR test. I should respond briefly and naturally, perhaps \"pong\" and ask what they need."
                 },
                 "finish_reason": "length",
                 "logprobs": null
@@ -1322,10 +1376,10 @@
             ],
             "usage": {
               "prompt_tokens": 31,
-              "completion_tokens": 51,
-              "total_tokens": 82,
+              "completion_tokens": 37,
+              "total_tokens": 68,
               "completion_tokens_details": {
-                "reasoning_tokens": 46
+                "reasoning_tokens": 32
               },
               "prompt_tokens_details": {
                 "cached_tokens": 0
@@ -1341,11 +1395,11 @@
           "passed": true,
           "score": 100,
           "details": "2/2 trials returned valid tool_calls",
-          "latencyMs": 1299,
+          "latencyMs": 1177,
           "rawResponse": {
-            "id": "01a140b42e5e73ac781b84a54fdf4a47",
+            "id": "01a140c868ae95b8f29b12316fe0e1f8",
             "object": "chat.completion",
-            "created": 1792086912,
+            "created": 1792088238,
             "model": "deepseek-ai/DeepSeek-V4.1-Flash",
             "choices": [
               {
@@ -1353,11 +1407,11 @@
                 "message": {
                   "role": "assistant",
                   "content": "",
-                  "reasoning_content": "The user wants the weather in Beijing. Use get_weather tool with location \"Beijing\".",
+                  "reasoning_content": "The user wants weather in Beijing. Call get_weather.",
                   "tool_calls": [
                     {
                       "index": 0,
-                      "id": "01a140b430472cc891de783ac6a8f2a2",
+                      "id": "01a140c86a662b03a3d09ac4b3f06813",
                       "type": "function",
                       "function": {
                         "name": "get_weather",
@@ -1372,10 +1426,10 @@
             ],
             "usage": {
               "prompt_tokens": 410,
-              "completion_tokens": 57,
-              "total_tokens": 467,
+              "completion_tokens": 51,
+              "total_tokens": 461,
               "completion_tokens_details": {
-                "reasoning_tokens": 19
+                "reasoning_tokens": 13
               },
               "prompt_tokens_details": {
                 "cached_tokens": 0
@@ -1391,11 +1445,11 @@
           "passed": true,
           "score": 100,
           "details": "Valid JSON matching schema",
-          "latencyMs": 1220,
+          "latencyMs": 1358,
           "rawResponse": {
-            "id": "01a140b4321d9b9a0de2f10b16b7a583",
+            "id": "01a140c86c30752ae08de46250f990b5",
             "object": "chat.completion",
-            "created": 1792086913,
+            "created": 1792088239,
             "model": "deepseek-ai/DeepSeek-V4.1-Flash",
             "choices": [
               {
@@ -1403,7 +1457,7 @@
                 "message": {
                   "role": "assistant",
                   "content": "{\"name\":\"Alice\",\"age\":30,\"skills\":[\"TypeScript\",\"Python\"],\"active\":true}",
-                  "reasoning_content": "We need answer only JSON. Need generate JSON object person named Alice age 30 skills TypeScript Python active true. Must output valid JSON only. Ensure no markdown. Field names? likely name, age, skills, active."
+                  "reasoning_content": "We need answer only JSON. Need generate JSON object person named Alice age 30 skills TypeScript Python active true. Must be valid JSON only. Need likely:\n{\n  \"name\": \"Alice\",\n  \"age\": 30,\n  \"skills\": [\"TypeScript\", \"Python\"],\n  \"active\": true\n}\nEnsure no markdown. final only."
                 },
                 "finish_reason": "stop",
                 "logprobs": null
@@ -1411,10 +1465,10 @@
             ],
             "usage": {
               "prompt_tokens": 60,
-              "completion_tokens": 69,
-              "total_tokens": 129,
+              "completion_tokens": 96,
+              "total_tokens": 156,
               "completion_tokens_details": {
-                "reasoning_tokens": 47
+                "reasoning_tokens": 74
               },
               "prompt_tokens_details": {
                 "cached_tokens": 0
@@ -1426,7 +1480,7 @@
           }
         }
       ],
-      "validatedAt": "2026-10-15T17:55:03.817Z"
+      "validatedAt": "2026-10-15T18:17:09.559Z"
     },
     {
       "modelId": "zai-org/GLM-5.3-Flash",
@@ -1439,11 +1493,11 @@
           "passed": true,
           "score": 100,
           "details": "OpenAI-compatible response structure",
-          "latencyMs": 1550,
+          "latencyMs": 1698,
           "rawResponse": {
-            "id": "01a140b3f763a50b0f92f915e9f2264f",
+            "id": "01a140c83363a0fe5509321c8b132cfc",
             "object": "chat.completion",
-            "created": 1792086898,
+            "created": 1792088224,
             "model": "zai-org/GLM-5.3-Flash",
             "choices": [
               {
@@ -1478,11 +1532,11 @@
           "passed": true,
           "score": 100,
           "details": "2/2 trials returned valid tool_calls",
-          "latencyMs": 4261,
+          "latencyMs": 912,
           "rawResponse": {
-            "id": "01a140b402199bd8035ff489c97218c6",
+            "id": "01a140c83dbc42b4a624959770c344b4",
             "object": "chat.completion",
-            "created": 1792086901,
+            "created": 1792088227,
             "model": "zai-org/GLM-5.3-Flash",
             "choices": [
               {
@@ -1494,7 +1548,7 @@
                   "tool_calls": [
                     {
                       "index": 0,
-                      "id": "01a140b41d50ff0a6938952559452f68",
+                      "id": "01a140c83f9413760cd1c00281c97429",
                       "type": "function",
                       "function": {
                         "name": "get_weather",
@@ -1528,11 +1582,11 @@
           "passed": true,
           "score": 100,
           "details": "Valid JSON matching schema",
-          "latencyMs": 2174,
+          "latencyMs": 2267,
           "rawResponse": {
-            "id": "01a140b41efd899879f30629ef8f2096",
+            "id": "01a140c841330edbbe0906cb7dfe6b73",
             "object": "chat.completion",
-            "created": 1792086908,
+            "created": 1792088228,
             "model": "zai-org/GLM-5.3-Flash",
             "choices": [
               {
@@ -1540,7 +1594,7 @@
                 "message": {
                   "role": "assistant",
                   "content": "{\n  \"name\": \"Alice\",\n  \"age\": 30,\n  \"skills\": [\"TypeScript\", \"Python\"],\n  \"active\": true\n}",
-                  "reasoning_content": "The user wants a JSON object for a person named Alice, age 30, skills [\"TypeScript\", \"Python\"], active true.\n\nI should output valid JSON only, as instructed by the system prompt."
+                  "reasoning_content": "The user wants a JSON object for a person named Alice, age 30, skills [\"TypeScript\", \"Python\"], active true. Simple task. Output valid JSON only."
                 },
                 "finish_reason": "stop",
                 "logprobs": null
@@ -1548,10 +1602,10 @@
             ],
             "usage": {
               "prompt_tokens": 43,
-              "completion_tokens": 75,
-              "total_tokens": 118,
+              "completion_tokens": 69,
+              "total_tokens": 112,
               "completion_tokens_details": {
-                "reasoning_tokens": 42
+                "reasoning_tokens": 36
               },
               "prompt_tokens_details": {
                 "cached_tokens": 0
@@ -1563,7 +1617,7 @@
           }
         }
       ],
-      "validatedAt": "2026-10-15T17:55:10.699Z"
+      "validatedAt": "2026-10-15T18:17:10.284Z"
     },
     {
       "modelId": "deepseek-ai/DeepSeek-V4-Flash",
@@ -1576,19 +1630,19 @@
           "passed": true,
           "score": 100,
           "details": "OpenAI-compatible response structure",
-          "latencyMs": 3619,
+          "latencyMs": 12389,
           "rawResponse": {
-            "id": "01a140b4143fd3042de89c6519eac8a8",
+            "id": "01a140c85001ed28691e93ab07566fd4",
             "object": "chat.completion",
-            "created": 1792086906,
+            "created": 1792088232,
             "model": "deepseek-ai/DeepSeek-V4-Flash",
             "choices": [
               {
                 "index": 0,
                 "message": {
                   "role": "assistant",
-                  "content": "**Pong!**",
-                  "reasoning_content": "1.  **Analyze the User's Request** ping **:\n    *   The user simply typed \"ping command\" (they typed \"ping\").\n    *   They are likely asking what the `ping` command is, how to answer it, or prompting, or simply testing the connection.\n    *   Since they asked \"ping\" in a chat context, they might literally be testing if I'm alive and responsive (a \"ping\" test).\n    *   Alternatively, they could be asking for an explanation of the network command `ping`.\n\n2.  **Determine the best response**:\n    *   *Option A (Literal response):* \"Pong!\" (Fun, brief, acknowledges the test).\n    *   *Option B (Explanatory response):* Briefly explain what the `ping` command does, how to use it, and its response format.\n    *   *Best approach:* Combine both. Start with a \"Pong!\" to answer the literal ping, then offer a summary of the network utility in case they wanted the technical explanation. Keep it concise."
+                  "content": "Pong!",
+                  "reasoning_content": "Hmm, the user justo envió \"ping\". Esto es muy ping-only test. Es una way para check if I'm alive and responsive. No deeper question or request.\n\nOk, the user wants to know if I'm here. I should respond with a clear, friendly acknowledgment that I am indeed active and ready to help. Since it's just a ping, I can keep it simple and inviting. I'll confirm I'm here, then open the floor for them to ask anything or clarify their request."
                 },
                 "finish_reason": "length",
                 "logprobs": null
@@ -1596,10 +1650,10 @@
             ],
             "usage": {
               "prompt_tokens": 5,
-              "completion_tokens": 228,
-              "total_tokens": 233,
+              "completion_tokens": 108,
+              "total_tokens": 113,
               "completion_tokens_details": {
-                "reasoning_tokens": 223
+                "reasoning_tokens": 105
               },
               "prompt_tokens_details": {
                 "cached_tokens": 0
@@ -1615,11 +1669,11 @@
           "passed": true,
           "score": 100,
           "details": "2/2 trials returned valid tool_calls",
-          "latencyMs": 2015,
+          "latencyMs": 4019,
           "rawResponse": {
-            "id": "01a140b40d17c117e806a5c45b1b7b95",
+            "id": "01a140c87b80b119e9396173515e2a5e",
             "object": "chat.completion",
-            "created": 1792086904,
+            "created": 1792088243,
             "model": "deepseek-ai/DeepSeek-V4-Flash",
             "choices": [
               {
@@ -1630,7 +1684,7 @@
                   "tool_calls": [
                     {
                       "index": 0,
-                      "id": "01a140b414874e0274dfd2e8c890c796",
+                      "id": "01a140c8824b6907ca9f297cf56f2697",
                       "type": "function",
                       "function": {
                         "name": "get_weather",
@@ -1664,19 +1718,19 @@
           "passed": true,
           "score": 100,
           "details": "Valid JSON matching schema",
-          "latencyMs": 2491,
+          "latencyMs": 1679,
           "rawResponse": {
-            "id": "01a140b43266b6b4d8ca59f9c52e1cdc",
+            "id": "01a140c87d7313e71c802e7f0778f464",
             "object": "chat.completion",
-            "created": 1792086913,
+            "created": 1792088243,
             "model": "deepseek-ai/DeepSeek-V4-Flash",
             "choices": [
               {
                 "index": 0,
                 "message": {
                   "role": "assistant",
-                  "content": "{\"name\":\"Alice\",\"age\":30,\"skills\":[\"TypeScript\",\"Python\"],\"active\":true}",
-                  "reasoning_content": "We need to generate a JSON-valid JSON object for a person named Alice, age 30, skills [\"TypeScript\", \" TypeScript\", \"Python\"], active true. The skills array has two elements, but note it says \"TypeScript\" with a space? Actually the user wrote \" TypeScript\" with a space before it? Let's read: 'skills [\"TypeScript\", \"Python\"]' - The string inside the array is \"TypeScript\" without space, but in the user input it's written as '\"TypeScript\", \"Python\"'. Actually the user wrote: 'skills [\"TypeScript\", \"Python\"]' - So it's fine. So the JSON object should be: {\"name\": \"Alice\", \"age\": 30, \"skills\": [\"TypeScript\", \"Python\"], \"active\": true}.\n\nBut the instruction says \"Output valid JSON only.\" So we just output that.\n\nMake sure to use double quotes for strings, no trailing commas, etc."
+                  "content": "{\"active true Aaron \" \t\t \t\t\t \t\t\t\t \t \t \n    :  0, \n    \n    \"name\": \"Alice\",\n    \"age\": 30,\n    \"skills\": [\"TypeScript\", \"Python\"],\n    \"active\": true\n}",
+                  "reasoning_content": "We need, \" Alice active\"Alice\""
                 },
                 "finish_reason": "stop",
                 "logprobs": null
@@ -1684,10 +1738,10 @@
             ],
             "usage": {
               "prompt_tokens": 34,
-              "completion_tokens": 222,
-              "total_tokens": 256,
+              "completion_tokens": 71,
+              "total_tokens": 105,
               "completion_tokens_details": {
-                "reasoning_tokens": 200
+                "reasoning_tokens": 10
               },
               "prompt_tokens_details": {
                 "cached_tokens": 0
@@ -1699,7 +1753,7 @@
           }
         }
       ],
-      "validatedAt": "2026-10-15T17:55:08.603Z"
+      "validatedAt": "2026-10-15T18:17:26.603Z"
     },
     {
       "modelId": "Qwen/Qwen3.5-9B",
@@ -1712,19 +1766,19 @@
           "passed": true,
           "score": 100,
           "details": "OpenAI-compatible response structure",
-          "latencyMs": 4898,
+          "latencyMs": 2839,
           "rawResponse": {
-            "id": "01a140b40c9f7d10b304e35da832c5db",
+            "id": "01a140c84756691a154b6fe39d021af5",
             "object": "chat.completion",
-            "created": 1792086904,
+            "created": 1792088229,
             "model": "Qwen/Qwen3.5-9B",
             "choices": [
               {
                 "index": 0,
                 "message": {
                   "role": "assistant",
-                  "content": "\n\nIt seems like you",
-                  "reasoning_content": "Okay, the user just sent \"ping\". Hmm, that's pretty vague. Let me think. Maybe they're testing if I'm responsive? Or perhaps they want to know how to use the ping command? Wait, but I'm an AI, not a network tool. Oh, right, ping is a network utility to check connectivity. But since I can't actually perform network operations, I should clarify that.\n\nWait, maybe they're asking about the ping command in general. Like how it works, or how to use it. But the message is just \"ping\" without any context. I should ask them to clarify what they need. Maybe they want to know the purpose of ping, how to use it, or something else. Let me check if there's any other possible interpretation. Sometimes people use \"ping\" to check if a service is up, but since I can't do that, I should inform them I can't perform network checks. Alternatively, maybe they're referring to a specific feature or command in a different context. I should respond by asking for more details to provide a helpful answer. Yeah, that makes sense. Let them know I can't do network pings but can explain about the command or other related topics.\n"
+                  "content": "\n\nHello! I'm",
+                  "reasoning_content": "Okay, the user just sent \"ping\". Hmm, that's pretty vague. Let me think. Maybe they're testing if I'm responsive? Or perhaps they want to know my status? Wait, \"ping\" is a network utility, but in this context, it's probably a casual way to check if I'm here.\n\nI should respond in a friendly manner. Let them know I'm available and ready to help. Maybe ask what they need. Keep it simple and open-ended. Don't want to assume too much. Just a quick acknowledgment and offer assistance. Yeah, that makes sense.\n"
                 },
                 "finish_reason": "length",
                 "logprobs": null
@@ -1732,10 +1786,10 @@
             ],
             "usage": {
               "prompt_tokens": 11,
-              "completion_tokens": 258,
-              "total_tokens": 269,
+              "completion_tokens": 128,
+              "total_tokens": 139,
               "completion_tokens_details": {
-                "reasoning_tokens": 253
+                "reasoning_tokens": 123
               },
               "prompt_tokens_details": {
                 "cached_tokens": 0
@@ -1751,11 +1805,11 @@
           "passed": true,
           "score": 100,
           "details": "2/2 trials returned valid tool_calls",
-          "latencyMs": 2295,
+          "latencyMs": 4102,
           "rawResponse": {
-            "id": "01a140b4295a4665ee7a57d6ea5d1e68",
+            "id": "01a140c8647141fa2010a0e7afc38d6a",
             "object": "chat.completion",
-            "created": 1792086911,
+            "created": 1792088237,
             "model": "Qwen/Qwen3.5-9B",
             "choices": [
               {
@@ -1767,7 +1821,7 @@
                   "tool_calls": [
                     {
                       "index": 0,
-                      "id": "01a140b432233301032444db4025abb6",
+                      "id": "01a140c872a046958d959443dcc9a946",
                       "type": "function",
                       "function": {
                         "name": "get_weather",
@@ -1804,31 +1858,63 @@
           "latencyMs": 20001
         }
       ],
-      "validatedAt": "2026-10-15T17:55:33.810Z"
+      "validatedAt": "2026-10-15T18:17:41.107Z"
     },
     {
       "modelId": "Qwen/Qwen3.5-4B",
       "provider": "siliconflow",
-      "passed": false,
-      "score": 50,
+      "passed": true,
+      "score": 79,
       "checks": [
         {
           "name": "openai-compat",
-          "passed": false,
-          "score": 0,
-          "details": "Request failed: Operation timed out",
-          "latencyMs": 15000
+          "passed": true,
+          "score": 100,
+          "details": "OpenAI-compatible response structure",
+          "latencyMs": 1898,
+          "rawResponse": {
+            "id": "01a140c84a07c96c6c4afe9b07e51363",
+            "object": "chat.completion",
+            "created": 1792088230,
+            "model": "Qwen/Qwen3.5-4B",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "\n\nHello! It looks",
+                  "reasoning_content": "Okay, the user just sent \"ping\". Hmm, that's a bit vague. Let me think. Ping is usually a command-line tool used to check network connectivity. Maybe they want to know how to use it? Or perhaps they're testing if I'm responsive?\n\nWait, since I'm an AI, I can't actually run commands. But maybe they're expecting a response like a ping test. Let me check the context. The user might be checking if the system is working. I should respond in a way that acknowledges the ping and offers help.\n\nI should keep it friendly and ask if they need assistance with something related to ping or network diagnostics. Maybe mention common uses like checking connectivity or troubleshooting. Let me make sure the response is clear and helpful without assuming too much.\n"
+                },
+                "finish_reason": "length",
+                "logprobs": null
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 11,
+              "completion_tokens": 166,
+              "total_tokens": 177,
+              "completion_tokens_details": {
+                "reasoning_tokens": 161
+              },
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "prompt_cache_hit_tokens": 0,
+              "prompt_cache_miss_tokens": 11
+            },
+            "system_fingerprint": ""
+          }
         },
         {
           "name": "tool-calling",
           "passed": true,
           "score": 100,
           "details": "2/2 trials returned valid tool_calls",
-          "latencyMs": 3880,
+          "latencyMs": 18569,
           "rawResponse": {
-            "id": "01a140b46bd4730ddc96d088595e7c6e",
+            "id": "01a140c8716667301be9bffb09ebd606",
             "object": "chat.completion",
-            "created": 1792086928,
+            "created": 1792088240,
             "model": "Qwen/Qwen3.5-4B",
             "choices": [
               {
@@ -1836,11 +1922,11 @@
                 "message": {
                   "role": "assistant",
                   "content": "\n\n",
-                  "reasoning_content": "The user is asking for the weather in Beijing and wants me to use the get_weather tool. I need to call the get_weather function with the location parameter set to \"Beijing\". The unit parameter is optional, so I don't need to specify it.\n",
+                  "reasoning_content": "The user is asking for the weather in Beijing and wants me to use the get_weather tool. I need to call this function with the location parameter set to \"Beijing\". The unit parameter is optional, so I don't need to specify it.\n",
                   "tool_calls": [
                     {
                       "index": 0,
-                      "id": "01a140b4787ceaaaedcb4033b6069c2e",
+                      "id": "01a140c8e2d7c756ee2ba72defb77e14",
                       "type": "function",
                       "function": {
                         "name": "get_weather",
@@ -1855,10 +1941,10 @@
             ],
             "usage": {
               "prompt_tokens": 399,
-              "completion_tokens": 81,
-              "total_tokens": 480,
+              "completion_tokens": 79,
+              "total_tokens": 478,
               "completion_tokens_details": {
-                "reasoning_tokens": 54
+                "reasoning_tokens": 52
               },
               "prompt_tokens_details": {
                 "cached_tokens": 0
@@ -1874,10 +1960,10 @@
           "passed": false,
           "score": 0,
           "details": "Request failed: Operation timed out",
-          "latencyMs": 20000
+          "latencyMs": 20001
         }
       ],
-      "validatedAt": "2026-10-15T17:55:51.863Z"
+      "validatedAt": "2026-10-15T18:18:09.828Z"
     },
     {
       "modelId": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
@@ -1890,11 +1976,11 @@
           "passed": true,
           "score": 100,
           "details": "OpenAI-compatible response structure",
-          "latencyMs": 10225,
+          "latencyMs": 8443,
           "rawResponse": {
-            "id": "01a140b4277e11a365e6cfb7871d626b",
+            "id": "01a140c889d7b287b7c4e9badd245048",
             "object": "chat.completion",
-            "created": 1792086911,
+            "created": 1792088246,
             "model": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
             "choices": [
               {
@@ -1929,18 +2015,18 @@
           "passed": false,
           "score": 0,
           "details": "0/2 trials returned valid tool_calls — last error: HTTP 400: {\"code\":20037,\"message\":\"Function call is not supported for this model.\",\"data\":null}",
-          "latencyMs": 429
+          "latencyMs": 407
         },
         {
           "name": "structured-output",
           "passed": true,
           "score": 100,
           "details": "Valid JSON matching schema",
-          "latencyMs": 14757,
+          "latencyMs": 10075,
           "rawResponse": {
-            "id": "01a140b452cabc7bb741d9177e9e0755",
+            "id": "01a140c8ae1a3cae378f62d538937b96",
             "object": "chat.completion",
-            "created": 1792086922,
+            "created": 1792088256,
             "model": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
             "choices": [
               {
@@ -1948,7 +2034,7 @@
                 "message": {
                   "role": "assistant",
                   "content": "{\"name\": \"Alice\", \"age\": 30, \"skills\": [\"TypeScript\", \"Python\"], \"active\": true}",
-                  "reasoning_content": "\nFirst, the user asked me to generate a JSON object for a person named Alice, age 30, skills [\"TypeScript\", \"Python\"], and active true. I need to make sure my response is valid JSON only, as per the system prompt.\n\nKey elements from the query:\n- Name: Alice\n- Age: 30\n- Skills: an array with \"TypeScript\" and \"Python\"\n- Active: true (a boolean)\n\nIn JSON, objects are enclosed in curly braces {}, and key-value pairs are separated by commas. Strings should be in double quotes, numbers can be without quotes, and arrays use square brackets [].\n\nSo, the JSON structure should look like:\n{\n  \"name\": \"Alice\",\n  \"age\": 30,\n  \"skills\": [\"TypeScript\", \"Python\"],\n  \"active\": true\n}\n\nI need to ensure it's valid JSON. Let me check:\n- All keys are strings.\n- Values are correctly typed: age is a number, skills is an array, active is a boolean.\n- No trailing commas, which could make it invalid.\n\nThe system prompt says: \"Output valid JSON only.\" So, I shouldn't add any extra text, just the JSON object. That means my response should be exactly the JSON, no explanations or anything else.\n\nFinally, I'll output this JSON directly. Since this is a text-based response, I'll write it as a string.\n\nResponse: {\"name\": \"Alice\", \"age\": 30, \"skills\": [\"TypeScript\", \"Python\"], \"active\": true}\n"
+                  "reasoning_content": "\nFirst, the user asked me to generate a JSON object for a person named Alice, age 30, skills [\"TypeScript\", \"Python\"], and active true. I need to make sure my response is valid JSON only, as per the system prompt.\n\nKey elements from the query:\n- Name: Alice\n- Age: 30\n- Skills: an array with \"TypeScript\" and \"Python\"\n- Active: true (a boolean)\n\nJSON structure should be straightforward. A JSON object typically starts with { and has key-value pairs separated by commas. Keys should be in double quotes, and values should be properly formatted.\n\nLet me outline the JSON:\n- \"name\": \"Alice\"\n- \"age\": 30\n- \"skills\": [\"TypeScript\", \"Python\"]\n- \"active\": true\n\nI need to ensure the JSON is valid:\n- All strings are in double quotes.\n- Numbers like age don't need quotes.\n- Arrays use square brackets with comma-separated values.\n- Booleans are true or false without quotes.\n\nNow, the system prompt says: \"Output valid JSON only.\" So, I shouldn't add any extra text, just the JSON itself. That means my response should be pure JSON, no explanations or anything else.\n\nConstructing the JSON:\n- Start with {\n- Add \"name\": \"Alice\",\n- Add \"age\": 30,\n- Add \"skills\": [\"TypeScript\", \"Python\"],\n- Add \"active\": true\n- End with }\n\nMake sure the syntax is correct: no trailing commas, proper indentation isn't required for validity, but I'll keep it clean for readability in this response.\n\nFinal JSON:\n{\n  \"name\": \"Alice\",\n  \"age\": 30,\n  \"skills\": [\"TypeScript\", \"Python\"],\n  \"active\": true\n}\n\nI should output this directly. No need for any other content.\n"
                 },
                 "finish_reason": "stop",
                 "logprobs": null
@@ -1956,10 +2042,10 @@
             ],
             "usage": {
               "prompt_tokens": 34,
-              "completion_tokens": 353,
-              "total_tokens": 387,
+              "completion_tokens": 416,
+              "total_tokens": 450,
               "completion_tokens_details": {
-                "reasoning_tokens": 325
+                "reasoning_tokens": 388
               },
               "prompt_tokens_details": {
                 "cached_tokens": 0
@@ -1971,32 +2057,32 @@
           }
         }
       ],
-      "validatedAt": "2026-10-15T17:55:36.546Z"
+      "validatedAt": "2026-10-15T18:17:45.940Z"
     },
     {
       "modelId": "Qwen/Qwen3-8B",
       "provider": "siliconflow",
-      "passed": false,
-      "score": 29,
+      "passed": true,
+      "score": 89,
       "checks": [
         {
           "name": "openai-compat",
           "passed": true,
           "score": 100,
           "details": "OpenAI-compatible response structure",
-          "latencyMs": 3936,
+          "latencyMs": 14086,
           "rawResponse": {
-            "id": "01a140b481b3b7ce8c38c8c8a1cfe63d",
+            "id": "01a140c8c3fa2f1f8157c861e8604d1f",
             "object": "chat.completion",
-            "created": 1792086934,
+            "created": 1792088262,
             "model": "Qwen/Qwen3-8B",
             "choices": [
               {
                 "index": 0,
                 "message": {
                   "role": "assistant",
-                  "content": "\n\nPong!",
-                  "reasoning_content": "\nOkay, the user just sent \"ping\". That's a common way to check if a server or device is responsive. Since they're using a chat interface, they might be testing if I'm online or if there's a delay. I should respond with a friendly acknowledgment to let them know I'm here. Maybe add an emoji to keep it light. I don't need to do anything else unless they have a specific request. Just a simple \"Pong!\" with a smiley face should work.\n"
+                  "content": "\n\nHello! 😊",
+                  "reasoning_content": "\nOkay, the user just sent \"ping\". That's a common way to check if a server or device is responsive. Since they're using a chat interface, they might be testing if I'm online or if there's a delay. I should respond with a friendly acknowledgment to let them know I'm here. Maybe add a question to see if they need help with something specific. Keep it simple and approachable.\n"
                 },
                 "finish_reason": "length",
                 "logprobs": null
@@ -2004,10 +2090,10 @@
             ],
             "usage": {
               "prompt_tokens": 9,
-              "completion_tokens": 108,
-              "total_tokens": 117,
+              "completion_tokens": 91,
+              "total_tokens": 100,
               "completion_tokens_details": {
-                "reasoning_tokens": 104
+                "reasoning_tokens": 86
               },
               "prompt_tokens_details": {
                 "cached_tokens": 0
@@ -2020,20 +2106,95 @@
         },
         {
           "name": "tool-calling",
-          "passed": false,
-          "score": 0,
-          "details": "0/2 trials returned valid tool_calls — last error: Request failed: Operation timed out",
-          "latencyMs": 0
+          "passed": true,
+          "score": 100,
+          "details": "2/2 trials returned valid tool_calls",
+          "latencyMs": 6243,
+          "rawResponse": {
+            "id": "01a140c9154fd3d823ee4973b3d3985e",
+            "object": "chat.completion",
+            "created": 1792088282,
+            "model": "Qwen/Qwen3-8B",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "",
+                  "reasoning_content": "\nOkay, the user is asking for the weather in Beijing and wants me to use the get_weather tool. Let me check the functions available. There's get_weather which requires the location parameter. The unit is optional but has an enum of celsius or fahrenheit. Since the user didn't specify the unit, maybe I should default to celsius. I need to make sure I include the location as \"Beijing\". The other function is calculate, but that's not relevant here. So the correct tool call would be get_weather with location set to Beijing and unit as celsius. Let me structure that in JSON.\n",
+                  "tool_calls": [
+                    {
+                      "index": 0,
+                      "id": "01a140c92b388cd017a7fc41cf12c627",
+                      "type": "function",
+                      "function": {
+                        "name": "get_weather",
+                        "arguments": "{\"location\": \"Beijing\", \"unit\": \"celsius\"}"
+                      }
+                    }
+                  ]
+                },
+                "finish_reason": "tool_calls",
+                "logprobs": null
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 275,
+              "completion_tokens": 155,
+              "total_tokens": 430,
+              "completion_tokens_details": {
+                "reasoning_tokens": 127
+              },
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "prompt_cache_hit_tokens": 0,
+              "prompt_cache_miss_tokens": 275
+            },
+            "system_fingerprint": ""
+          }
         },
         {
           "name": "structured-output",
           "passed": false,
-          "score": 0,
-          "details": "Request failed: Operation timed out",
-          "latencyMs": 20001
+          "score": 50,
+          "details": "JSON valid but schema mismatch",
+          "latencyMs": 12258,
+          "rawResponse": {
+            "id": "01a140c92cdf17cd177e6ad4ac9568c2",
+            "object": "chat.completion",
+            "created": 1792088288,
+            "model": "Qwen/Qwen3-8B",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "{\n\n}",
+                  "reasoning_content": "\nOkay, the user wants me to generate a JSON object for a person named Alice, who is 30 years old, has skills in TypeScript and Python, and is active. Let me start by recalling the structure of a JSON object.\n\nFirst, the keys should be in double quotes, and the values as well. The person's name is Alice, so the key \"name\" with the value \"Alice\". Age is 30, which is a number, so \"age\": 30. Skills are an array, so I need to put them in square brackets, separated by commas. The skills given are TypeScript and Python, so [\"TypeScript\", \"Python\"]. Active is a boolean, true. \n\nWait, the user specified \"active true\" – in JSON, boolean values are lowercase, so it should be \"active\": true. Let me make sure all the data types are correct. Name is a string, age is a number, skills are an array of strings, active is a boolean. \n\nPutting it all together, the JSON object should have these key-value pairs. Let me check for any syntax errors. Commas between each key-value pair except the last one. The array elements are properly quoted. No trailing commas. \n\nSo the final JSON would look like:\n{\n  \"name\": \"Alice\",\n  \"age\": 30,\n  \"skills\": [\"TypeScript\", \"Python\"],\n  \"active\": true\n}\n\nI think that's all. Let me verify once more. Name is correct, age is a number, skills array has both items, active is true. Yep, that's right. No other fields needed. The user didn't mention anything else, so this should meet their requirements.\n"
+                },
+                "finish_reason": "stop",
+                "logprobs": null
+              }
+            ],
+            "usage": {
+              "prompt_tokens": 44,
+              "completion_tokens": 357,
+              "total_tokens": 401,
+              "completion_tokens_details": {
+                "reasoning_tokens": 355
+              },
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "prompt_cache_hit_tokens": 0,
+              "prompt_cache_miss_tokens": 44
+            },
+            "system_fingerprint": ""
+          }
         }
       ],
-      "validatedAt": "2026-10-15T17:56:58.252Z"
+      "validatedAt": "2026-10-15T18:18:20.450Z"
     }
   ]
 }
