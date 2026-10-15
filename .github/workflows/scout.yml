@@ -61,7 +61,7 @@ jobs:
         id: scout
         run: |
           node dist/cli.js \
-            --sources openrouter,custom-seeds \
+            --sources openrouter,github-models,custom-seeds \
             --validators openai-compat,tool-calling,structured-output \
             --max-models 12 \
             --concurrency 3 \
