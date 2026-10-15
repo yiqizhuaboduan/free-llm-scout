@@ -27,7 +27,7 @@ program
   .name('scout')
   .description('free-llm-scout: Automated free LLM discovery, validation, and fleet config generator')
   .version(getVersion())
-  .option('-s, --sources <names>', 'Comma-separated discovery sources (openrouter,github-models,siliconflow,modelscope,bailian,zhipu,moonshot,huggingface,custom-seeds)', 'openrouter,github-models,custom-seeds')
+  .option('-s, --sources <names>', 'Comma-separated discovery sources (openrouter,siliconflow,modelscope,bailian,zhipu,moonshot,huggingface,custom-seeds)', 'openrouter,custom-seeds')
   .option('-v, --validators <names>', 'Comma-separated validators (openai-compat,tool-calling,structured-output | opt-in: context-window,rate-limit)', 'openai-compat,tool-calling,structured-output')
   .option('-e, --emitters <names>', 'Comma-separated emitters (dsh-fleet,registry-json,leaderboard)', 'dsh-fleet,registry-json,leaderboard')
   .option('-c, --concurrency <n>', 'Max concurrent validations', '3')

@@ -18,7 +18,6 @@ permissions:
 env:
   # These must be set in GitHub repository Settings > Secrets > Actions
   OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-  GH_MODELS_API_KEY: ${{ secrets.GH_MODELS_API_KEY }}
   SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
   MODELSCOPE_API_KEY: ${{ secrets.MODELSCOPE_API_KEY }}
   BAILIAN_API_KEY: ${{ secrets.BAILIAN_API_KEY }}
@@ -61,7 +60,7 @@ jobs:
         id: scout
         run: |
           node dist/cli.js \
-            --sources openrouter,github-models,custom-seeds \
+            --sources openrouter,custom-seeds \
             --validators openai-compat,tool-calling,structured-output \
             --max-models 12 \
             --concurrency 3 \

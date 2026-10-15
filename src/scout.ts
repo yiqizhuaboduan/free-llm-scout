@@ -14,7 +14,6 @@ import { BailianDiscovery } from './discover/bailian.js';
 import { ZhipuDiscovery } from './discover/zhipu.js';
 import { MoonshotDiscovery } from './discover/moonshot.js';
 import { HuggingFaceDiscovery } from './discover/huggingface.js';
-import { GitHubModelsDiscovery } from './discover/github-models.js';
 import { CustomSeedsDiscovery } from './discover/custom-seeds.js';
 import { CompatValidator } from './validate/compat.js';
 import { ToolCallingValidator } from './validate/tool-calling.js';
@@ -35,7 +34,6 @@ const SOURCE_REGISTRY: Record<string, () => DiscoverySource> = {
   zhipu: () => new ZhipuDiscovery(),
   moonshot: () => new MoonshotDiscovery(),
   huggingface: () => new HuggingFaceDiscovery(),
-  'github-models': () => new GitHubModelsDiscovery(),
   'custom-seeds': () => new CustomSeedsDiscovery(),
 };
 
@@ -54,7 +52,7 @@ const EMITTER_REGISTRY: Record<string, () => Emitter> = {
 };
 
 const DEFAULT_CONFIG: ScoutConfig = {
-  sources: ['openrouter', 'github-models', 'custom-seeds'],
+  sources: ['openrouter', 'custom-seeds'],
   // Budget: OpenRouter free tier allows ~50 requests/day (account-wide).
   // Default trio costs ~4 requests per model; --max-models caps the total.
   // `context-window` and `rate-limit` are opt-in — they burn 5-15 requests
@@ -163,7 +161,7 @@ export class Scout {
       // When at least one key exists, drop models from keyless providers so
       // they cannot eat into the capped validation budget (they would only
       // warn-and-skip anyway). With no keys at all, keep everything for a dry run.
-      const KEYED_PROVIDERS = ['openrouter', 'siliconflow', 'modelscope', 'bailian', 'zhipu', 'moonshot', 'huggingface', 'github-models'];
+      const KEYED_PROVIDERS = ['openrouter', 'siliconflow', 'modelscope', 'bailian', 'zhipu', 'moonshot', 'huggingface'];
       const anyKey = KEYED_PROVIDERS.some(p => this.getApiKey(p) !== '');
       const validatable = anyKey ? discovered.filter(m => this.getApiKey(m.provider) !== '') : discovered;
       const noKey = discovered.length - validatable.length;
@@ -349,7 +347,6 @@ export class Scout {
       zhipu: 'ZHIPU_API_KEY',
       moonshot: 'MOONSHOT_API_KEY',
       huggingface: 'HF_API_KEY',
-      'github-models': 'GH_MODELS_API_KEY',
       'deepseek-account': 'DEEPSEEK_API_KEY',
     };
     return process.env[envMap[provider]] || '';
@@ -364,7 +361,6 @@ export class Scout {
       zhipu: 'https://open.bigmodel.cn/api/paas/v4',
       moonshot: 'https://api.moonshot.cn/v1',
       huggingface: 'https://api-inference.huggingface.co',
-      'github-models': 'https://models.github.ai/inference',
       'deepseek-account': 'https://api.deepseek.com/v1',
     };
     return urlMap[provider] || '';

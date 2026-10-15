@@ -14,7 +14,7 @@
 
 **free-llm-scout** 每天自动：
 
-1. **🔍 发现** —— 从多个平台拉取免费模型清单（OpenRouter、SiliconFlow、ModelScope、百炼、智谱、月之暗面、HuggingFace、**GitHub Models**、内置种子）
+1. **🔍 发现** —— 从多个平台拉取免费模型清单（OpenRouter、SiliconFlow、ModelScope、百炼、智谱、月之暗面、HuggingFace、内置种子）
 2. **🧪 实测验证** —— 不是看宣传页，是发真实请求：
    - ✅ OpenAI 接口兼容性
    - ✅ **工具调用（Tool Calling）可靠性**（DSH 编码 Agent 的命脉）
@@ -71,7 +71,6 @@ pnpm scout
 | 平台 | 环境变量 | 免费档 | 获取地址 |
 |------|----------|--------|----------|
 | **OpenRouter** | `OPENROUTER_API_KEY` | ✅ 50 请求/天（充 $10 → 1000/天） | [openrouter.ai/keys](https://openrouter.ai/keys) |
-| **GitHub Models** | `GH_MODELS_API_KEY` | ✅ 用 GitHub Token 即可调用 GPT-4.1/DeepSeek-R1/Llama-4 等 | [github.com/settings/tokens](https://github.com/settings/tokens)（经典令牌免勾选即可用） |
 | SiliconFlow | `SILICONFLOW_API_KEY` | ✅ | [siliconflow.cn](https://siliconflow.cn) |
 | ModelScope | `MODELSCOPE_API_KEY` | ✅ | [modelscope.cn](https://modelscope.cn) |
 | 百炼 | `BAILIAN_API_KEY` | ✅ 试用额度 | [bailian.aliyun.com](https://bailian.aliyun.com) |
@@ -96,7 +95,7 @@ pnpm scout
 
 ```bash
 pnpm scout \
-  --sources openrouter,github-models,custom-seeds \
+  --sources openrouter,custom-seeds \
   --validators openai-compat,tool-calling,structured-output \
   --max-models 12 \
   --concurrency 3 \
@@ -159,7 +158,6 @@ free-llm-scout/
 │   ├── types.ts / utils.ts
 │   ├── discover/                 # 发现源（插拔式，一平台一文件）
 │   │   ├── openrouter.ts
-│   │   ├── github-models.ts      # GitHub Models（免费 GPT/Llama/DeepSeek）
 │   │   ├── siliconflow.ts / modelscope.ts / bailian.ts
 │   │   ├── zhipu.ts / moonshot.ts / huggingface.ts
 │   │   └── custom-seeds.ts       # 人工精选种子（兜底）
@@ -199,7 +197,7 @@ free-llm-scout/
 ## 🙏 致谢
 
 - **DeepSeek Harness（DSH）** —— 本项目服务的宿主环境
-- **OpenRouter / GitHub Models** —— 免费模型聚合
+- **OpenRouter** —— 免费模型聚合
 - 各免费档平台 —— SiliconFlow、ModelScope、百炼、智谱、月之暗面、HuggingFace
 
 ---
