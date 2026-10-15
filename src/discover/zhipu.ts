@@ -39,10 +39,15 @@ export class ZhipuDiscovery implements DiscoverySource {
     // two free flash models entirely, so catalog-based filtering here always
     // yielded zero. The free tier is served from a curated supplement instead;
     // re-verify by hand if Zhipu revises its pricing again.
+    //
+    // contextWindow: real-world serving window is FAR below the advertised
+    // 128K — a long DSH session got error 1261 "Prompt exceeds max length"
+    // with a 131072 claim (2026-10-15). Under-claim at 32K so the harness
+    // compacts/rotates BEFORE hitting 1261; short sessions still work fine.
     const now = new Date().toISOString();
     const FREE_MODELS = [
-      { id: 'glm-4-flash', name: 'GLM-4 Flash (免费)', contextWindow: 131072 },
-      { id: 'glm-4.5-flash', name: 'GLM-4.5 Flash (免费)', contextWindow: 131072 },
+      { id: 'glm-4-flash', name: 'GLM-4 Flash (免费·短会话)', contextWindow: 32768 },
+      { id: 'glm-4.5-flash', name: 'GLM-4.5 Flash (免费·短会话)', contextWindow: 32768 },
     ];
     return FREE_MODELS.map(m => ({
       id: `zhipu/${m.id}`,
@@ -50,7 +55,7 @@ export class ZhipuDiscovery implements DiscoverySource {
       modelId: m.id,
       name: m.name,
       contextWindow: m.contextWindow,
-      maxTokens: Math.min(65536, Math.floor(m.contextWindow * 0.5)),
+      maxTokens: 8192,
       inputModalities: ['text'],
       outputModalities: ['text'],
       priceInput: 0,
