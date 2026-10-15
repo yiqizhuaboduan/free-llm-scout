@@ -30,8 +30,27 @@ export interface ModelInfo {
   supportsStructuredOutput?: boolean;
   /** Discovery source timestamp */
   discoveredAt: string;
+  /** How the free quota renews — drives the "spend the perishable first" ordering */
+  quota?: QuotaPolicy;
   /** Raw provider-specific metadata */
   raw?: Record<string, unknown>;
+}
+
+/** How a provider's free quota renews. */
+export type QuotaKind =
+  /** Resets every day — unused capacity is lost at midnight, so spend it first. */
+  | 'daily-reset'
+  /** A one-time grant that expires — spend before the deadline. */
+  | 'trial-expiring'
+  /** Free for the foreseeable future — nothing wasted by deferring. */
+  | 'durable';
+
+export interface QuotaPolicy {
+  kind: QuotaKind;
+  /** Estimated daily free request budget (daily-reset tiers only). */
+  amount?: number;
+  /** ISO date when the grant expires (trial-expiring tiers only). */
+  expiresAt?: string;
 }
 
 export interface ValidationResult {

@@ -7,6 +7,7 @@
 import { readFileSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { QUOTA_POLICIES } from '../dist/scout.js';
 import { DshFleetEmitter } from '../dist/emitters/dsh-fleet.js';
 import { RegistryJsonEmitter } from '../dist/emitters/registry-json.js';
 import { LeaderboardEmitter } from '../dist/emitters/leaderboard.js';
@@ -15,7 +16,11 @@ const here = dirname(fileURLToPath(import.meta.url));
 const raw = JSON.parse(readFileSync(resolve(here, '../data/raw-results.json'), 'utf8'));
 
 const results = raw.results ?? [];
-const models = raw.models ?? [];
+const models = (raw.models ?? []).map(m => ({
+  ...m,
+  // Offline re-generation must order identically to a live run.
+  quota: QUOTA_POLICIES[m.provider],
+}));
 const config = raw.config ?? {};
 
 const options = {

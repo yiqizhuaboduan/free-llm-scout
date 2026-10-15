@@ -135,6 +135,13 @@ export function familyKey(modelId: string): string {
     .replace(/-latest$/i, '');
 }
 
+/** Fleet ordering tiers: spend the perishable first, keep the durable as buffer. */
+const QUOTA_TIER: Record<string, number> = {
+  'daily-reset': 0,     // resets at midnight — unused capacity is lost, spend it now
+  'trial-expiring': 1,  // one-time grant — spend before the deadline
+  'durable': 2,         // free for the foreseeable future — nothing wasted by waiting
+};
+
 export function selectFleetModels(
   results: ValidationResult[],
   models: ModelInfo[],
@@ -147,16 +154,33 @@ export function selectFleetModels(
   // Results carry the bare modelId; models are keyed by the prefixed id
   // (`provider/modelId`). Look up through the same composite key everywhere.
   const modelMap = new Map(models.map(m => [m.id, m]));
+  const quotaOf = (r: ValidationResult) =>
+    modelMap.get(`${r.provider}/${r.modelId}`)?.quota;
+
   const ranked = results
     .filter(r => r.passed && r.score >= options.minScore)
     .sort((a, b) => {
-      // Primary: score desc
+      // Primary: perishability tier — daily-reset before trial before durable
+      const qa = quotaOf(a), qb = quotaOf(b);
+      const ta = QUOTA_TIER[qa?.kind ?? 'durable'] ?? 2;
+      const tb = QUOTA_TIER[qb?.kind ?? 'durable'] ?? 2;
+      if (ta !== tb) return ta - tb;
+      // Secondary (within daily-reset): smaller daily budget first — the big
+      // pool stays as the day's reserve while the small one gets used up.
+      if (ta === 0 && (qa?.amount ?? Infinity) !== (qb?.amount ?? Infinity)) {
+        return (qa?.amount ?? Infinity) - (qb?.amount ?? Infinity);
+      }
+      // Tertiary (within trial-expiring): soonest expiry first
+      if (ta === 1 && (qa?.expiresAt ?? '9999') !== (qb?.expiresAt ?? '9999')) {
+        return (qa?.expiresAt ?? '9999') < (qb?.expiresAt ?? '9999') ? -1 : 1;
+      }
+      // Then: score desc
       if (b.score !== a.score) return b.score - a.score;
-      // Secondary: provider priority
+      // Then: provider priority
       const pa = options.providerPriority.indexOf(a.provider);
       const pb = options.providerPriority.indexOf(b.provider);
       if (pa !== pb) return pa - pb;
-      // Tertiary: context window desc
+      // Finally: context window desc
       const ma = modelMap.get(`${a.provider}/${a.modelId}`);
       const mb = modelMap.get(`${b.provider}/${b.modelId}`);
       return (mb?.contextWindow ?? 0) - (ma?.contextWindow ?? 0);

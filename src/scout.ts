@@ -3,7 +3,7 @@
  * Coordinates discovery → validation → emission
  */
 
-import { ModelInfo, ValidationResult, ValidationCheck, ScoutConfig, DiscoverySource, Validator, Emitter, EmitOptions } from './types.js';
+import { ModelInfo, ValidationResult, ValidationCheck, ScoutConfig, DiscoverySource, Validator, Emitter, EmitOptions, QuotaPolicy } from './types.js';
 import { loadEnv, computeScore, writeJson, getProjectRoot } from './utils.js';
 import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
@@ -50,6 +50,31 @@ const EMITTER_REGISTRY: Record<string, () => Emitter> = {
   'registry-json': () => new RegistryJsonEmitter(),
   'leaderboard': () => new LeaderboardEmitter(),
 };
+
+/**
+ * Per-provider free-quota renewal semantics (2026-10 knowledge, edit freely —
+ * the ordering rule only needs kind + rough amount):
+ *   - openrouter:  50 free requests/day per ACCOUNT (unpaid tier) — the
+ *                  smallest daily pool, so it is spent first
+ *   - siliconflow: flash/small models carry a generous daily allowance
+ *   - modelscope:  free API quota resets daily + 200 魔点 login bonus
+ *   - zhipu:       the Flash line is free for the foreseeable future
+ *   - bailian:     new-user grants (~1M tokens/model) that expire
+ *   - moonshot:    trial credit that expires
+ */
+const QUOTA_POLICIES: Record<string, QuotaPolicy> = {
+  openrouter: { kind: 'daily-reset', amount: 50 },
+  siliconflow: { kind: 'daily-reset', amount: 2000 },
+  modelscope: { kind: 'daily-reset', amount: 2000 },
+  zhipu: { kind: 'durable' },
+  huggingface: { kind: 'durable' },
+  bailian: { kind: 'trial-expiring' },
+  moonshot: { kind: 'trial-expiring' },
+  'deepseek-account': { kind: 'durable' },
+};
+
+/** Reused by scripts/reemit.mjs so offline re-generation orders identically. */
+export { QUOTA_POLICIES };
 
 const DEFAULT_CONFIG: ScoutConfig = {
   sources: ['openrouter', 'custom-seeds'],
@@ -158,6 +183,11 @@ export class Scout {
       // 1. Discover models from all sources
       spinner.text = '🔍 Discovering models from sources...';
       const discovered = await this.discoverAll();
+      // Stamp each model with its provider's quota policy so the fleet
+      // ordering can "spend the perishable first" (see selectFleetModels).
+      for (const m of discovered) {
+        m.quota = QUOTA_POLICIES[m.provider];
+      }
       // When at least one key exists, drop models from keyless providers so
       // they cannot eat into the capped validation budget (they would only
       // warn-and-skip anyway). With no keys at all, keep everything for a dry run.
