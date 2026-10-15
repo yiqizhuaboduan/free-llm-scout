@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-14T16:47:07.178Z",
+  "timestamp": "2026-10-15T07:30:48.730Z",
   "config": {
     "sources": [
       "openrouter",
@@ -28,7 +28,7 @@
       "zhipu",
       "deepseek-account"
     ],
-    "outputDir": "./dist"
+    "outputDir": "./data"
   },
   "models": [
     {
@@ -48,7 +48,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-14T16:46:55.029Z",
+      "discoveredAt": "2026-10-15T07:30:43.637Z",
       "raw": {
         "description": "NVIDIA Nemotron 3.5 Lightning is an open mixture-of-experts model from NVIDIA, with 3B active parameters out of 30B total. It is suited for high-throughput agentic workloads and specialized tasks that...",
         "architecture": {
@@ -82,7 +82,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-14T16:46:55.029Z",
+      "discoveredAt": "2026-10-15T07:30:43.637Z",
       "raw": {
         "description": "NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active parameters out of 550B total (MoE). Built on a hybrid Transformer-Mamba mixture-of-experts architecture, it...",
         "architecture": {
@@ -117,7 +117,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-14T16:46:55.029Z",
+      "discoveredAt": "2026-10-15T07:30:43.637Z",
       "raw": {
         "description": "Dots3-Note Preview is an open-weight mixture-of-experts model from Dots Studio, with 16B active parameters out of 280B total. It is the lightest model in the Dots 3 family and is...",
         "architecture": {
@@ -152,7 +152,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-14T16:46:55.029Z",
+      "discoveredAt": "2026-10-15T07:30:43.637Z",
       "raw": {
         "description": "Laguna S 2.1 is the latest coding agent model from [Poolside](<https://poolside.ai/>). Laguna S 2.1 is a 118B total parameter model with 8B active parameters, scoring 70.2% on Terminal-Bench 2.1 and...",
         "architecture": {
@@ -186,7 +186,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-14T16:46:55.029Z",
+      "discoveredAt": "2026-10-15T07:30:43.637Z",
       "raw": {
         "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines...",
         "architecture": {
@@ -220,7 +220,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-14T16:46:55.029Z",
+      "discoveredAt": "2026-10-15T07:30:43.637Z",
       "raw": {
         "description": "NVIDIA Nemotron 3 Super is a 120B-parameter open hybrid MoE model, activating just 12B parameters for maximum compute efficiency and accuracy in complex multi-agent applications. Built on a hybrid Mamba-Transformer...",
         "architecture": {
@@ -254,7 +254,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-14T16:46:55.033Z"
+      "discoveredAt": "2026-10-15T07:30:43.638Z"
     },
     {
       "id": "openrouter/cohere/north-mini-code:free",
@@ -273,7 +273,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-14T16:46:55.029Z",
+      "discoveredAt": "2026-10-15T07:30:43.637Z",
       "raw": {
         "description": "North Mini Code is Cohere's first agentic coding model and the debut of its North family. A sparse mixture-of-experts model with 30B total parameters and 3B active, it is optimized...",
         "architecture": {
@@ -310,7 +310,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-14T16:46:55.029Z",
+      "discoveredAt": "2026-10-15T07:30:43.637Z",
       "raw": {
         "description": "NVIDIA Nemotron™ 3 Nano Omni is a 30B-A3B open multimodal model designed to function as a perception and context sub-agent in enterprise agent systems. It accepts text, image, video, and...",
         "architecture": {
@@ -348,7 +348,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-10-14T16:46:55.029Z",
+      "discoveredAt": "2026-10-15T07:30:43.637Z",
       "raw": {
         "description": "NVIDIA Nemotron 3.5 Content Safety is a compact 4B-parameter multimodal guardrail model from NVIDIA, fine-tuned from Google Gemma-3-4B. It moderates both inputs to and responses from LLMs and VLMs, accepting...",
         "architecture": {
@@ -367,76 +367,76 @@
       }
     },
     {
-      "id": "openrouter/google/lyria-3-pro-preview",
+      "id": "openrouter/google/gemma-4-26b-a4b-it:free",
       "provider": "openrouter",
-      "modelId": "google/lyria-3-pro-preview",
-      "name": "Google: Lyria 3 Pro Preview",
-      "contextWindow": 1048576,
+      "modelId": "google/gemma-4-26b-a4b-it:free",
+      "name": "Google: Gemma 4 26B A4B  (free)",
+      "contextWindow": 262144,
       "maxTokens": 65536,
       "inputModalities": [
+        "image",
         "text",
-        "image"
+        "video"
       ],
       "outputModalities": [
-        "text",
-        "audio"
+        "text"
       ],
       "priceInput": 0,
       "priceOutput": 0,
       "supportsToolCalling": false,
       "supportsStructuredOutput": false,
-      "discoveredAt": "2026-10-14T16:46:55.029Z",
+      "discoveredAt": "2026-10-15T07:30:43.637Z",
       "raw": {
-        "description": "Full-length songs are priced at $0.08 per song. Lyria 3 is Google's family of music generation models, available through the Gemini API. With Lyria 3, you can generate high-quality, 48kHz...",
+        "description": "Gemma 4 26B A4B IT is an instruction-tuned Mixture-of-Experts (MoE) model from Google DeepMind. Despite 25.2B total parameters, only 3.8B activate per token during inference — delivering near-31B quality at...",
         "architecture": {
-          "modality": "text+image->text+audio",
+          "modality": "text+image+video->text",
           "input_modalities": [
+            "image",
             "text",
-            "image"
+            "video"
           ],
           "output_modalities": [
-            "text",
-            "audio"
+            "text"
           ],
-          "tokenizer": "Other",
+          "tokenizer": "Gemma",
           "instruct_type": null
         },
         "perRequestLimits": null
       }
     },
     {
-      "id": "openrouter/google/lyria-3-clip-preview",
+      "id": "openrouter/google/gemma-4-31b-it:free",
       "provider": "openrouter",
-      "modelId": "google/lyria-3-clip-preview",
-      "name": "Google: Lyria 3 Clip Preview",
-      "contextWindow": 1048576,
+      "modelId": "google/gemma-4-31b-it:free",
+      "name": "Google: Gemma 4 31B (free)",
+      "contextWindow": 262144,
       "maxTokens": 65536,
       "inputModalities": [
+        "image",
         "text",
-        "image"
+        "video"
       ],
       "outputModalities": [
-        "text",
-        "audio"
+        "text"
       ],
       "priceInput": 0,
       "priceOutput": 0,
       "supportsToolCalling": false,
       "supportsStructuredOutput": false,
-      "discoveredAt": "2026-10-14T16:46:55.029Z",
+      "discoveredAt": "2026-10-15T07:30:43.637Z",
       "raw": {
-        "description": "30 second duration clips are priced at $0.04 per clip. Lyria 3 is Google's family of music generation models, available through the Gemini API. With Lyria 3, you can generate...",
+        "description": "Gemma 4 31B Instruct is Google DeepMind's 30.7B dense multimodal model supporting text and image input with text output. Features a 256K token context window, configurable thinking/reasoning mode, native function...",
         "architecture": {
-          "modality": "text+image->text+audio",
+          "modality": "text+image+video->text",
           "input_modalities": [
+            "image",
             "text",
-            "image"
+            "video"
           ],
           "output_modalities": [
-            "text",
-            "audio"
+            "text"
           ],
-          "tokenizer": "Other",
+          "tokenizer": "Gemma",
           "instruct_type": null
         },
         "perRequestLimits": null
@@ -455,24 +455,24 @@
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 464
+          "latencyMs": 89
         },
         {
           "name": "tool-calling",
           "passed": false,
           "score": 0,
           "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 631
+          "latencyMs": 44
         },
         {
           "name": "structured-output",
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 340
+          "latencyMs": 29
         }
       ],
-      "validatedAt": "2026-10-14T16:46:57.108Z"
+      "validatedAt": "2026-10-15T07:30:43.849Z"
     },
     {
       "modelId": "nvidia/nemotron-3-ultra-550b-a55b:free",
@@ -485,24 +485,24 @@
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 720
+          "latencyMs": 111
         },
         {
           "name": "tool-calling",
           "passed": false,
           "score": 0,
           "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 392
+          "latencyMs": 26
         },
         {
           "name": "structured-output",
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 458
+          "latencyMs": 19
         }
       ],
-      "validatedAt": "2026-10-14T16:46:57.010Z"
+      "validatedAt": "2026-10-15T07:30:43.824Z"
     },
     {
       "modelId": "dots-studio/dots-3-note-preview:free",
@@ -515,24 +515,24 @@
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 685
+          "latencyMs": 118
         },
         {
           "name": "tool-calling",
           "passed": false,
           "score": 0,
           "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 518
+          "latencyMs": 32
         },
         {
           "name": "structured-output",
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 365
+          "latencyMs": 21
         }
       ],
-      "validatedAt": "2026-10-14T16:46:57.125Z"
+      "validatedAt": "2026-10-15T07:30:43.851Z"
     },
     {
       "modelId": "poolside/laguna-s-2.1:free",
@@ -545,24 +545,24 @@
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 373
+          "latencyMs": 56
         },
         {
           "name": "tool-calling",
           "passed": false,
           "score": 0,
           "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 462
+          "latencyMs": 21
         },
         {
           "name": "structured-output",
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 422
+          "latencyMs": 18
         }
       ],
-      "validatedAt": "2026-10-14T16:46:58.731Z"
+      "validatedAt": "2026-10-15T07:30:44.008Z"
     },
     {
       "modelId": "poolside/laguna-xs-2.1:free",
@@ -575,24 +575,24 @@
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 480
+          "latencyMs": 28
         },
         {
           "name": "tool-calling",
           "passed": false,
           "score": 0,
           "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 364
+          "latencyMs": 20
         },
         {
           "name": "structured-output",
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 412
+          "latencyMs": 23
         }
       ],
-      "validatedAt": "2026-10-14T16:46:59.276Z"
+      "validatedAt": "2026-10-15T07:30:43.942Z"
     },
     {
       "modelId": "nvidia/nemotron-3-super-120b-a12b:free",
@@ -605,24 +605,24 @@
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 576
+          "latencyMs": 39
         },
         {
           "name": "tool-calling",
           "passed": false,
           "score": 0,
           "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 415
+          "latencyMs": 20
         },
         {
           "name": "structured-output",
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 401
+          "latencyMs": 27
         }
       ],
-      "validatedAt": "2026-10-14T16:46:58.932Z"
+      "validatedAt": "2026-10-15T07:30:43.959Z"
     },
     {
       "modelId": "inclusionai/ling-3.1-flash",
@@ -635,15 +635,15 @@
           "passed": true,
           "score": 100,
           "details": "OpenAI-compatible response structure",
-          "latencyMs": 1208,
+          "latencyMs": 762,
           "rawResponse": {
-            "id": "gen-1791996419-Dmpp9pQOjEOyJPY3RD1i",
+            "id": "gen-1792049443-pIqB74W34lgMPtDmMTzZ",
             "object": "chat.completion",
-            "created": 1791996419,
+            "created": 1792049443,
             "model": "inclusionai/ling-3.1-flash",
-            "provider": "DeepInfra",
+            "provider": "Novita",
             "system_fingerprint": null,
-            "service_tier": "default",
+            "service_tier": null,
             "choices": [
               {
                 "index": 0,
@@ -670,7 +670,7 @@
               "prompt_tokens": 21,
               "completion_tokens": 5,
               "total_tokens": 26,
-              "cost": 0.0000108,
+              "cost": 0.0000027,
               "is_byok": false,
               "prompt_tokens_details": {
                 "cached_tokens": 0,
@@ -679,9 +679,9 @@
                 "video_tokens": 0
               },
               "cost_details": {
-                "upstream_inference_cost": 0.0000108,
-                "upstream_inference_prompt_cost": 0.0000063,
-                "upstream_inference_completions_cost": 0.0000045
+                "upstream_inference_cost": 0.0000027,
+                "upstream_inference_prompt_cost": 0.000001575,
+                "upstream_inference_completions_cost": 0.000001125
               },
               "completion_tokens_details": {
                 "reasoning_tokens": 5,
@@ -696,11 +696,11 @@
           "passed": true,
           "score": 100,
           "details": "2/2 trials returned valid tool_calls",
-          "latencyMs": 1413,
+          "latencyMs": 799,
           "rawResponse": {
-            "id": "gen-1791996423-Q4t6FaPIcrKwS3BkiFSL",
+            "id": "gen-1792049446-NC0wSouH3t9lulV8lZo9",
             "object": "chat.completion",
-            "created": 1791996423,
+            "created": 1792049446,
             "model": "inclusionai/ling-3.1-flash",
             "provider": "Novita",
             "system_fingerprint": null,
@@ -720,7 +720,7 @@
                     {
                       "type": "function",
                       "index": 0,
-                      "id": "call_9eeeca6f1e394049a58405d9",
+                      "id": "call_cd130d59dd89412f807cbd82",
                       "function": {
                         "name": "get_weather",
                         "arguments": "{\"location\": \"Beijing\"}"
@@ -768,11 +768,11 @@
           "passed": true,
           "score": 100,
           "details": "Valid JSON matching schema",
-          "latencyMs": 990,
+          "latencyMs": 146,
           "rawResponse": {
-            "id": "gen-1791996425-K5e56EzRRr7cH0WrQJ5s",
+            "id": "gen-1792049447-w43gkfPRmLounYilF1rE",
             "object": "chat.completion",
-            "created": 1791996425,
+            "created": 1792049447,
             "model": "inclusionai/ling-3.1-flash",
             "provider": "DeepInfra",
             "system_fingerprint": null,
@@ -787,11 +787,11 @@
                   "role": "assistant",
                   "content": "{\n  \"name\": \"Alice\",\n  \"age\": 30,\n  \"skills\": [\"TypeScript\", \"Python\"],\n  \"active\": true\n}",
                   "refusal": null,
-                  "reasoning": "The user wants a JSON object for a person with specific attributes:\n- name: \"Alice\"\n- age: 30\n- skills: [\"TypeScript\", \"Python\"]\n- active: true\n\nThis is straightforward. I need to output valid JSON only.",
+                  "reasoning": "The user wants a JSON object with specific fields: name \"Alice\", age 30, skills array with \"TypeScript\" and \"Python\", and active true. Simple task.",
                   "reasoning_details": [
                     {
                       "type": "reasoning.text",
-                      "text": "The user wants a JSON object for a person with specific attributes:\n- name: \"Alice\"\n- age: 30\n- skills: [\"TypeScript\", \"Python\"]\n- active: true\n\nThis is straightforward. I need to output valid JSON only.",
+                      "text": "The user wants a JSON object with specific fields: name \"Alice\", age 30, skills array with \"TypeScript\" and \"Python\", and active true. Simple task.",
                       "format": "unknown",
                       "index": 0
                     }
@@ -801,9 +801,9 @@
             ],
             "usage": {
               "prompt_tokens": 52,
-              "completion_tokens": 98,
-              "total_tokens": 150,
-              "cost": 0.0001038,
+              "completion_tokens": 78,
+              "total_tokens": 130,
+              "cost": 0.0000858,
               "is_byok": false,
               "prompt_tokens_details": {
                 "cached_tokens": 0,
@@ -812,12 +812,12 @@
                 "video_tokens": 0
               },
               "cost_details": {
-                "upstream_inference_cost": 0.0001038,
+                "upstream_inference_cost": 0.0000858,
                 "upstream_inference_prompt_cost": 0.0000156,
-                "upstream_inference_completions_cost": 0.0000882
+                "upstream_inference_completions_cost": 0.0000702
               },
               "completion_tokens_details": {
-                "reasoning_tokens": 53,
+                "reasoning_tokens": 37,
                 "image_tokens": 0,
                 "audio_tokens": 0
               }
@@ -825,7 +825,7 @@
           }
         }
       ],
-      "validatedAt": "2026-10-14T16:47:07.160Z"
+      "validatedAt": "2026-10-15T07:30:48.723Z"
     },
     {
       "modelId": "cohere/north-mini-code:free",
@@ -838,24 +838,24 @@
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 382
+          "latencyMs": 36
         },
         {
           "name": "tool-calling",
           "passed": false,
           "score": 0,
           "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 575
+          "latencyMs": 23
         },
         {
           "name": "structured-output",
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 740
+          "latencyMs": 18
         }
       ],
-      "validatedAt": "2026-10-14T16:47:01.205Z"
+      "validatedAt": "2026-10-15T07:30:44.061Z"
     },
     {
       "modelId": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
@@ -868,24 +868,24 @@
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 411
+          "latencyMs": 34
         },
         {
           "name": "tool-calling",
           "passed": false,
           "score": 0,
           "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 390
+          "latencyMs": 20
         },
         {
           "name": "structured-output",
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 1643
+          "latencyMs": 18
         }
       ],
-      "validatedAt": "2026-10-14T16:47:02.110Z"
+      "validatedAt": "2026-10-15T07:30:44.104Z"
     },
     {
       "modelId": "nvidia/nemotron-3.5-content-safety:free",
@@ -898,27 +898,27 @@
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 448
+          "latencyMs": 29
         },
         {
           "name": "tool-calling",
           "passed": false,
           "score": 0,
           "details": "0/2 trials returned valid tool_calls — last error: HTTP 404: {\"error\":{\"message\":\"No endpoints found that support tool use. Try disabling \\\"get_weather\\\". To learn more about provider routing, visit: https://openrouter.ai/docs/guides/routing/provider-selection\"",
-          "latencyMs": 358
+          "latencyMs": 21
         },
         {
           "name": "structured-output",
           "passed": false,
           "score": 0,
           "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
-          "latencyMs": 377
+          "latencyMs": 22
         }
       ],
-      "validatedAt": "2026-10-14T16:47:02.752Z"
+      "validatedAt": "2026-10-15T07:30:44.155Z"
     },
     {
-      "modelId": "google/lyria-3-pro-preview",
+      "modelId": "google/gemma-4-26b-a4b-it:free",
       "provider": "openrouter",
       "passed": false,
       "score": 0,
@@ -927,28 +927,28 @@
           "name": "openai-compat",
           "passed": false,
           "score": 0,
-          "details": "HTTP 403: {\"error\":{\"message\":\"This model is not available in your region.\",\"code\":403,\"metadata\":{\"routing_funnel\":[{\"step\":\"Initial Endpoints\",\"endpoint_count\":1}],\"failed_routing_step\":\"Gate Endpoints with G",
-          "latencyMs": 397
+          "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+          "latencyMs": 49
         },
         {
           "name": "tool-calling",
           "passed": false,
           "score": 0,
-          "details": "0/2 trials returned valid tool_calls — last error: HTTP 403: {\"error\":{\"message\":\"This model is not available in your region.\",\"code\":403,\"metadata\":{\"routing_funnel\":[{\"step\":\"Initial Endpoints\",\"endpoint_count\":1}],\"failed_routing_step\":\"Gate Endpoints with G",
-          "latencyMs": 497
+          "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+          "latencyMs": 23
         },
         {
           "name": "structured-output",
           "passed": false,
           "score": 0,
-          "details": "HTTP 403: {\"error\":{\"message\":\"This model is not available in your region.\",\"code\":403,\"metadata\":{\"routing_funnel\":[{\"step\":\"Initial Endpoints\",\"endpoint_count\":1}],\"failed_routing_step\":\"Gate Endpoints with G",
-          "latencyMs": 519
+          "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+          "latencyMs": 22
         }
       ],
-      "validatedAt": "2026-10-14T16:47:04.064Z"
+      "validatedAt": "2026-10-15T07:30:44.225Z"
     },
     {
-      "modelId": "google/lyria-3-clip-preview",
+      "modelId": "google/gemma-4-31b-it:free",
       "provider": "openrouter",
       "passed": false,
       "score": 0,
@@ -957,25 +957,25 @@
           "name": "openai-compat",
           "passed": false,
           "score": 0,
-          "details": "HTTP 403: {\"error\":{\"message\":\"This model is not available in your region.\",\"code\":403,\"metadata\":{\"routing_funnel\":[{\"step\":\"Initial Endpoints\",\"endpoint_count\":1}],\"failed_routing_step\":\"Gate Endpoints with G",
-          "latencyMs": 451
+          "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+          "latencyMs": 27
         },
         {
           "name": "tool-calling",
           "passed": false,
           "score": 0,
-          "details": "0/2 trials returned valid tool_calls — last error: HTTP 403: {\"error\":{\"message\":\"This model is not available in your region.\",\"code\":403,\"metadata\":{\"routing_funnel\":[{\"step\":\"Initial Endpoints\",\"endpoint_count\":1}],\"failed_routing_step\":\"Gate Endpoints with G",
-          "latencyMs": 376
+          "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+          "latencyMs": 32
         },
         {
           "name": "structured-output",
           "passed": false,
           "score": 0,
-          "details": "HTTP 403: {\"error\":{\"message\":\"This model is not available in your region.\",\"code\":403,\"metadata\":{\"routing_funnel\":[{\"step\":\"Initial Endpoints\",\"endpoint_count\":1}],\"failed_routing_step\":\"Gate Endpoints with G",
-          "latencyMs": 418
+          "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+          "latencyMs": 29
         }
       ],
-      "validatedAt": "2026-10-14T16:47:04.381Z"
+      "validatedAt": "2026-10-15T07:30:44.275Z"
     }
   ]
 }
