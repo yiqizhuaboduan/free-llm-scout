@@ -1,12 +1,10 @@
 /**
  * free-llm-scout — Zhipu (智谱) Discovery Adapter
- * Zhipu AI - GLM models with free tier
+ * Zhipu AI — free tier: glm-4-flash / glm-4.5-flash (curated, see fetchModels)
  */
 
 import { ModelInfo, DiscoverySource } from '../types.js';
 import { withTimeout } from '../utils.js';
-
-const ZHIPU_MODELS_URL = 'https://open.bigmodel.cn/api/paas/v4/models';
 
 export class ZhipuDiscovery implements DiscoverySource {
   name = 'zhipu';
@@ -34,75 +32,33 @@ export class ZhipuDiscovery implements DiscoverySource {
   }
 
   async fetchModels(): Promise<ModelInfo[]> {
-    if (!this.apiKey) {
-      throw new Error('ZHIPU_API_KEY not set');
-    }
-
-    const resp = await withTimeout(
-      fetch(`${this.baseURL}/models`, {
-        headers: {
-          'Authorization': `Bearer ${this.apiKey}`,
-          'Accept': 'application/json',
-        },
-      }),
-      15000
-    );
-
-    if (!resp.ok) {
-      const text = await resp.text();
-      throw new Error(`Zhipu API error: ${resp.status} ${text}`);
-    }
-
-    const data = await resp.json() as { data: ZhipuModel[] };
+    // 2026-10-15 empirically verified (real calls, not the catalog):
+    //   glm-4-flash  -> HTTP 200 free      glm-4.5-flash -> HTTP 200 free
+    //   glm-5.3-flash / flashx / air / turbo -> error 1113 余额不足 (paid)
+    // The /models catalog LISTS only the paid glm-4.5..5.3 line and OMITS the
+    // two free flash models entirely, so catalog-based filtering here always
+    // yielded zero. The free tier is served from a curated supplement instead;
+    // re-verify by hand if Zhipu revises its pricing again.
     const now = new Date().toISOString();
-
-    // Zhipu's free tier is the Flash line (2026-10 catalog: glm-5.3-flash /
-    // glm-5.3-flashx — the glm-4-flash era is over). Air/turbo are low-price,
-    // NOT free, so they stay out of a no-bill fleet.
-    return data.data
-      .filter(m => this.isFreeModel(m))
-      .map(m => this.normalizeModel(m, now));
-  }
-
-  private isFreeModel(model: ZhipuModel): boolean {
-    return model.id.toLowerCase().includes('flash');
-  }
-
-  private normalizeModel(model: ZhipuModel, discoveredAt: string): ModelInfo {
-    const contextWindow = this.getContextWindow(model.id);
-    return {
-      id: `zhipu/${model.id}`,
+    const FREE_MODELS = [
+      { id: 'glm-4-flash', name: 'GLM-4 Flash (免费)', contextWindow: 131072 },
+      { id: 'glm-4.5-flash', name: 'GLM-4.5 Flash (免费)', contextWindow: 131072 },
+    ];
+    return FREE_MODELS.map(m => ({
+      id: `zhipu/${m.id}`,
       provider: 'zhipu',
-      modelId: model.id,
-      name: model.id,
-      contextWindow,
-      maxTokens: Math.min(65536, Math.floor(contextWindow * 0.5)),
+      modelId: m.id,
+      name: m.name,
+      contextWindow: m.contextWindow,
+      maxTokens: Math.min(65536, Math.floor(m.contextWindow * 0.5)),
       inputModalities: ['text'],
       outputModalities: ['text'],
       priceInput: 0,
       priceOutput: 0,
-      supportsToolCalling: this.inferToolCalling(model.id),
+      supportsToolCalling: true,
       supportsStructuredOutput: true,
-      discoveredAt,
-      raw: model,
-    };
+      discoveredAt: now,
+      raw: { source: 'curated-free-tier', note: 'Catalog omits free flash models; verified by live calls 2026-10-15' },
+    }));
   }
-
-  private getContextWindow(modelId: string): number {
-    if (modelId.includes('flash')) return 131072;
-    if (modelId.includes('air')) return 131072;
-    return 128000;
-  }
-
-  private inferToolCalling(modelId: string): boolean {
-    return modelId.toLowerCase().includes('flash');
-  }
-}
-
-interface ZhipuModel {
-  id: string;
-  object: 'model';
-  created: number;
-  owned_by: string;
-  [key: string]: unknown;
 }
