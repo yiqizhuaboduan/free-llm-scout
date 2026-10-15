@@ -1,0 +1,62 @@
+{
+  "name": "free-llm-scout",
+  "version": "0.1.0",
+  "description": "Automated free LLM discovery, validation, and fleet config generator for DSH and beyond. Non-commercial free; commercial use requires authorization (fanrujin2023@outlook.com).",
+  "type": "module",
+  "main": "dist/cli.js",
+  "bin": {
+    "scout": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/cli.ts",
+    "scout": "tsx src/cli.ts",
+    "test": "vitest run",
+    "lint": "eslint src --ext ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "llm",
+    "free",
+    "discovery",
+    "validation",
+    "tool-calling",
+    "dsh",
+    "deepseek-harness",
+    "model-fleet",
+    "openrouter"
+  ],
+  "author": "fanrujin2023@outlook.com",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fanrujin2023/free-llm-scout.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fanrujin2023/free-llm-scout/issues"
+  },
+  "homepage": "https://github.com/fanrujin2023/free-llm-scout#readme",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "zod": "^3.23.8",
+    "yaml": "^2.5.1",
+    "p-limit": "^6.1.0",
+    "undici": "^6.19.8",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "ora": "^8.1.0",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "@types/js-yaml": "^4.0.9",
+    "typescript": "^5.5.4",
+    "tsx": "^4.19.0",
+    "vitest": "^2.0.5",
+    "eslint": "^9.9.0",
+    "@typescript-eslint/eslint-plugin": "^8.3.0",
+    "@typescript-eslint/parser": "^8.3.0"
+  }
+}

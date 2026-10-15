@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Source
+src/
+*.ts
+*.map
+tsconfig.json
+.gitignore
+README.md
+LICENSE.md
+.env.example
+.github/
+
+# Keep only dist/ and package.json for npm publish

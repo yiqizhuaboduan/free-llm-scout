@@ -1,0 +1,14 @@
+{
+  "updatedAt": "2026-10-14T16:47:07.160Z",
+  "note": "Models confirmed delisted/blocked. Delete a line to re-probe it on the next run.",
+  "dead": [
+    "openrouter/apodex/apodex-1.1-mini:free",
+    "openrouter/google/lyria-3-clip-preview",
+    "openrouter/google/lyria-3-pro-preview",
+    "openrouter/inclusionai/ling-3.0-flash-sante:free",
+    "openrouter/qwen/qwen3.8-27b:free",
+    "openrouter/stealth/space-bunny-alpha",
+    "openrouter/thinkingmachines/inkling-small:free",
+    "openrouter/thinkingmachines/inkling:free"
+  ]
+}

@@ -1,0 +1,116 @@
+name: free-llm-scout Daily Run
+
+on:
+  schedule:
+    # Run daily at 06:00 UTC (14:00 CST)
+    - cron: '0 6 * * *'
+  workflow_dispatch: # Manual trigger
+  push:
+    paths:
+      - 'src/**'
+      - 'package.json'
+      - '.github/workflows/scout.yml'
+
+permissions:
+  contents: write # For committing generated files
+  pull-requests: write # For creating PR with updates
+
+env:
+  # These must be set in GitHub repository Settings > Secrets > Actions
+  OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+  SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
+  MODELSCOPE_API_KEY: ${{ secrets.MODELSCOPE_API_KEY }}
+  BAILIAN_API_KEY: ${{ secrets.BAILIAN_API_KEY }}
+  ZHIPU_API_KEY: ${{ secrets.ZHIPU_API_KEY }}
+  MOONSHOT_API_KEY: ${{ secrets.MOONSHOT_API_KEY }}
+  HF_API_KEY: ${{ secrets.HF_API_KEY }}
+  DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+
+jobs:
+  scout:
+    name: Run free-llm-scout
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build TypeScript
+        run: pnpm run build
+
+      - name: Run free-llm-scout
+        id: scout
+        run: |
+          node dist/cli.js \
+            --sources openrouter,custom-seeds \
+            --validators openai-compat,tool-calling,structured-output \
+            --max-models 12 \
+            --concurrency 3 \
+            --min-score 60 \
+            --max-fleet 15 \
+            --output ./dist
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet dist/; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No changes in generated files"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Changes detected in generated files"
+            git diff --stat dist/
+          fi
+
+      - name: Create Pull Request with updates
+        if: steps.changes.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'chore: update free LLM fleet registry [skip ci]'
+          title: '🤖 Daily free-llm-scout fleet update'
+          body: |
+            Automated update from **free-llm-scout** daily run.
+            
+            ## Changes
+            - Updated model registry (`dist/registry.json`)
+            - Updated DSH fleet chain (`dist/fleet.chain.yaml`)
+            - Updated leaderboard (`dist/LEADERBOARD.md`)
+            
+            ## Summary
+            Run `free-llm-scout` with all enabled sources and validators.
+            Review the changes and merge to keep your fleet fresh.
+          labels: 'automated,dependencies'
+          branch: 'free-llm-scout/update'
+          delete-branch: true
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: scout-output
+          path: dist/
+          retention-days: 7
+
+  test:
+    name: TypeScript Type Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run build
