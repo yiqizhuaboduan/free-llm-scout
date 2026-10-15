@@ -82,28 +82,17 @@ jobs:
             git status --porcelain data/
           fi
 
-      - name: Create Pull Request with updates
-        if: steps.changes.outputs.changed == 'true'
-        uses: peter-evans/create-pull-request@v6
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: 'chore: update free LLM fleet registry [skip ci]'
-          title: '🤖 Daily free-llm-scout fleet update'
-          body: |
-            Automated update from **free-llm-scout** daily run.
-            
-            ## Changes
-            - Updated model registry (`data/registry.json`)
-            - Updated DSH fleet chain (`data/fleet.chain.yaml`)
-            - Updated leaderboard (`data/LEADERBOARD.md`)
-            - Updated dead-model cache (`data/dead-models.json`)
-            
-            ## Summary
-            Run `free-llm-scout` with all enabled sources and validators.
-            Review the changes and merge to keep your fleet fresh.
-          labels: 'automated,dependencies'
-          branch: 'free-llm-scout/update'
-          delete-branch: true
+      - name: Commit updated fleet data
+        run: |
+          git config user.name "free-llm-scout[bot]"
+          git config user.email "scout@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: daily fleet update [skip ci]"
+            git push
+          fi
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
