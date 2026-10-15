@@ -18,6 +18,7 @@ permissions:
 env:
   # These must be set in GitHub repository Settings > Secrets > Actions
   OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+  GITHUB_MODELS_API_KEY: ${{ secrets.GITHUB_MODELS_API_KEY }}
   SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
   MODELSCOPE_API_KEY: ${{ secrets.MODELSCOPE_API_KEY }}
   BAILIAN_API_KEY: ${{ secrets.BAILIAN_API_KEY }}

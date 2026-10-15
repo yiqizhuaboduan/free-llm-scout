@@ -2,10 +2,12 @@
 
 > **Automated free LLM discovery, validation, and fleet config generator for DSH (DeepSeek Harness) and beyond.**
 
+English | [简体中文](README.zh-CN.md)
+
 [![License](https://img.shields.io/badge/License-Non--Commercial%20Free-blue.svg)](LICENSE.md)
 [![Node.js](https://img.shields.io/badge/Node.js-20+-green.svg)](https://nodejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5-blue.svg)](https://www.typescriptlang.org/)
-[![CI](https://github.com/fanrujin2023/free-llm-scout/actions/workflows/scout.yml/badge.svg)](https://github.com/fanrujin2023/free-llm-scout/actions/workflows/scout.yml)
+[![CI](https://github.com/yiqizhuaboduan/free-llm-scout/actions/workflows/scout.yml/badge.svg)](https://github.com/yiqizhuaboduan/free-llm-scout/actions/workflows/scout.yml)
 
 ---
 

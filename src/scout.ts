@@ -14,6 +14,7 @@ import { BailianDiscovery } from './discover/bailian.js';
 import { ZhipuDiscovery } from './discover/zhipu.js';
 import { MoonshotDiscovery } from './discover/moonshot.js';
 import { HuggingFaceDiscovery } from './discover/huggingface.js';
+import { GitHubModelsDiscovery } from './discover/github-models.js';
 import { CustomSeedsDiscovery } from './discover/custom-seeds.js';
 import { CompatValidator } from './validate/compat.js';
 import { ToolCallingValidator } from './validate/tool-calling.js';
@@ -34,6 +35,7 @@ const SOURCE_REGISTRY: Record<string, () => DiscoverySource> = {
   zhipu: () => new ZhipuDiscovery(),
   moonshot: () => new MoonshotDiscovery(),
   huggingface: () => new HuggingFaceDiscovery(),
+  'github-models': () => new GitHubModelsDiscovery(),
   'custom-seeds': () => new CustomSeedsDiscovery(),
 };
 
@@ -52,7 +54,7 @@ const EMITTER_REGISTRY: Record<string, () => Emitter> = {
 };
 
 const DEFAULT_CONFIG: ScoutConfig = {
-  sources: ['openrouter', 'custom-seeds'],
+  sources: ['openrouter', 'github-models', 'custom-seeds'],
   // Budget: OpenRouter free tier allows ~50 requests/day (account-wide).
   // Default trio costs ~4 requests per model; --max-models caps the total.
   // `context-window` and `rate-limit` are opt-in — they burn 5-15 requests
@@ -158,16 +160,24 @@ export class Scout {
       // 1. Discover models from all sources
       spinner.text = '🔍 Discovering models from sources...';
       const discovered = await this.discoverAll();
-      const alive = discovered.filter(m => !this.deadModels.has(m.id));
-      const deadSkipped = discovered.length - alive.length;
+      // When at least one key exists, drop models from keyless providers so
+      // they cannot eat into the capped validation budget (they would only
+      // warn-and-skip anyway). With no keys at all, keep everything for a dry run.
+      const KEYED_PROVIDERS = ['openrouter', 'siliconflow', 'modelscope', 'bailian', 'zhipu', 'moonshot', 'huggingface', 'github-models'];
+      const anyKey = KEYED_PROVIDERS.some(p => this.getApiKey(p) !== '');
+      const validatable = anyKey ? discovered.filter(m => this.getApiKey(m.provider) !== '') : discovered;
+      const noKey = discovered.length - validatable.length;
+      const alive = validatable.filter(m => !this.deadModels.has(m.id));
+      const deadSkipped = validatable.length - alive.length;
       const allModels = this.capModels(alive);
-      if (deadSkipped > 0) {
-        spinner.succeed(`Discovered ${discovered.length} models — skipping ${deadSkipped} known-dead`);
-      } else if (allModels.length < discovered.length) {
-        spinner.succeed(`Discovered ${discovered.length} models — validating top ${allModels.length} (quota budget)`);
-      } else {
-        spinner.succeed(`Discovered ${allModels.length} models from ${this.sources.length} sources`);
-      }
+      const notes = [
+        noKey > 0 ? `skipping ${noKey} keyless-source models` : null,
+        deadSkipped > 0 ? `skipping ${deadSkipped} known-dead` : null,
+        allModels.length < alive.length ? `validating top ${allModels.length} (quota budget)` : null,
+      ].filter(Boolean).join(', ');
+      spinner.succeed(notes
+        ? `Discovered ${discovered.length} models — ${notes}`
+        : `Discovered ${allModels.length} models from ${this.sources.length} sources`);
 
       // 2. Validate models in parallel
       spinner.text = '🧪 Validating models...';
@@ -339,6 +349,7 @@ export class Scout {
       zhipu: 'ZHIPU_API_KEY',
       moonshot: 'MOONSHOT_API_KEY',
       huggingface: 'HF_API_KEY',
+      'github-models': 'GITHUB_MODELS_API_KEY',
       'deepseek-account': 'DEEPSEEK_API_KEY',
     };
     return process.env[envMap[provider]] || '';
@@ -353,6 +364,7 @@ export class Scout {
       zhipu: 'https://open.bigmodel.cn/api/paas/v4',
       moonshot: 'https://api.moonshot.cn/v1',
       huggingface: 'https://api-inference.huggingface.co',
+      'github-models': 'https://models.github.ai/inference',
       'deepseek-account': 'https://api.deepseek.com/v1',
     };
     return urlMap[provider] || '';
