@@ -1,0 +1,934 @@
+{
+  "generatedAt": "2026-10-15T02:17:45.773Z",
+  "version": "1.0",
+  "models": [
+    {
+      "id": "openrouter/nvidia/nemotron-3.5-lightning:free",
+      "provider": "openrouter",
+      "modelId": "nvidia/nemotron-3.5-lightning:free",
+      "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+      "contextWindow": 1000000,
+      "maxTokens": 65536,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "priceInput": 0,
+      "priceOutput": 0,
+      "supportsToolCalling": true,
+      "supportsStructuredOutput": true,
+      "discoveredAt": "2026-10-14T16:46:55.029Z",
+      "raw": {
+        "description": "NVIDIA Nemotron 3.5 Lightning is an open mixture-of-experts model from NVIDIA, with 3B active parameters out of 30B total. It is suited for high-throughput agentic workloads and specialized tasks that...",
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
+        },
+        "perRequestLimits": null
+      },
+      "validation": {
+        "passed": false,
+        "score": 0,
+        "checks": [
+          {
+            "name": "openai-compat",
+            "passed": false,
+            "score": 0,
+            "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+            "latencyMs": 464
+          },
+          {
+            "name": "tool-calling",
+            "passed": false,
+            "score": 0,
+            "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+            "latencyMs": 631
+          },
+          {
+            "name": "structured-output",
+            "passed": false,
+            "score": 0,
+            "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+            "latencyMs": 340
+          }
+        ],
+        "validatedAt": "2026-10-14T16:46:57.108Z"
+      }
+    },
+    {
+      "id": "openrouter/nvidia/nemotron-3-ultra-550b-a55b:free",
+      "provider": "openrouter",
+      "modelId": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "name": "NVIDIA: Nemotron 3 Ultra (free)",
+      "contextWindow": 1000000,
+      "maxTokens": 65536,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "priceInput": 0,
+      "priceOutput": 0,
+      "supportsToolCalling": true,
+      "supportsStructuredOutput": true,
+      "discoveredAt": "2026-10-14T16:46:55.029Z",
+      "raw": {
+        "description": "NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active parameters out of 550B total (MoE). Built on a hybrid Transformer-Mamba mixture-of-experts architecture, it...",
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
+        },
+        "perRequestLimits": null
+      },
+      "validation": {
+        "passed": false,
+        "score": 0,
+        "checks": [
+          {
+            "name": "openai-compat",
+            "passed": false,
+            "score": 0,
+            "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+            "latencyMs": 720
+          },
+          {
+            "name": "tool-calling",
+            "passed": false,
+            "score": 0,
+            "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+            "latencyMs": 392
+          },
+          {
+            "name": "structured-output",
+            "passed": false,
+            "score": 0,
+            "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+            "latencyMs": 458
+          }
+        ],
+        "validatedAt": "2026-10-14T16:46:57.010Z"
+      }
+    },
+    {
+      "id": "openrouter/dots-studio/dots-3-note-preview:free",
+      "provider": "openrouter",
+      "modelId": "dots-studio/dots-3-note-preview:free",
+      "name": "Dots Studio: Dots3-Note Preview (free)",
+      "contextWindow": 512000,
+      "maxTokens": 65536,
+      "inputModalities": [
+        "text",
+        "image"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "priceInput": 0,
+      "priceOutput": 0,
+      "supportsToolCalling": true,
+      "supportsStructuredOutput": true,
+      "discoveredAt": "2026-10-14T16:46:55.029Z",
+      "raw": {
+        "description": "Dots3-Note Preview is an open-weight mixture-of-experts model from Dots Studio, with 16B active parameters out of 280B total. It is the lightest model in the Dots 3 family and is...",
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
+        },
+        "perRequestLimits": null
+      },
+      "validation": {
+        "passed": false,
+        "score": 0,
+        "checks": [
+          {
+            "name": "openai-compat",
+            "passed": false,
+            "score": 0,
+            "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+            "latencyMs": 685
+          },
+          {
+            "name": "tool-calling",
+            "passed": false,
+            "score": 0,
+            "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+            "latencyMs": 518
+          },
+          {
+            "name": "structured-output",
+            "passed": false,
+            "score": 0,
+            "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+            "latencyMs": 365
+          }
+        ],
+        "validatedAt": "2026-10-14T16:46:57.125Z"
+      }
+    },
+    {
+      "id": "openrouter/poolside/laguna-s-2.1:free",
+      "provider": "openrouter",
+      "modelId": "poolside/laguna-s-2.1:free",
+      "name": "Poolside: Laguna S 2.1 (free)",
+      "contextWindow": 262144,
+      "maxTokens": 65536,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "priceInput": 0,
+      "priceOutput": 0,
+      "supportsToolCalling": true,
+      "supportsStructuredOutput": true,
+      "discoveredAt": "2026-10-14T16:46:55.029Z",
+      "raw": {
+        "description": "Laguna S 2.1 is the latest coding agent model from [Poolside](<https://poolside.ai/>). Laguna S 2.1 is a 118B total parameter model with 8B active parameters, scoring 70.2% on Terminal-Bench 2.1 and...",
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
+        },
+        "perRequestLimits": null
+      },
+      "validation": {
+        "passed": false,
+        "score": 0,
+        "checks": [
+          {
+            "name": "openai-compat",
+            "passed": false,
+            "score": 0,
+            "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+            "latencyMs": 373
+          },
+          {
+            "name": "tool-calling",
+            "passed": false,
+            "score": 0,
+            "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+            "latencyMs": 462
+          },
+          {
+            "name": "structured-output",
+            "passed": false,
+            "score": 0,
+            "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+            "latencyMs": 422
+          }
+        ],
+        "validatedAt": "2026-10-14T16:46:58.731Z"
+      }
+    },
+    {
+      "id": "openrouter/poolside/laguna-xs-2.1:free",
+      "provider": "openrouter",
+      "modelId": "poolside/laguna-xs-2.1:free",
+      "name": "Poolside: Laguna XS 2.1 (free)",
+      "contextWindow": 262144,
+      "maxTokens": 65536,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "priceInput": 0,
+      "priceOutput": 0,
+      "supportsToolCalling": true,
+      "supportsStructuredOutput": true,
+      "discoveredAt": "2026-10-14T16:46:55.029Z",
+      "raw": {
+        "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines...",
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
+        },
+        "perRequestLimits": null
+      },
+      "validation": {
+        "passed": false,
+        "score": 0,
+        "checks": [
+          {
+            "name": "openai-compat",
+            "passed": false,
+            "score": 0,
+            "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+            "latencyMs": 480
+          },
+          {
+            "name": "tool-calling",
+            "passed": false,
+            "score": 0,
+            "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+            "latencyMs": 364
+          },
+          {
+            "name": "structured-output",
+            "passed": false,
+            "score": 0,
+            "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+            "latencyMs": 412
+          }
+        ],
+        "validatedAt": "2026-10-14T16:46:59.276Z"
+      }
+    },
+    {
+      "id": "openrouter/nvidia/nemotron-3-super-120b-a12b:free",
+      "provider": "openrouter",
+      "modelId": "nvidia/nemotron-3-super-120b-a12b:free",
+      "name": "NVIDIA: Nemotron 3 Super (free)",
+      "contextWindow": 262144,
+      "maxTokens": 65536,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "priceInput": 0,
+      "priceOutput": 0,
+      "supportsToolCalling": true,
+      "supportsStructuredOutput": true,
+      "discoveredAt": "2026-10-14T16:46:55.029Z",
+      "raw": {
+        "description": "NVIDIA Nemotron 3 Super is a 120B-parameter open hybrid MoE model, activating just 12B parameters for maximum compute efficiency and accuracy in complex multi-agent applications. Built on a hybrid Mamba-Transformer...",
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
+        },
+        "perRequestLimits": null
+      },
+      "validation": {
+        "passed": false,
+        "score": 0,
+        "checks": [
+          {
+            "name": "openai-compat",
+            "passed": false,
+            "score": 0,
+            "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+            "latencyMs": 576
+          },
+          {
+            "name": "tool-calling",
+            "passed": false,
+            "score": 0,
+            "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+            "latencyMs": 415
+          },
+          {
+            "name": "structured-output",
+            "passed": false,
+            "score": 0,
+            "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+            "latencyMs": 401
+          }
+        ],
+        "validatedAt": "2026-10-14T16:46:58.932Z"
+      }
+    },
+    {
+      "id": "openrouter/inclusionai/ling-3.1-flash",
+      "provider": "openrouter",
+      "modelId": "inclusionai/ling-3.1-flash",
+      "name": "Ling 3.1 Flash (free)",
+      "contextWindow": 262144,
+      "maxTokens": 32768,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "priceInput": 0,
+      "priceOutput": 0,
+      "supportsToolCalling": true,
+      "supportsStructuredOutput": true,
+      "discoveredAt": "2026-10-14T16:46:55.033Z",
+      "validation": {
+        "passed": true,
+        "score": 100,
+        "checks": [
+          {
+            "name": "openai-compat",
+            "passed": true,
+            "score": 100,
+            "details": "OpenAI-compatible response structure",
+            "latencyMs": 1208,
+            "rawResponse": {
+              "id": "gen-1791996419-Dmpp9pQOjEOyJPY3RD1i",
+              "object": "chat.completion",
+              "created": 1791996419,
+              "model": "inclusionai/ling-3.1-flash",
+              "provider": "DeepInfra",
+              "system_fingerprint": null,
+              "service_tier": "default",
+              "choices": [
+                {
+                  "index": 0,
+                  "logprobs": null,
+                  "finish_reason": "length",
+                  "native_finish_reason": "length",
+                  "message": {
+                    "role": "assistant",
+                    "content": null,
+                    "refusal": null,
+                    "reasoning": "The user just said \"",
+                    "reasoning_details": [
+                      {
+                        "type": "reasoning.text",
+                        "text": "The user just said \"",
+                        "format": "unknown",
+                        "index": 0
+                      }
+                    ]
+                  }
+                }
+              ],
+              "usage": {
+                "prompt_tokens": 21,
+                "completion_tokens": 5,
+                "total_tokens": 26,
+                "cost": 0.0000108,
+                "is_byok": false,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "audio_tokens": 0,
+                  "video_tokens": 0
+                },
+                "cost_details": {
+                  "upstream_inference_cost": 0.0000108,
+                  "upstream_inference_prompt_cost": 0.0000063,
+                  "upstream_inference_completions_cost": 0.0000045
+                },
+                "completion_tokens_details": {
+                  "reasoning_tokens": 5,
+                  "image_tokens": 0,
+                  "audio_tokens": 0
+                }
+              }
+            }
+          },
+          {
+            "name": "tool-calling",
+            "passed": true,
+            "score": 100,
+            "details": "2/2 trials returned valid tool_calls",
+            "latencyMs": 1413,
+            "rawResponse": {
+              "id": "gen-1791996423-Q4t6FaPIcrKwS3BkiFSL",
+              "object": "chat.completion",
+              "created": 1791996423,
+              "model": "inclusionai/ling-3.1-flash",
+              "provider": "Novita",
+              "system_fingerprint": null,
+              "service_tier": null,
+              "choices": [
+                {
+                  "index": 0,
+                  "logprobs": null,
+                  "finish_reason": "tool_calls",
+                  "native_finish_reason": "tool_calls",
+                  "message": {
+                    "role": "assistant",
+                    "content": null,
+                    "refusal": null,
+                    "reasoning": "The user wants to know the weather in Beijing. I'll use the get_weather tool with the location set to \"Beijing\".",
+                    "tool_calls": [
+                      {
+                        "type": "function",
+                        "index": 0,
+                        "id": "call_9eeeca6f1e394049a58405d9",
+                        "function": {
+                          "name": "get_weather",
+                          "arguments": "{\"location\": \"Beijing\"}"
+                        }
+                      }
+                    ],
+                    "reasoning_details": [
+                      {
+                        "type": "reasoning.text",
+                        "text": "The user wants to know the weather in Beijing. I'll use the get_weather tool with the location set to \"Beijing\".",
+                        "format": "unknown",
+                        "index": 0
+                      }
+                    ]
+                  }
+                }
+              ],
+              "usage": {
+                "prompt_tokens": 372,
+                "completion_tokens": 44,
+                "total_tokens": 416,
+                "cost": 0.0000186,
+                "is_byok": false,
+                "prompt_tokens_details": {
+                  "cached_tokens": 320,
+                  "cache_write_tokens": 0,
+                  "audio_tokens": 0,
+                  "video_tokens": 0
+                },
+                "cost_details": {
+                  "upstream_inference_cost": 0.0000186,
+                  "upstream_inference_prompt_cost": 0.0000087,
+                  "upstream_inference_completions_cost": 0.0000099
+                },
+                "completion_tokens_details": {
+                  "reasoning_tokens": 28,
+                  "image_tokens": 0,
+                  "audio_tokens": 0
+                }
+              }
+            }
+          },
+          {
+            "name": "structured-output",
+            "passed": true,
+            "score": 100,
+            "details": "Valid JSON matching schema",
+            "latencyMs": 990,
+            "rawResponse": {
+              "id": "gen-1791996425-K5e56EzRRr7cH0WrQJ5s",
+              "object": "chat.completion",
+              "created": 1791996425,
+              "model": "inclusionai/ling-3.1-flash",
+              "provider": "DeepInfra",
+              "system_fingerprint": null,
+              "service_tier": "default",
+              "choices": [
+                {
+                  "index": 0,
+                  "logprobs": null,
+                  "finish_reason": "stop",
+                  "native_finish_reason": "stop",
+                  "message": {
+                    "role": "assistant",
+                    "content": "{\n  \"name\": \"Alice\",\n  \"age\": 30,\n  \"skills\": [\"TypeScript\", \"Python\"],\n  \"active\": true\n}",
+                    "refusal": null,
+                    "reasoning": "The user wants a JSON object for a person with specific attributes:\n- name: \"Alice\"\n- age: 30\n- skills: [\"TypeScript\", \"Python\"]\n- active: true\n\nThis is straightforward. I need to output valid JSON only.",
+                    "reasoning_details": [
+                      {
+                        "type": "reasoning.text",
+                        "text": "The user wants a JSON object for a person with specific attributes:\n- name: \"Alice\"\n- age: 30\n- skills: [\"TypeScript\", \"Python\"]\n- active: true\n\nThis is straightforward. I need to output valid JSON only.",
+                        "format": "unknown",
+                        "index": 0
+                      }
+                    ]
+                  }
+                }
+              ],
+              "usage": {
+                "prompt_tokens": 52,
+                "completion_tokens": 98,
+                "total_tokens": 150,
+                "cost": 0.0001038,
+                "is_byok": false,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "audio_tokens": 0,
+                  "video_tokens": 0
+                },
+                "cost_details": {
+                  "upstream_inference_cost": 0.0001038,
+                  "upstream_inference_prompt_cost": 0.0000156,
+                  "upstream_inference_completions_cost": 0.0000882
+                },
+                "completion_tokens_details": {
+                  "reasoning_tokens": 53,
+                  "image_tokens": 0,
+                  "audio_tokens": 0
+                }
+              }
+            }
+          }
+        ],
+        "validatedAt": "2026-10-14T16:47:07.160Z"
+      }
+    },
+    {
+      "id": "openrouter/cohere/north-mini-code:free",
+      "provider": "openrouter",
+      "modelId": "cohere/north-mini-code:free",
+      "name": "Cohere: North Mini Code (free)",
+      "contextWindow": 256000,
+      "maxTokens": 65536,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "priceInput": 0,
+      "priceOutput": 0,
+      "supportsToolCalling": true,
+      "supportsStructuredOutput": true,
+      "discoveredAt": "2026-10-14T16:46:55.029Z",
+      "raw": {
+        "description": "North Mini Code is Cohere's first agentic coding model and the debut of its North family. A sparse mixture-of-experts model with 30B total parameters and 3B active, it is optimized...",
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Cohere",
+          "instruct_type": null
+        },
+        "perRequestLimits": null
+      },
+      "validation": {
+        "passed": false,
+        "score": 0,
+        "checks": [
+          {
+            "name": "openai-compat",
+            "passed": false,
+            "score": 0,
+            "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+            "latencyMs": 382
+          },
+          {
+            "name": "tool-calling",
+            "passed": false,
+            "score": 0,
+            "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+            "latencyMs": 575
+          },
+          {
+            "name": "structured-output",
+            "passed": false,
+            "score": 0,
+            "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+            "latencyMs": 740
+          }
+        ],
+        "validatedAt": "2026-10-14T16:47:01.205Z"
+      }
+    },
+    {
+      "id": "openrouter/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "provider": "openrouter",
+      "modelId": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
+      "contextWindow": 256000,
+      "maxTokens": 65536,
+      "inputModalities": [
+        "text",
+        "audio",
+        "image",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "priceInput": 0,
+      "priceOutput": 0,
+      "supportsToolCalling": true,
+      "supportsStructuredOutput": true,
+      "discoveredAt": "2026-10-14T16:46:55.029Z",
+      "raw": {
+        "description": "NVIDIA Nemotron™ 3 Nano Omni is a 30B-A3B open multimodal model designed to function as a perception and context sub-agent in enterprise agent systems. It accepts text, image, video, and...",
+        "architecture": {
+          "modality": "text+image+audio+video->text",
+          "input_modalities": [
+            "text",
+            "audio",
+            "image",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
+        },
+        "perRequestLimits": null
+      },
+      "validation": {
+        "passed": false,
+        "score": 0,
+        "checks": [
+          {
+            "name": "openai-compat",
+            "passed": false,
+            "score": 0,
+            "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+            "latencyMs": 411
+          },
+          {
+            "name": "tool-calling",
+            "passed": false,
+            "score": 0,
+            "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+            "latencyMs": 390
+          },
+          {
+            "name": "structured-output",
+            "passed": false,
+            "score": 0,
+            "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+            "latencyMs": 1643
+          }
+        ],
+        "validatedAt": "2026-10-14T16:47:02.110Z"
+      }
+    },
+    {
+      "id": "openrouter/nvidia/nemotron-3.5-content-safety:free",
+      "provider": "openrouter",
+      "modelId": "nvidia/nemotron-3.5-content-safety:free",
+      "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
+      "contextWindow": 128000,
+      "maxTokens": 64000,
+      "inputModalities": [
+        "text",
+        "image"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "priceInput": 0,
+      "priceOutput": 0,
+      "supportsToolCalling": true,
+      "supportsStructuredOutput": true,
+      "discoveredAt": "2026-10-14T16:46:55.029Z",
+      "raw": {
+        "description": "NVIDIA Nemotron 3.5 Content Safety is a compact 4B-parameter multimodal guardrail model from NVIDIA, fine-tuned from Google Gemma-3-4B. It moderates both inputs to and responses from LLMs and VLMs, accepting...",
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
+        },
+        "perRequestLimits": null
+      },
+      "validation": {
+        "passed": false,
+        "score": 0,
+        "checks": [
+          {
+            "name": "openai-compat",
+            "passed": false,
+            "score": 0,
+            "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+            "latencyMs": 448
+          },
+          {
+            "name": "tool-calling",
+            "passed": false,
+            "score": 0,
+            "details": "0/2 trials returned valid tool_calls — last error: HTTP 404: {\"error\":{\"message\":\"No endpoints found that support tool use. Try disabling \\\"get_weather\\\". To learn more about provider routing, visit: https://openrouter.ai/docs/guides/routing/provider-selection\"",
+            "latencyMs": 358
+          },
+          {
+            "name": "structured-output",
+            "passed": false,
+            "score": 0,
+            "details": "HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remain",
+            "latencyMs": 377
+          }
+        ],
+        "validatedAt": "2026-10-14T16:47:02.752Z"
+      }
+    },
+    {
+      "id": "openrouter/google/lyria-3-pro-preview",
+      "provider": "openrouter",
+      "modelId": "google/lyria-3-pro-preview",
+      "name": "Google: Lyria 3 Pro Preview",
+      "contextWindow": 1048576,
+      "maxTokens": 65536,
+      "inputModalities": [
+        "text",
+        "image"
+      ],
+      "outputModalities": [
+        "text",
+        "audio"
+      ],
+      "priceInput": 0,
+      "priceOutput": 0,
+      "supportsToolCalling": false,
+      "supportsStructuredOutput": false,
+      "discoveredAt": "2026-10-14T16:46:55.029Z",
+      "raw": {
+        "description": "Full-length songs are priced at $0.08 per song. Lyria 3 is Google's family of music generation models, available through the Gemini API. With Lyria 3, you can generate high-quality, 48kHz...",
+        "architecture": {
+          "modality": "text+image->text+audio",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text",
+            "audio"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
+        },
+        "perRequestLimits": null
+      },
+      "validation": {
+        "passed": false,
+        "score": 0,
+        "checks": [
+          {
+            "name": "openai-compat",
+            "passed": false,
+            "score": 0,
+            "details": "HTTP 403: {\"error\":{\"message\":\"This model is not available in your region.\",\"code\":403,\"metadata\":{\"routing_funnel\":[{\"step\":\"Initial Endpoints\",\"endpoint_count\":1}],\"failed_routing_step\":\"Gate Endpoints with G",
+            "latencyMs": 397
+          },
+          {
+            "name": "tool-calling",
+            "passed": false,
+            "score": 0,
+            "details": "0/2 trials returned valid tool_calls — last error: HTTP 403: {\"error\":{\"message\":\"This model is not available in your region.\",\"code\":403,\"metadata\":{\"routing_funnel\":[{\"step\":\"Initial Endpoints\",\"endpoint_count\":1}],\"failed_routing_step\":\"Gate Endpoints with G",
+            "latencyMs": 497
+          },
+          {
+            "name": "structured-output",
+            "passed": false,
+            "score": 0,
+            "details": "HTTP 403: {\"error\":{\"message\":\"This model is not available in your region.\",\"code\":403,\"metadata\":{\"routing_funnel\":[{\"step\":\"Initial Endpoints\",\"endpoint_count\":1}],\"failed_routing_step\":\"Gate Endpoints with G",
+            "latencyMs": 519
+          }
+        ],
+        "validatedAt": "2026-10-14T16:47:04.064Z"
+      }
+    },
+    {
+      "id": "openrouter/google/lyria-3-clip-preview",
+      "provider": "openrouter",
+      "modelId": "google/lyria-3-clip-preview",
+      "name": "Google: Lyria 3 Clip Preview",
+      "contextWindow": 1048576,
+      "maxTokens": 65536,
+      "inputModalities": [
+        "text",
+        "image"
+      ],
+      "outputModalities": [
+        "text",
+        "audio"
+      ],
+      "priceInput": 0,
+      "priceOutput": 0,
+      "supportsToolCalling": false,
+      "supportsStructuredOutput": false,
+      "discoveredAt": "2026-10-14T16:46:55.029Z",
+      "raw": {
+        "description": "30 second duration clips are priced at $0.04 per clip. Lyria 3 is Google's family of music generation models, available through the Gemini API. With Lyria 3, you can generate...",
+        "architecture": {
+          "modality": "text+image->text+audio",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text",
+            "audio"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
+        },
+        "perRequestLimits": null
+      },
+      "validation": {
+        "passed": false,
+        "score": 0,
+        "checks": [
+          {
+            "name": "openai-compat",
+            "passed": false,
+            "score": 0,
+            "details": "HTTP 403: {\"error\":{\"message\":\"This model is not available in your region.\",\"code\":403,\"metadata\":{\"routing_funnel\":[{\"step\":\"Initial Endpoints\",\"endpoint_count\":1}],\"failed_routing_step\":\"Gate Endpoints with G",
+            "latencyMs": 451
+          },
+          {
+            "name": "tool-calling",
+            "passed": false,
+            "score": 0,
+            "details": "0/2 trials returned valid tool_calls — last error: HTTP 403: {\"error\":{\"message\":\"This model is not available in your region.\",\"code\":403,\"metadata\":{\"routing_funnel\":[{\"step\":\"Initial Endpoints\",\"endpoint_count\":1}],\"failed_routing_step\":\"Gate Endpoints with G",
+            "latencyMs": 376
+          },
+          {
+            "name": "structured-output",
+            "passed": false,
+            "score": 0,
+            "details": "HTTP 403: {\"error\":{\"message\":\"This model is not available in your region.\",\"code\":403,\"metadata\":{\"routing_funnel\":[{\"step\":\"Initial Endpoints\",\"endpoint_count\":1}],\"failed_routing_step\":\"Gate Endpoints with G",
+            "latencyMs": 418
+          }
+        ],
+        "validatedAt": "2026-10-14T16:47:04.381Z"
+      }
+    }
+  ],
+  "summary": {
+    "totalDiscovered": 12,
+    "totalValidated": 12,
+    "passed": 1,
+    "byProvider": {
+      "openrouter": 12
+    }
+  }
+}

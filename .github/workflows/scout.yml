@@ -66,18 +66,20 @@ jobs:
             --concurrency 3 \
             --min-score 60 \
             --max-fleet 15 \
-            --output ./dist
+            --output ./data
 
       - name: Check for changes
         id: changes
         run: |
-          if git diff --quiet dist/; then
+          # git status (not git diff): data/ files may be new/untracked, which
+          # git diff never reports — that silently disabled the PR step before.
+          if [ -z "$(git status --porcelain data/)" ]; then
             echo "changed=false" >> $GITHUB_OUTPUT
             echo "No changes in generated files"
           else
             echo "changed=true" >> $GITHUB_OUTPUT
             echo "Changes detected in generated files"
-            git diff --stat dist/
+            git status --porcelain data/
           fi
 
       - name: Create Pull Request with updates
@@ -91,9 +93,10 @@ jobs:
             Automated update from **free-llm-scout** daily run.
             
             ## Changes
-            - Updated model registry (`dist/registry.json`)
-            - Updated DSH fleet chain (`dist/fleet.chain.yaml`)
-            - Updated leaderboard (`dist/LEADERBOARD.md`)
+            - Updated model registry (`data/registry.json`)
+            - Updated DSH fleet chain (`data/fleet.chain.yaml`)
+            - Updated leaderboard (`data/LEADERBOARD.md`)
+            - Updated dead-model cache (`data/dead-models.json`)
             
             ## Summary
             Run `free-llm-scout` with all enabled sources and validators.
@@ -106,7 +109,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: scout-output
-          path: dist/
+          path: data/
           retention-days: 7
 
   test:

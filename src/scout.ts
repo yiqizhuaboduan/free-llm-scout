@@ -65,7 +65,7 @@ const DEFAULT_CONFIG: ScoutConfig = {
   maxFleetSize: 15,
   maxModels: 12,
   providerPriority: ['openrouter', 'siliconflow', 'modelscope', 'bailian', 'zhipu', 'deepseek-account'],
-  outputDir: './dist',
+  outputDir: './data',
 };
 
 export class Scout {

@@ -35,7 +35,7 @@ program
   .option('--min-score <n>', 'Minimum score to pass (0-100)', '60')
   .option('--max-fleet <n>', 'Maximum fleet size', '15')
   .option('--max-models <n>', 'Cap models validated per run (0 = unlimited). Free tiers allow ~50 req/day; each model costs ~4', '12')
-  .option('-o, --output <dir>', 'Output directory', './dist')
+  .option('-o, --output <dir>', 'Output directory (tracked in git so the daily PR can commit it)', './data')
   .option('--dsh-fleet-path <path>', 'Path to DSH cordis.patch.yml for auto-patching')
   .option('--provider-priority <list>', 'Comma-separated provider priority for fleet ordering', 'openrouter,siliconflow,modelscope,bailian,zhipu,deepseek-account')
   .action(async (options) => {
