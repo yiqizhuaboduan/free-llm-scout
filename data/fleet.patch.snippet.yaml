@@ -1,6 +1,6 @@
 # free-llm-scout generated patch snippet for cordis.patch.yml
 # Paste this into model-fleet config section (replace existing chain:)
-# Generated at: 2026-10-15T16:42:38.202Z
+# Generated at: 2026-10-15T16:49:27.319Z
 #
 # Example:
 # - id: model-fleet
@@ -11,23 +11,31 @@
                   - provider: siliconflow
                     model: "deepseek-ai/DeepSeek-V4.1-Flash"
                   - provider: siliconflow
-                    model: "zai-org/GLM-5.3-Flash"
-                  - provider: siliconflow
                     model: "deepseek-ai/DeepSeek-V4-Flash"
                   - provider: bailian
                     model: "qwen-long"
                   - provider: siliconflow
+                    model: "Qwen/Qwen3-8B"
+                  - provider: siliconflow
+                    model: "zai-org/GLM-5.3-Flash"
+                  - provider: siliconflow
                     model: "Qwen/Qwen3.5-9B"
+                  - provider: siliconflow
+                    model: "Qwen/Qwen3.5-4B"
 chain:
           - provider: openrouter
             model: "inclusionai/ling-3.1-flash"
           - provider: siliconflow
             model: "deepseek-ai/DeepSeek-V4.1-Flash"
           - provider: siliconflow
-            model: "zai-org/GLM-5.3-Flash"
-          - provider: siliconflow
             model: "deepseek-ai/DeepSeek-V4-Flash"
           - provider: bailian
             model: "qwen-long"
           - provider: siliconflow
+            model: "Qwen/Qwen3-8B"
+          - provider: siliconflow
+            model: "zai-org/GLM-5.3-Flash"
+          - provider: siliconflow
             model: "Qwen/Qwen3.5-9B"
+          - provider: siliconflow
+            model: "Qwen/Qwen3.5-4B"
