@@ -127,6 +127,14 @@ export function computeScore(checks: ValidationCheck[]): number {
   return Math.round(total / weightSum);
 }
 
+/** Collapse dated snapshots into one family key: qwen-plus-2025-07-14,
+ * qwen-plus-latest and qwen-plus are all the same model to a fleet. */
+export function familyKey(modelId: string): string {
+  return modelId
+    .replace(/-\d{4}-\d{2}-\d{2}$/i, '')
+    .replace(/-latest$/i, '');
+}
+
 export function selectFleetModels(
   results: ValidationResult[],
   models: ModelInfo[],
@@ -139,7 +147,7 @@ export function selectFleetModels(
   // Results carry the bare modelId; models are keyed by the prefixed id
   // (`provider/modelId`). Look up through the same composite key everywhere.
   const modelMap = new Map(models.map(m => [m.id, m]));
-  const eligible = results
+  const ranked = results
     .filter(r => r.passed && r.score >= options.minScore)
     .sort((a, b) => {
       // Primary: score desc
@@ -152,10 +160,20 @@ export function selectFleetModels(
       const ma = modelMap.get(`${a.provider}/${a.modelId}`);
       const mb = modelMap.get(`${b.provider}/${b.modelId}`);
       return (mb?.contextWindow ?? 0) - (ma?.contextWindow ?? 0);
-    })
-    .slice(0, options.maxFleetSize)
-    .map(r => modelMap.get(`${r.provider}/${r.modelId}`))
-    .filter((m): m is ModelInfo => m !== undefined);
+    });
+  // Family dedup: one entry per (provider, family) — dated snapshots of the
+  // same model would otherwise flood the chain (8 of 15 slots were
+  // qwen-plus snapshots in the first real run).
+  const seenFamilies = new Set<string>();
+  const eligible: ModelInfo[] = [];
+  for (const r of ranked) {
+    const key = `${r.provider}/${familyKey(r.modelId)}`;
+    if (seenFamilies.has(key)) continue;
+    seenFamilies.add(key);
+    const m = modelMap.get(`${r.provider}/${r.modelId}`);
+    if (m) eligible.push(m);
+    if (eligible.length >= options.maxFleetSize) break;
+  }
   return eligible;
 }
 

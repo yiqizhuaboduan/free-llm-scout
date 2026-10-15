@@ -60,9 +60,9 @@ jobs:
         id: scout
         run: |
           node dist/cli.js \
-            --sources openrouter,custom-seeds \
+            --sources openrouter,siliconflow,modelscope,bailian,zhipu,moonshot,custom-seeds \
             --validators openai-compat,tool-calling,structured-output \
-            --max-models 12 \
+            --max-models 20 \
             --concurrency 3 \
             --min-score 60 \
             --max-fleet 15 \

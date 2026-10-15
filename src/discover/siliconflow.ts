@@ -57,18 +57,34 @@ export class SiliconFlowDiscovery implements DiscoverySource {
     const now = new Date().toISOString();
 
     return data.data
-      .filter(m => this.isFreeModel(m))
+      .filter(m => this.isFreeTier(m))
       .map(m => this.normalizeModel(m, now));
   }
 
-  private isFreeModel(model: SiliconFlowModel): boolean {
-    // SiliconFlow marks free models with price = 0 or specific tags
-    return (model.price?.input === 0 || model.price?.input === '0') &&
-           (model.price?.output === 0 || model.price?.output === '0');
+  /**
+   * SiliconFlow's /models carries NO pricing, so free-tier membership is
+   * inferred by naming conventions (2026-10 catalog):
+   *   - `Pro/`  prefix = paid accelerated deployments -> exclude
+   *   - `LoRA/` prefix = paid fine-tune endpoints    -> exclude
+   *   - flash variants (GLM-5.3-Flash, DeepSeek-V4-Flash, Ling-flash, ...) = free tier
+   *   - small chat models (4B/7B/8B/9B/mini) = historically free
+   *   - embeddings/rerankers/ASR/TTS/image/video/OCR are not chat -> exclude
+   * Validation then proves each candidate really answers.
+   */
+  private isFreeTier(model: SiliconFlowModel): boolean {
+    const id = model.id;
+    if (id.startsWith('Pro/') || id.startsWith('LoRA/')) return false;
+    const idLower = id.toLowerCase();
+    const nonChat = ['embed', 'rerank', 'asr', 'tts', 'voice', 'image', 'video', 'ocr', 'captioner', 'kolors', 'wan2', 'diffusion', 'vl-', '-vl', 'omni'];
+    if (nonChat.some(k => idLower.includes(k))) return false;
+    if (idLower.includes('flash') || idLower.includes('mini')) return true;
+    return /-(4b|7b|8b|9b)(-|\.|$)/i.test(id);
   }
 
   private normalizeModel(model: SiliconFlowModel, discoveredAt: string): ModelInfo {
-    const contextWindow = model.context_length || 4096;
+    // The catalog does not expose context_length; use a conservative claim
+    // (the opt-in context-window validator measures the real one).
+    const contextWindow = model.context_length || 131072;
     return {
       id: `siliconflow/${model.id}`,
       provider: 'siliconflow',

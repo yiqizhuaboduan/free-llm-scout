@@ -1,9 +1,19 @@
 # free-llm-scout generated fleet chain
-# Generated at: 2026-10-15T09:59:30.998Z
-# Source models: 1 models, minScore=60
+# Generated at: 2026-10-15T16:42:38.200Z
+# Source models: 6 models, minScore=60
 #
 # To use: copy this into your cordis.patch.yml under model-fleet.config.chain
 # Or include via YAML anchor/merge
 chain:
           - provider: openrouter
             model: "inclusionai/ling-3.1-flash"
+          - provider: siliconflow
+            model: "deepseek-ai/DeepSeek-V4.1-Flash"
+          - provider: siliconflow
+            model: "zai-org/GLM-5.3-Flash"
+          - provider: siliconflow
+            model: "deepseek-ai/DeepSeek-V4-Flash"
+          - provider: bailian
+            model: "qwen-long"
+          - provider: siliconflow
+            model: "Qwen/Qwen3.5-9B"

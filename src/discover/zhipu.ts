@@ -56,15 +56,16 @@ export class ZhipuDiscovery implements DiscoverySource {
     const data = await resp.json() as { data: ZhipuModel[] };
     const now = new Date().toISOString();
 
-    // Zhipu free models: glm-4-flash, glm-4-air, etc.
+    // Zhipu's free tier is the Flash line (2026-10 catalog: glm-5.3-flash /
+    // glm-5.3-flashx — the glm-4-flash era is over). Air/turbo are low-price,
+    // NOT free, so they stay out of a no-bill fleet.
     return data.data
       .filter(m => this.isFreeModel(m))
       .map(m => this.normalizeModel(m, now));
   }
 
   private isFreeModel(model: ZhipuModel): boolean {
-    const freeModels = ['glm-4-flash', 'glm-4-air', 'glm-4-airx'];
-    return freeModels.some(fm => model.id.includes(fm));
+    return model.id.toLowerCase().includes('flash');
   }
 
   private normalizeModel(model: ZhipuModel, discoveredAt: string): ModelInfo {
@@ -94,7 +95,7 @@ export class ZhipuDiscovery implements DiscoverySource {
   }
 
   private inferToolCalling(modelId: string): boolean {
-    return ['glm-4-flash', 'glm-4-air', 'glm-4-airx'].some(k => modelId.includes(k));
+    return modelId.toLowerCase().includes('flash');
   }
 }
 

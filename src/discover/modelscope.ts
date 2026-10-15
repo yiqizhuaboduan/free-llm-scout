@@ -67,7 +67,9 @@ export class ModelScopeDiscovery implements DiscoverySource {
   }
 
   private normalizeModel(model: ModelScopeModel, discoveredAt: string): ModelInfo {
-    const contextWindow = model.context_length || 4096;
+    // The catalog does not expose context_length; use a conservative claim
+    // (the opt-in context-window validator measures the real one).
+    const contextWindow = model.context_length || 131072;
     return {
       id: `modelscope/${model.id}`,
       provider: 'modelscope',
