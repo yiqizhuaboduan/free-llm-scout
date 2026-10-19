@@ -1,12 +1,14 @@
 # free-llm-scout generated fleet chain
-# Generated at: 2026-10-18T10:18:41.407Z
-# Source models: 12 models, minScore=60
+# Generated at: 2026-10-19T11:49:07.864Z
+# Source models: 11 models, minScore=60
 #
 # To use: copy this into your cordis.patch.yml under model-fleet.config.chain
 # Or include via YAML anchor/merge
 chain:
           - provider: openrouter
             model: "nvidia/nemotron-3.5-super-vl:free"
+          - provider: openrouter
+            model: "nvidia/nemotron-3.5-lightning:free"
           - provider: openrouter
             model: "nvidia/nemotron-3-ultra-550b-a55b:free"
           - provider: openrouter
@@ -15,8 +17,6 @@ chain:
             model: "nvidia/nemotron-3-super-120b-a12b:free"
           - provider: openrouter
             model: "cohere/north-mini-code:free"
-          - provider: openrouter
-            model: "poolside/laguna-s-2.1:free"
           - provider: siliconflow
             model: "deepseek-ai/DeepSeek-V4.1-Flash"
           - provider: siliconflow
@@ -27,5 +27,3 @@ chain:
             model: "Qwen/Qwen3-8B"
           - provider: siliconflow
             model: "Qwen/Qwen3.5-9B"
-          - provider: siliconflow
-            model: "Qwen/Qwen3.5-4B"
