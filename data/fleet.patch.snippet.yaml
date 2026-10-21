@@ -1,19 +1,19 @@
 # free-llm-scout generated patch snippet for cordis.patch.yml
 # Paste this into model-fleet config section (replace existing chain:)
-# Generated at: 2026-10-20T10:50:22.149Z
+# Generated at: 2026-10-21T11:00:16.245Z
 #
 # Example:
 # - id: model-fleet
 #   name: "./plugins/model-fleet.mjs"
 #   config:
 #                  - provider: openrouter
+                    model: "nvidia/nemotron-3.5-super-vl:free"
+                  - provider: openrouter
                     model: "nvidia/nemotron-3.5-lightning:free"
                   - provider: openrouter
                     model: "nvidia/nemotron-3-ultra-550b-a55b:free"
                   - provider: openrouter
                     model: "dots-studio/dots-3-note-preview:free"
-                  - provider: openrouter
-                    model: "cohere/north-mini-code:free"
                   - provider: siliconflow
                     model: "deepseek-ai/DeepSeek-V4.1-Flash"
                   - provider: siliconflow
@@ -22,15 +22,17 @@
                     model: "deepseek-ai/DeepSeek-V4-Flash"
                   - provider: siliconflow
                     model: "Qwen/Qwen3.5-9B"
+                  - provider: siliconflow
+                    model: "Qwen/Qwen3.5-4B"
 chain:
+          - provider: openrouter
+            model: "nvidia/nemotron-3.5-super-vl:free"
           - provider: openrouter
             model: "nvidia/nemotron-3.5-lightning:free"
           - provider: openrouter
             model: "nvidia/nemotron-3-ultra-550b-a55b:free"
           - provider: openrouter
             model: "dots-studio/dots-3-note-preview:free"
-          - provider: openrouter
-            model: "cohere/north-mini-code:free"
           - provider: siliconflow
             model: "deepseek-ai/DeepSeek-V4.1-Flash"
           - provider: siliconflow
@@ -39,3 +41,5 @@ chain:
             model: "deepseek-ai/DeepSeek-V4-Flash"
           - provider: siliconflow
             model: "Qwen/Qwen3.5-9B"
+          - provider: siliconflow
+            model: "Qwen/Qwen3.5-4B"
