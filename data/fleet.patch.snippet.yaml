@@ -1,6 +1,6 @@
 # free-llm-scout generated patch snippet for cordis.patch.yml
 # Paste this into model-fleet config section (replace existing chain:)
-# Generated at: 2026-10-23T10:52:47.414Z
+# Generated at: 2026-10-24T10:07:36.564Z
 #
 # Example:
 # - id: model-fleet
@@ -15,17 +15,13 @@
                   - provider: openrouter
                     model: "dots-studio/dots-3-note-preview:free"
                   - provider: openrouter
-                    model: "cohere/north-mini-code:free"
-                  - provider: openrouter
-                    model: "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+                    model: "poolside/laguna-s-2.1:free"
                   - provider: siliconflow
                     model: "deepseek-ai/DeepSeek-V4.1-Flash"
                   - provider: siliconflow
                     model: "zai-org/GLM-5.3-Flash"
                   - provider: siliconflow
                     model: "deepseek-ai/DeepSeek-V4-Flash"
-                  - provider: siliconflow
-                    model: "Qwen/Qwen3-8B"
                   - provider: siliconflow
                     model: "Qwen/Qwen3.5-9B"
 chain:
@@ -38,16 +34,12 @@ chain:
           - provider: openrouter
             model: "dots-studio/dots-3-note-preview:free"
           - provider: openrouter
-            model: "cohere/north-mini-code:free"
-          - provider: openrouter
-            model: "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+            model: "poolside/laguna-s-2.1:free"
           - provider: siliconflow
             model: "deepseek-ai/DeepSeek-V4.1-Flash"
           - provider: siliconflow
             model: "zai-org/GLM-5.3-Flash"
           - provider: siliconflow
             model: "deepseek-ai/DeepSeek-V4-Flash"
-          - provider: siliconflow
-            model: "Qwen/Qwen3-8B"
           - provider: siliconflow
             model: "Qwen/Qwen3.5-9B"
