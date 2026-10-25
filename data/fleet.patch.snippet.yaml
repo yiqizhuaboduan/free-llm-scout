@@ -1,45 +1,11 @@
 # free-llm-scout generated patch snippet for cordis.patch.yml
 # Paste this into model-fleet config section (replace existing chain:)
-# Generated at: 2026-10-24T10:07:36.564Z
+# Generated at: 2026-10-25T10:30:38.525Z
 #
 # Example:
 # - id: model-fleet
 #   name: "./plugins/model-fleet.mjs"
 #   config:
-#                  - provider: openrouter
-                    model: "nvidia/nemotron-3.5-super-vl:free"
-                  - provider: openrouter
-                    model: "nvidia/nemotron-3.5-lightning:free"
-                  - provider: openrouter
-                    model: "nvidia/nemotron-3-ultra-550b-a55b:free"
-                  - provider: openrouter
-                    model: "dots-studio/dots-3-note-preview:free"
-                  - provider: openrouter
-                    model: "poolside/laguna-s-2.1:free"
-                  - provider: siliconflow
-                    model: "deepseek-ai/DeepSeek-V4.1-Flash"
-                  - provider: siliconflow
-                    model: "zai-org/GLM-5.3-Flash"
-                  - provider: siliconflow
-                    model: "deepseek-ai/DeepSeek-V4-Flash"
-                  - provider: siliconflow
-                    model: "Qwen/Qwen3.5-9B"
+#        
 chain:
-          - provider: openrouter
-            model: "nvidia/nemotron-3.5-super-vl:free"
-          - provider: openrouter
-            model: "nvidia/nemotron-3.5-lightning:free"
-          - provider: openrouter
-            model: "nvidia/nemotron-3-ultra-550b-a55b:free"
-          - provider: openrouter
-            model: "dots-studio/dots-3-note-preview:free"
-          - provider: openrouter
-            model: "poolside/laguna-s-2.1:free"
-          - provider: siliconflow
-            model: "deepseek-ai/DeepSeek-V4.1-Flash"
-          - provider: siliconflow
-            model: "zai-org/GLM-5.3-Flash"
-          - provider: siliconflow
-            model: "deepseek-ai/DeepSeek-V4-Flash"
-          - provider: siliconflow
-            model: "Qwen/Qwen3.5-9B"
+
