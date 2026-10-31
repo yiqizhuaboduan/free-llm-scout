@@ -1,6 +1,6 @@
 # free-llm-scout generated fleet chain
-# Generated at: 2026-10-30T11:57:47.997Z
-# Source models: 4 models, minScore=60
+# Generated at: 2026-10-31T11:31:31.375Z
+# Source models: 6 models, minScore=60
 #
 # To use: copy this into your cordis.patch.yml under model-fleet.config.chain
 # Or include via YAML anchor/merge
@@ -13,3 +13,7 @@ chain:
             model: "nvidia/nemotron-3-ultra-550b-a55b:free"
           - provider: openrouter
             model: "dots-studio/dots-3-note-preview:free"
+          - provider: openrouter
+            model: "cohere/north-mini-code:free"
+          - provider: openrouter
+            model: "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
