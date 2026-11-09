@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T12:35:20.546Z",
+  "updatedAt": "2026-11-09T14:53:18.361Z",
   "note": "Models confirmed delisted/blocked. Delete a line to re-probe it on the next run.",
   "dead": [
     "openrouter/apodex/apodex-1.1-mini:free",
