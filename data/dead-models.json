@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T14:53:18.361Z",
+  "updatedAt": "2026-11-10T14:05:15.258Z",
   "note": "Models confirmed delisted/blocked. Delete a line to re-probe it on the next run.",
   "dead": [
     "openrouter/apodex/apodex-1.1-mini:free",
@@ -9,6 +9,7 @@
     "openrouter/nvidia/nemotron-3-super-120b-a12b:free",
     "openrouter/qwen/qwen3.8-27b:free",
     "openrouter/stealth/space-bunny-alpha",
+    "openrouter/thinkingmachines/inkling-2-small:free",
     "openrouter/thinkingmachines/inkling-small:free",
     "openrouter/thinkingmachines/inkling:free"
   ]
