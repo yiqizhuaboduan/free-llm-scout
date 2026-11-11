@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T14:05:15.315Z",
+  "generatedAt": "2026-11-11T13:22:59.438Z",
   "version": "1.0",
   "models": [
     {
@@ -19,7 +19,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-11-10T14:04:49.352Z",
+      "discoveredAt": "2026-11-11T13:22:10.442Z",
       "raw": {
         "id": "qwen-long",
         "object": "model",
@@ -38,92 +38,24 @@
             "passed": false,
             "score": 0,
             "details": "HTTP 400: {\"error\":{\"message\":\"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment\",\"type\":\"Arrearage\",\"param\":",
-            "latencyMs": 286
+            "latencyMs": 305
           },
           {
             "name": "tool-calling",
             "passed": false,
             "score": 0,
             "details": "0/2 trials returned valid tool_calls — last error: HTTP 400: {\"error\":{\"message\":\"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment\",\"type\":\"Arrearage\",\"param\":",
-            "latencyMs": 297
+            "latencyMs": 308
           },
           {
             "name": "structured-output",
             "passed": false,
             "score": 0,
             "details": "HTTP 400: {\"error\":{\"message\":\"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment\",\"type\":\"Arrearage\",\"param\":",
-            "latencyMs": 295
+            "latencyMs": 309
           }
         ],
-        "validatedAt": "2026-11-10T14:04:51.810Z"
-      }
-    },
-    {
-      "id": "openrouter/thinkingmachines/inkling-2-small:free",
-      "provider": "openrouter",
-      "modelId": "thinkingmachines/inkling-2-small:free",
-      "name": "Thinking Machines: Inkling 2 Small (free)",
-      "contextWindow": 1048576,
-      "maxTokens": 65536,
-      "inputModalities": [
-        "text",
-        "image"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "priceInput": 0,
-      "priceOutput": 0,
-      "supportsToolCalling": true,
-      "supportsStructuredOutput": true,
-      "discoveredAt": "2026-11-10T14:04:46.141Z",
-      "raw": {
-        "description": "Inkling 2 Small is a multimodal mixture-of-experts reasoning model from Thinking Machines Lab, with 17B active parameters out of 594B total. It is the first model in the second Inkling...",
-        "architecture": {
-          "modality": "text+image->text",
-          "input_modalities": [
-            "text",
-            "image"
-          ],
-          "output_modalities": [
-            "text"
-          ],
-          "tokenizer": "Other",
-          "instruct_type": null
-        },
-        "perRequestLimits": null
-      },
-      "quota": {
-        "kind": "daily-reset",
-        "amount": 50
-      },
-      "validation": {
-        "passed": false,
-        "score": 0,
-        "checks": [
-          {
-            "name": "openai-compat",
-            "passed": false,
-            "score": 0,
-            "details": "HTTP 403: {\"error\":{\"message\":\"thinkingmachines/inkling-2-small:free is only available on agentic harnesses. Try plugging it into a coding agent or productivity app listed on https://openrouter.ai/apps\",\"code\":",
-            "latencyMs": 82
-          },
-          {
-            "name": "tool-calling",
-            "passed": false,
-            "score": 0,
-            "details": "0/2 trials returned valid tool_calls — last error: HTTP 403: {\"error\":{\"message\":\"thinkingmachines/inkling-2-small:free is only available on agentic harnesses. Try plugging it into a coding agent or productivity app listed on https://openrouter.ai/apps\",\"code\":",
-            "latencyMs": 22
-          },
-          {
-            "name": "structured-output",
-            "passed": false,
-            "score": 0,
-            "details": "HTTP 403: {\"error\":{\"message\":\"thinkingmachines/inkling-2-small:free is only available on agentic harnesses. Try plugging it into a coding agent or productivity app listed on https://openrouter.ai/apps\",\"code\":",
-            "latencyMs": 21
-          }
-        ],
-        "validatedAt": "2026-11-10T14:04:52.842Z"
+        "validatedAt": "2026-11-11T13:22:13.732Z"
       }
     },
     {
@@ -145,7 +77,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-11-10T14:04:46.141Z",
+      "discoveredAt": "2026-11-11T13:22:05.410Z",
       "raw": {
         "description": "NVIDIA Nemotron 3.5 Super VL is an open multimodal mixture-of-experts model from NVIDIA, with 12B active parameters out of 120B total. It takes text, images, documents, GUI screenshots, and video...",
         "architecture": {
@@ -176,11 +108,11 @@
             "passed": true,
             "score": 100,
             "details": "OpenAI-compatible response structure",
-            "latencyMs": 276,
+            "latencyMs": 426,
             "rawResponse": {
-              "id": "gen-1794319492-Yg3eNsmVA2iaRTzGakVK",
+              "id": "gen-1794403335-4oeIBnVTze1LeuBSR1MV",
               "object": "chat.completion",
-              "created": 1794319492,
+              "created": 1794403335,
               "model": "nvidia/nemotron-3.5-super-vl:free",
               "provider": "Nvidia",
               "system_fingerprint": null,
@@ -237,11 +169,11 @@
             "passed": true,
             "score": 100,
             "details": "2/2 trials returned valid tool_calls",
-            "latencyMs": 260,
+            "latencyMs": 1940,
             "rawResponse": {
-              "id": "gen-1794319494-zfOnAbaKtT7YHBcvCttR",
+              "id": "gen-1794403336-AfoAw17nbly6hLfUu4vV",
               "object": "chat.completion",
-              "created": 1794319494,
+              "created": 1794403336,
               "model": "nvidia/nemotron-3.5-super-vl:free",
               "provider": "Nvidia",
               "system_fingerprint": null,
@@ -261,7 +193,7 @@
                       {
                         "type": "function",
                         "index": 0,
-                        "id": "call-87feb766-2f79-4797-8dec-206d1e9cf311",
+                        "id": "call-c94e36b4-757d-4441-a4ea-dcb2013a2999",
                         "function": {
                           "name": "get_weather",
                           "arguments": "{\"location\":\"Beijing\",\"unit\":\"celsius\"}"
@@ -309,11 +241,11 @@
             "passed": true,
             "score": 100,
             "details": "Valid JSON matching schema",
-            "latencyMs": 217,
+            "latencyMs": 210,
             "rawResponse": {
-              "id": "gen-1794319495-ypgUMvIefNEmX5v7w1bN",
+              "id": "gen-1794403341-TkJLgvbxObkurIZ7mQCF",
               "object": "chat.completion",
-              "created": 1794319495,
+              "created": 1794403341,
               "model": "nvidia/nemotron-3.5-super-vl:free",
               "provider": "Nvidia",
               "system_fingerprint": null,
@@ -328,11 +260,11 @@
                     "role": "assistant",
                     "content": "{\"name\": \"Alice\", \"age\": 30, \"skills\": [\"TypeScript\", \"Python\"], \"active\": true}",
                     "refusal": null,
-                    "reasoning": "The user wants a JSON object representing a person with specific fields:\n- name: \"Alice\"\n- age: 30\n- skills: [\"TypeScript\", \"Python\"]\n- active: true\n\nI need to output valid JSON only, no markdown code blocks, no extra text.\n\nJSON structure:\n{\n  \"name\": \"Alice\",\n  \"age\": 30,\n  \"skills\": [\"TypeScript\", \"Python\"],\n  \"active\": true\n}\n\nI should output exactly this, nothing else.",
+                    "reasoning": "The user wants a JSON object representing a person with specific fields:\n- name: \"Alice\"\n- age: 30\n- skills: [\"TypeScript\", \"Python\"]\n- active: true\n\nI need to output valid JSON only, no markdown code blocks, no extra text.\n\nJSON structure:\n{\n  \"name\": \"Alice\",\n  \"age\": 30,\n  \"skills\": [\"TypeScript\", \"Python\"],\n  \"active\": true\n}\n\nI should output exactly this, ensuring it's valid JSON.",
                     "reasoning_details": [
                       {
                         "type": "reasoning.text",
-                        "text": "The user wants a JSON object representing a person with specific fields:\n- name: \"Alice\"\n- age: 30\n- skills: [\"TypeScript\", \"Python\"]\n- active: true\n\nI need to output valid JSON only, no markdown code blocks, no extra text.\n\nJSON structure:\n{\n  \"name\": \"Alice\",\n  \"age\": 30,\n  \"skills\": [\"TypeScript\", \"Python\"],\n  \"active\": true\n}\n\nI should output exactly this, nothing else.",
+                        "text": "The user wants a JSON object representing a person with specific fields:\n- name: \"Alice\"\n- age: 30\n- skills: [\"TypeScript\", \"Python\"]\n- active: true\n\nI need to output valid JSON only, no markdown code blocks, no extra text.\n\nJSON structure:\n{\n  \"name\": \"Alice\",\n  \"age\": 30,\n  \"skills\": [\"TypeScript\", \"Python\"],\n  \"active\": true\n}\n\nI should output exactly this, ensuring it's valid JSON.",
                         "format": "unknown",
                         "index": 0
                       }
@@ -342,8 +274,8 @@
               ],
               "usage": {
                 "prompt_tokens": 47,
-                "completion_tokens": 134,
-                "total_tokens": 181,
+                "completion_tokens": 137,
+                "total_tokens": 184,
                 "cost": 0,
                 "is_byok": false,
                 "prompt_tokens_details": {
@@ -358,7 +290,7 @@
                   "upstream_inference_completions_cost": 0
                 },
                 "completion_tokens_details": {
-                  "reasoning_tokens": 104,
+                  "reasoning_tokens": 107,
                   "image_tokens": 0,
                   "audio_tokens": 0
                 }
@@ -366,7 +298,7 @@
             }
           }
         ],
-        "validatedAt": "2026-11-10T14:04:56.119Z"
+        "validatedAt": "2026-11-11T13:22:22.733Z"
       }
     },
     {
@@ -386,7 +318,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-11-10T14:04:46.141Z",
+      "discoveredAt": "2026-11-11T13:22:05.410Z",
       "raw": {
         "description": "NVIDIA Nemotron 3.5 Lightning is an open mixture-of-experts model from NVIDIA, with 3B active parameters out of 30B total. It is suited for high-throughput agentic workloads and specialized tasks that...",
         "architecture": {
@@ -408,18 +340,18 @@
       },
       "validation": {
         "passed": true,
-        "score": 100,
+        "score": 79,
         "checks": [
           {
             "name": "openai-compat",
             "passed": true,
             "score": 100,
             "details": "OpenAI-compatible response structure",
-            "latencyMs": 141,
+            "latencyMs": 81,
             "rawResponse": {
-              "id": "gen-1794319492-VfucPH1Wg12vj1g509TR",
+              "id": "gen-1794403335-jJSDUfyhLRjHchl6vYIA",
               "object": "chat.completion",
-              "created": 1794319492,
+              "created": 1794403335,
               "model": "nvidia/nemotron-3.5-lightning:free",
               "provider": "Nvidia",
               "system_fingerprint": null,
@@ -476,11 +408,11 @@
             "passed": true,
             "score": 100,
             "details": "2/2 trials returned valid tool_calls",
-            "latencyMs": 71,
+            "latencyMs": 62,
             "rawResponse": {
-              "id": "gen-1794319495-4VK1jcCEVcFELR8rwz7n",
+              "id": "gen-1794403340-kcymjo65RTyE01s9O7UR",
               "object": "chat.completion",
-              "created": 1794319495,
+              "created": 1794403340,
               "model": "nvidia/nemotron-3.5-lightning:free",
               "provider": "Nvidia",
               "system_fingerprint": null,
@@ -500,7 +432,7 @@
                       {
                         "type": "function",
                         "index": 0,
-                        "id": "call-294d04e6-57f4-4c91-b9d0-3d046ce68b1b",
+                        "id": "call-cbdfe864-10b0-4615-8454-c1acd912361c",
                         "function": {
                           "name": "get_weather",
                           "arguments": "{\"location\":\"Beijing\"}"
@@ -545,67 +477,13 @@
           },
           {
             "name": "structured-output",
-            "passed": true,
-            "score": 100,
-            "details": "Valid JSON matching schema",
-            "latencyMs": 79,
-            "rawResponse": {
-              "id": "gen-1794319497-4T7FTIUlBpdKIYG3f65t",
-              "object": "chat.completion",
-              "created": 1794319497,
-              "model": "nvidia/nemotron-3.5-lightning:free",
-              "provider": "Nvidia",
-              "system_fingerprint": null,
-              "service_tier": null,
-              "choices": [
-                {
-                  "index": 0,
-                  "logprobs": null,
-                  "finish_reason": "stop",
-                  "native_finish_reason": "stop",
-                  "message": {
-                    "role": "assistant",
-                    "content": "{\n  \"name\": \"Alice\",\n  \"age\": 30,\n  \"skills\": [\"TypeScript\", \"Python\"],\n  \"active\": true\n}",
-                    "refusal": null,
-                    "reasoning": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - Name: Alice\n   - Age: 30\n   - Skills: [\"TypeScript\", \"Python\"]\n   - Active: true\n   - Output format: Valid JSON only\n\n2.  **Identify Required JSON Structure:**\n   I need to create a JSON object with these key-value pairs:\n   - \"name\": \"Alice\"\n   - \"age\": 30\n   - \"skills\": [\"TypeScript\", \"Python\"]\n   - \"active\": true\n\n3.  **Validate JSON:**\n   - Keys must be in double quotes\n   - String values in double quotes\n   - Number values without quotes\n   - Array values in square brackets with quoted strings\n   - Boolean `true` without quotes\n   - Check for trailing commas: None allowed\n   - Check for proper syntax\n\n   Draft:\n   ```json\n   {\n     \"name\": \"Alice\",\n     \"age\": 30,\n     \"skills\": [\"TypeScript\", \"Python\"],\n     \"active\": true\n   }\n   ```\n\n4.  **Output Generation:**\n   The user said \"Output valid JSON only.\" I should output just the JSON object, no extra text, no explanations.\n\n   I'll output exactly the JSON object. I can format it nicely or as a single line, but standard pretty-printed JSON is fine as long as it's valid. I'll make sure it's valid and only the JSON.\n\n   Let's produce it.✅",
-                    "reasoning_details": [
-                      {
-                        "type": "reasoning.text",
-                        "text": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - Name: Alice\n   - Age: 30\n   - Skills: [\"TypeScript\", \"Python\"]\n   - Active: true\n   - Output format: Valid JSON only\n\n2.  **Identify Required JSON Structure:**\n   I need to create a JSON object with these key-value pairs:\n   - \"name\": \"Alice\"\n   - \"age\": 30\n   - \"skills\": [\"TypeScript\", \"Python\"]\n   - \"active\": true\n\n3.  **Validate JSON:**\n   - Keys must be in double quotes\n   - String values in double quotes\n   - Number values without quotes\n   - Array values in square brackets with quoted strings\n   - Boolean `true` without quotes\n   - Check for trailing commas: None allowed\n   - Check for proper syntax\n\n   Draft:\n   ```json\n   {\n     \"name\": \"Alice\",\n     \"age\": 30,\n     \"skills\": [\"TypeScript\", \"Python\"],\n     \"active\": true\n   }\n   ```\n\n4.  **Output Generation:**\n   The user said \"Output valid JSON only.\" I should output just the JSON object, no extra text, no explanations.\n\n   I'll output exactly the JSON object. I can format it nicely or as a single line, but standard pretty-printed JSON is fine as long as it's valid. I'll make sure it's valid and only the JSON.\n\n   Let's produce it.✅",
-                        "format": "unknown",
-                        "index": 0
-                      }
-                    ]
-                  }
-                }
-              ],
-              "usage": {
-                "prompt_tokens": 47,
-                "completion_tokens": 354,
-                "total_tokens": 401,
-                "cost": 0,
-                "is_byok": false,
-                "prompt_tokens_details": {
-                  "cached_tokens": 0,
-                  "cache_write_tokens": 0,
-                  "audio_tokens": 0,
-                  "video_tokens": 0
-                },
-                "cost_details": {
-                  "upstream_inference_cost": 0,
-                  "upstream_inference_prompt_cost": 0,
-                  "upstream_inference_completions_cost": 0
-                },
-                "completion_tokens_details": {
-                  "reasoning_tokens": 318,
-                  "image_tokens": 0,
-                  "audio_tokens": 0
-                }
-              }
-            }
+            "passed": false,
+            "score": 0,
+            "details": "No content string",
+            "latencyMs": 44
           }
         ],
-        "validatedAt": "2026-11-10T14:05:05.021Z"
+        "validatedAt": "2026-11-11T13:22:55.009Z"
       }
     },
     {
@@ -625,7 +503,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-11-10T14:04:46.141Z",
+      "discoveredAt": "2026-11-11T13:22:05.410Z",
       "raw": {
         "description": "NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active parameters out of 550B total (MoE). Built on a hybrid Transformer-Mamba mixture-of-experts architecture, it...",
         "architecture": {
@@ -646,152 +524,19 @@
         "amount": 50
       },
       "validation": {
-        "passed": true,
-        "score": 100,
+        "passed": false,
+        "score": 29,
         "checks": [
           {
             "name": "openai-compat",
             "passed": true,
             "score": 100,
             "details": "OpenAI-compatible response structure",
-            "latencyMs": 308,
+            "latencyMs": 293,
             "rawResponse": {
-              "id": "gen-1794319492-2t8AHI9voazWHM2HQOkn",
+              "id": "gen-1794403335-kVMgyhseiscYa4Ebsl0V",
               "object": "chat.completion",
-              "created": 1794319492,
-              "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-              "provider": "Nvidia",
-              "system_fingerprint": null,
-              "service_tier": null,
-              "choices": [
-                {
-                  "index": 0,
-                  "logprobs": null,
-                  "finish_reason": "length",
-                  "native_finish_reason": "length",
-                  "message": {
-                    "role": "assistant",
-                    "content": null,
-                    "refusal": null,
-                    "reasoning": "The user sent \"ping",
-                    "reasoning_details": [
-                      {
-                        "type": "reasoning.text",
-                        "text": "The user sent \"ping",
-                        "format": "unknown",
-                        "index": 0
-                      }
-                    ]
-                  }
-                }
-              ],
-              "usage": {
-                "prompt_tokens": 17,
-                "completion_tokens": 5,
-                "total_tokens": 22,
-                "cost": 0,
-                "is_byok": false,
-                "prompt_tokens_details": {
-                  "cached_tokens": 0,
-                  "cache_write_tokens": 0,
-                  "audio_tokens": 0,
-                  "video_tokens": 0
-                },
-                "cost_details": {
-                  "upstream_inference_cost": 0,
-                  "upstream_inference_prompt_cost": 0,
-                  "upstream_inference_completions_cost": 0
-                },
-                "completion_tokens_details": {
-                  "reasoning_tokens": 5,
-                  "image_tokens": 0,
-                  "audio_tokens": 0
-                }
-              }
-            }
-          },
-          {
-            "name": "tool-calling",
-            "passed": true,
-            "score": 100,
-            "details": "2/2 trials returned valid tool_calls",
-            "latencyMs": 340,
-            "rawResponse": {
-              "id": "gen-1794319501-alQfC5ULalttIMvdqtB1",
-              "object": "chat.completion",
-              "created": 1794319501,
-              "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-              "provider": "Nvidia",
-              "system_fingerprint": null,
-              "service_tier": null,
-              "choices": [
-                {
-                  "index": 0,
-                  "logprobs": null,
-                  "finish_reason": "tool_calls",
-                  "native_finish_reason": "tool_calls",
-                  "message": {
-                    "role": "assistant",
-                    "content": null,
-                    "refusal": null,
-                    "reasoning": "The user is asking for the weather in Beijing and specifically wants me to use the get_weather tool. I need to call the get_weather function with location \"Beijing\". The unit parameter is optional, but I can include it or leave it out. I'll call the function.",
-                    "tool_calls": [
-                      {
-                        "type": "function",
-                        "index": 0,
-                        "id": "call-8b017350-9f37-45cd-bb26-f919cfae6042",
-                        "function": {
-                          "name": "get_weather",
-                          "arguments": "{\"location\":\"Beijing\"}"
-                        }
-                      }
-                    ],
-                    "reasoning_details": [
-                      {
-                        "type": "reasoning.text",
-                        "text": "The user is asking for the weather in Beijing and specifically wants me to use the get_weather tool. I need to call the get_weather function with location \"Beijing\". The unit parameter is optional, but I can include it or leave it out. I'll call the function.",
-                        "format": "unknown",
-                        "index": 0
-                      }
-                    ]
-                  }
-                }
-              ],
-              "usage": {
-                "prompt_tokens": 411,
-                "completion_tokens": 85,
-                "total_tokens": 496,
-                "cost": 0,
-                "is_byok": false,
-                "prompt_tokens_details": {
-                  "cached_tokens": 0,
-                  "cache_write_tokens": 0,
-                  "audio_tokens": 0,
-                  "video_tokens": 0
-                },
-                "cost_details": {
-                  "upstream_inference_cost": 0,
-                  "upstream_inference_prompt_cost": 0,
-                  "upstream_inference_completions_cost": 0
-                },
-                "completion_tokens_details": {
-                  "reasoning_tokens": 58,
-                  "image_tokens": 0,
-                  "audio_tokens": 0
-                }
-              }
-            }
-          },
-          {
-            "name": "structured-output",
-            "passed": true,
-            "score": 100,
-            "details": "Valid JSON matching schema",
-            "latencyMs": 302,
-            "rawResponse": {
-              "id": "gen-1794319508-tFcxWnr8nB9Mmhwe3lV4",
-              "object": "chat.completion",
-              "created": 1794319508,
+              "created": 1794403335,
               "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
               "provider": "Nvidia",
               "system_fingerprint": null,
@@ -804,24 +549,16 @@
                   "native_finish_reason": "stop",
                   "message": {
                     "role": "assistant",
-                    "content": "{\"name\": \"Alice\", \"age\": 30, \"skills\": [\"TypeScript\", \"Python\"], \"active\": true}",
+                    "content": null,
                     "refusal": null,
-                    "reasoning": "The user wants a JSON object for a person with specific attributes. I need to output valid JSON only, no extra text. The fields: name \"Alice\", age 30, skills array with \"TypeScript\" and \"Python\", active true. Ensure proper JSON formatting. No comments. Just the object.",
-                    "reasoning_details": [
-                      {
-                        "type": "reasoning.text",
-                        "text": "The user wants a JSON object for a person with specific attributes. I need to output valid JSON only, no extra text. The fields: name \"Alice\", age 30, skills array with \"TypeScript\" and \"Python\", active true. Ensure proper JSON formatting. No comments. Just the object.",
-                        "format": "unknown",
-                        "index": 0
-                      }
-                    ]
+                    "reasoning": null
                   }
                 }
               ],
               "usage": {
-                "prompt_tokens": 47,
-                "completion_tokens": 93,
-                "total_tokens": 140,
+                "prompt_tokens": 17,
+                "completion_tokens": 1,
+                "total_tokens": 18,
                 "cost": 0,
                 "is_byok": false,
                 "prompt_tokens_details": {
@@ -836,15 +573,83 @@
                   "upstream_inference_completions_cost": 0
                 },
                 "completion_tokens_details": {
-                  "reasoning_tokens": 63,
+                  "reasoning_tokens": 1,
                   "image_tokens": 0,
                   "audio_tokens": 0
                 }
               }
             }
+          },
+          {
+            "name": "tool-calling",
+            "passed": false,
+            "score": 0,
+            "details": "0/2 trials returned valid tool_calls — last error: Response missing valid tool_calls",
+            "latencyMs": 278,
+            "rawResponse": {
+              "id": "gen-1794403336-UBVkAh8gh2nmoZbfCEWe",
+              "object": "chat.completion",
+              "created": 1794403336,
+              "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+              "provider": "Nvidia",
+              "system_fingerprint": null,
+              "service_tier": null,
+              "choices": [
+                {
+                  "index": 0,
+                  "logprobs": null,
+                  "finish_reason": "stop",
+                  "native_finish_reason": "stop",
+                  "message": {
+                    "role": "assistant",
+                    "content": null,
+                    "refusal": null,
+                    "reasoning": ".",
+                    "reasoning_details": [
+                      {
+                        "type": "reasoning.text",
+                        "text": ".",
+                        "format": "unknown",
+                        "index": 0
+                      }
+                    ]
+                  }
+                }
+              ],
+              "usage": {
+                "prompt_tokens": 411,
+                "completion_tokens": 2,
+                "total_tokens": 413,
+                "cost": 0,
+                "is_byok": false,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0,
+                  "cache_write_tokens": 0,
+                  "audio_tokens": 0,
+                  "video_tokens": 0
+                },
+                "cost_details": {
+                  "upstream_inference_cost": 0,
+                  "upstream_inference_prompt_cost": 0,
+                  "upstream_inference_completions_cost": 0
+                },
+                "completion_tokens_details": {
+                  "reasoning_tokens": 2,
+                  "image_tokens": 0,
+                  "audio_tokens": 0
+                }
+              }
+            }
+          },
+          {
+            "name": "structured-output",
+            "passed": false,
+            "score": 0,
+            "details": "No content string",
+            "latencyMs": 264
           }
         ],
-        "validatedAt": "2026-11-10T14:05:11.467Z"
+        "validatedAt": "2026-11-11T13:22:19.005Z"
       }
     },
     {
@@ -864,7 +669,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-11-10T14:04:49.352Z",
+      "discoveredAt": "2026-11-11T13:22:10.442Z",
       "raw": {
         "id": "qwen-turbo-2024-11-01",
         "object": "model",
@@ -883,24 +688,24 @@
             "passed": false,
             "score": 0,
             "details": "HTTP 400: {\"error\":{\"message\":\"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment\",\"type\":\"Arrearage\",\"param\":",
-            "latencyMs": 770
+            "latencyMs": 1659
           },
           {
             "name": "tool-calling",
             "passed": false,
             "score": 0,
             "details": "0/2 trials returned valid tool_calls — last error: HTTP 429: {\"error\":{\"message\":\"You have exceeded your current request limit. For details, see: https://help.aliyun.com/zh/model-studio/error-code#rate-limit\",\"type\":\"limit_requests\",\"param\":null,\"code\":\"limit_r",
-            "latencyMs": 259
+            "latencyMs": 318
           },
           {
             "name": "structured-output",
             "passed": false,
             "score": 0,
-            "details": "HTTP 400: {\"error\":{\"message\":\"Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment\",\"type\":\"Arrearage\",\"param\":",
-            "latencyMs": 280
+            "details": "HTTP 429: {\"error\":{\"message\":\"You have exceeded your current request limit. For details, see: https://help.aliyun.com/zh/model-studio/error-code#rate-limit\",\"type\":\"limit_requests\",\"param\":null,\"code\":\"limit_r",
+            "latencyMs": 325
           }
         ],
-        "validatedAt": "2026-11-10T14:04:52.203Z"
+        "validatedAt": "2026-11-11T13:22:15.124Z"
       }
     },
     {
@@ -920,7 +725,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-11-10T14:04:49.352Z",
+      "discoveredAt": "2026-11-11T13:22:10.442Z",
       "raw": {
         "id": "qwen-turbo-0919",
         "object": "model",
@@ -938,25 +743,25 @@
             "name": "openai-compat",
             "passed": false,
             "score": 0,
-            "details": "HTTP 404: {\"error\":{\"message\":\"The model `qwen-turbo-0919` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"model_not_found\"},\"request_id\":\"f661c5da-fbf1-9e53",
-            "latencyMs": 1291
+            "details": "HTTP 404: {\"error\":{\"message\":\"The model `qwen-turbo-0919` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"model_not_found\"},\"request_id\":\"4f779305-7dc0-9707",
+            "latencyMs": 1610
           },
           {
             "name": "tool-calling",
             "passed": false,
             "score": 0,
-            "details": "0/2 trials returned valid tool_calls — last error: HTTP 404: {\"error\":{\"message\":\"The model `qwen-turbo-0919` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"model_not_found\"},\"request_id\":\"081522df-8725-96d2",
-            "latencyMs": 254
+            "details": "0/2 trials returned valid tool_calls — last error: HTTP 404: {\"error\":{\"message\":\"The model `qwen-turbo-0919` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"model_not_found\"},\"request_id\":\"80264bc0-fdd9-9358",
+            "latencyMs": 274
           },
           {
             "name": "structured-output",
             "passed": false,
             "score": 0,
-            "details": "HTTP 404: {\"error\":{\"message\":\"The model `qwen-turbo-0919` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"model_not_found\"},\"request_id\":\"73a452e2-0b2e-9b2a",
-            "latencyMs": 255
+            "details": "HTTP 404: {\"error\":{\"message\":\"The model `qwen-turbo-0919` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"model_not_found\"},\"request_id\":\"611a9a36-26fe-9d3f",
+            "latencyMs": 279
           }
         ],
-        "validatedAt": "2026-11-10T14:04:52.690Z"
+        "validatedAt": "2026-11-11T13:22:14.940Z"
       }
     },
     {
@@ -977,7 +782,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-11-10T14:04:46.141Z",
+      "discoveredAt": "2026-11-11T13:22:05.410Z",
       "raw": {
         "description": "Dots3-Note Preview is an open-weight mixture-of-experts model from Dots Studio, with 16B active parameters out of 280B total. It is the lightest model in the Dots 3 family and is...",
         "architecture": {
@@ -1007,11 +812,11 @@
             "passed": true,
             "score": 100,
             "details": "OpenAI-compatible response structure",
-            "latencyMs": 525,
+            "latencyMs": 5880,
             "rawResponse": {
-              "id": "gen-1794319496-j866PEIRvxDW7VlF6zEC",
+              "id": "gen-1794403339-dxD6R3XwXq5z8Y6n1s0J",
               "object": "chat.completion",
-              "created": 1794319496,
+              "created": 1794403339,
               "model": "dots-studio/dots-3-note-preview:free",
               "provider": "AtlasCloud",
               "system_fingerprint": null,
@@ -1026,11 +831,11 @@
                     "role": "assistant",
                     "content": null,
                     "refusal": null,
-                    "reasoning": "用户发来一个简单的",
+                    "reasoning": "用户发来一个“",
                     "reasoning_details": [
                       {
                         "type": "reasoning.text",
-                        "text": "用户发来一个简单的",
+                        "text": "用户发来一个“",
                         "format": "unknown",
                         "index": 0
                       }
@@ -1056,7 +861,7 @@
                   "upstream_inference_completions_cost": 0
                 },
                 "completion_tokens_details": {
-                  "reasoning_tokens": 9,
+                  "reasoning_tokens": 7,
                   "image_tokens": 0,
                   "audio_tokens": 0
                 }
@@ -1068,11 +873,11 @@
             "passed": true,
             "score": 100,
             "details": "2/2 trials returned valid tool_calls",
-            "latencyMs": 697,
+            "latencyMs": 7155,
             "rawResponse": {
-              "id": "gen-1794319499-3YMQCI6nVRwQcm0SfBLx",
+              "id": "gen-1794403353-Rli5Zor02bWd8PdBTdbd",
               "object": "chat.completion",
-              "created": 1794319499,
+              "created": 1794403353,
               "model": "dots-studio/dots-3-note-preview:free",
               "provider": "AtlasCloud",
               "system_fingerprint": null,
@@ -1087,12 +892,12 @@
                     "role": "assistant",
                     "content": "\n\n\n",
                     "refusal": null,
-                    "reasoning": "The user is asking for the weather in Beijing. I should use the get_weather tool to fetch this information. The tool requires a location parameter, which is \"Beijing\". I'll also specify the unit as celsius since that's commonly used in China, but it's optional. I'll just call it with the location.",
+                    "reasoning": "The user is asking for the weather in Beijing. They explicitly said \"Use the get_weather tool.\" So I need to call the get_weather function with location=\"Beijing\". I should also consider the unit parameter - they didn't specify, so I'll use the default or maybe I should ask? But they said \"Use the get_weather tool\" so I should just call it. The unit is optional, so I can omit it or use a reasonable default. I'll just call with location=\"Beijing\".",
                     "tool_calls": [
                       {
                         "type": "function",
                         "index": 0,
-                        "id": "call_5839b5ea9ecd497496460c5e",
+                        "id": "call_c90d1f144a3d4be7a08ae081",
                         "function": {
                           "name": "get_weather",
                           "arguments": "{\"location\": \"Beijing\"}"
@@ -1102,7 +907,7 @@
                     "reasoning_details": [
                       {
                         "type": "reasoning.text",
-                        "text": "The user is asking for the weather in Beijing. I should use the get_weather tool to fetch this information. The tool requires a location parameter, which is \"Beijing\". I'll also specify the unit as celsius since that's commonly used in China, but it's optional. I'll just call it with the location.",
+                        "text": "The user is asking for the weather in Beijing. They explicitly said \"Use the get_weather tool.\" So I need to call the get_weather function with location=\"Beijing\". I should also consider the unit parameter - they didn't specify, so I'll use the default or maybe I should ask? But they said \"Use the get_weather tool\" so I should just call it. The unit is optional, so I can omit it or use a reasonable default. I'll just call with location=\"Beijing\".",
                         "format": "unknown",
                         "index": 0
                       }
@@ -1112,8 +917,8 @@
               ],
               "usage": {
                 "prompt_tokens": 275,
-                "completion_tokens": 94,
-                "total_tokens": 369,
+                "completion_tokens": 131,
+                "total_tokens": 406,
                 "cost": 0,
                 "is_byok": false,
                 "prompt_tokens_details": {
@@ -1128,7 +933,7 @@
                   "upstream_inference_completions_cost": 0
                 },
                 "completion_tokens_details": {
-                  "reasoning_tokens": 75,
+                  "reasoning_tokens": 113,
                   "image_tokens": 0,
                   "audio_tokens": 0
                 }
@@ -1140,11 +945,11 @@
             "passed": true,
             "score": 100,
             "details": "Valid JSON matching schema",
-            "latencyMs": 545,
+            "latencyMs": 6928,
             "rawResponse": {
-              "id": "gen-1794319501-OfXcTVOnKRm9BJOEClO4",
+              "id": "gen-1794403362-h3e4UjSbafvW50jJA4xf",
               "object": "chat.completion",
-              "created": 1794319501,
+              "created": 1794403362,
               "model": "dots-studio/dots-3-note-preview:free",
               "provider": "AtlasCloud",
               "system_fingerprint": null,
@@ -1159,11 +964,11 @@
                     "role": "assistant",
                     "content": "{\"name\":\"Alice\",\"age\":30,\"skills\":[\"TypeScript\",\"Python\"],\"active\":true}",
                     "refusal": null,
-                    "reasoning": "The user wants a JSON object with fields: name, age, skills, active. They want valid JSON only. So output exactly a JSON object, no extra text.\n\nPotential JSON: {\"name\":\"Alice\",\"age\":30,\"skills\":[\"TypeScript\",\"Python\"],\"active\":true}\n\nMake sure it's valid JSON. Should be exactly that, no trailing commas, etc. Probably include line breaks? They said \"Generate a JSON object\" and \"Output valid JSON only.\" So I should output just the JSON, no extra text.\n\nThus output:\n\n{\"name\":\"Alice\",\"age\":30,\"skills\":[\"TypeScript\",\"Python\"],\"active\":true}\n\nMaybe with spaces? Could be any valid JSON. I'll output exactly that.",
+                    "reasoning": "The user asks: \"Generate a JSON object for a person named Alice, age 30, skills [\"TypeScript\", \"Python\"], active true.\"\n\nWe need to output a JSON object. The user wants JSON. They also said \"Output valid JSON only.\" So we should output exactly a JSON object, no extra text, no explanation.\n\nThe object should include fields: name, age, skills, active. Possibly we can use any keys, but likely they want exactly those keys. They wrote \"named Alice, age 30, skills [\"TypeScript\", \"Python\"], active true.\" So we can output:\n\n{\n  \"name\": \"Alice\",\n  \"age\": 30,\n  \"skills\": [\"TypeScript\", \"Python\"],\n  \"active\": true\n}\n\nBut ensure it's valid JSON. Possibly include no trailing commas.\n\nWe should output only JSON. No extra text. So I'll output exactly that.\n\nBut ensure it's valid JSON: need double quotes around keys and string values, numbers without quotes, booleans lowercase.\n\nThus output:\n\n{\"name\":\"Alice\",\"age\":30,\"skills\":[\"TypeScript\",\"Python\"],\"active\":true}\n\nOr with whitespace? Probably any valid JSON is fine. But they said \"Generate a JSON object\", likely they expect an object.\n\nI'll output a pretty-printed JSON or compact? They didn't specify formatting, just valid JSON. I'll output compact.\n\nBut to be safe, output exactly a JSON object, no extra characters.\n\nThus I'll output:\n\n{\"name\":\"Alice\",\"age\":30,\"skills\":[\"TypeScript\",\"Python\"],\"active\":true}\n\nMake sure no trailing newline? Probably fine.\n\nBut the instruction: \"Output valid JSON only.\" So I should output only JSON, no additional text. So I'll output exactly that.\n\nThus final answer: {\"name\":\"Alice\",\"age\":30,\"skills\":[\"TypeScript\",\"Python\"],\"active\":true}\n",
                     "reasoning_details": [
                       {
                         "type": "reasoning.text",
-                        "text": "The user wants a JSON object with fields: name, age, skills, active. They want valid JSON only. So output exactly a JSON object, no extra text.\n\nPotential JSON: {\"name\":\"Alice\",\"age\":30,\"skills\":[\"TypeScript\",\"Python\"],\"active\":true}\n\nMake sure it's valid JSON. Should be exactly that, no trailing commas, etc. Probably include line breaks? They said \"Generate a JSON object\" and \"Output valid JSON only.\" So I should output just the JSON, no extra text.\n\nThus output:\n\n{\"name\":\"Alice\",\"age\":30,\"skills\":[\"TypeScript\",\"Python\"],\"active\":true}\n\nMaybe with spaces? Could be any valid JSON. I'll output exactly that.",
+                        "text": "The user asks: \"Generate a JSON object for a person named Alice, age 30, skills [\"TypeScript\", \"Python\"], active true.\"\n\nWe need to output a JSON object. The user wants JSON. They also said \"Output valid JSON only.\" So we should output exactly a JSON object, no extra text, no explanation.\n\nThe object should include fields: name, age, skills, active. Possibly we can use any keys, but likely they want exactly those keys. They wrote \"named Alice, age 30, skills [\"TypeScript\", \"Python\"], active true.\" So we can output:\n\n{\n  \"name\": \"Alice\",\n  \"age\": 30,\n  \"skills\": [\"TypeScript\", \"Python\"],\n  \"active\": true\n}\n\nBut ensure it's valid JSON. Possibly include no trailing commas.\n\nWe should output only JSON. No extra text. So I'll output exactly that.\n\nBut ensure it's valid JSON: need double quotes around keys and string values, numbers without quotes, booleans lowercase.\n\nThus output:\n\n{\"name\":\"Alice\",\"age\":30,\"skills\":[\"TypeScript\",\"Python\"],\"active\":true}\n\nOr with whitespace? Probably any valid JSON is fine. But they said \"Generate a JSON object\", likely they expect an object.\n\nI'll output a pretty-printed JSON or compact? They didn't specify formatting, just valid JSON. I'll output compact.\n\nBut to be safe, output exactly a JSON object, no extra characters.\n\nThus I'll output:\n\n{\"name\":\"Alice\",\"age\":30,\"skills\":[\"TypeScript\",\"Python\"],\"active\":true}\n\nMake sure no trailing newline? Probably fine.\n\nBut the instruction: \"Output valid JSON only.\" So I should output only JSON, no additional text. So I'll output exactly that.\n\nThus final answer: {\"name\":\"Alice\",\"age\":30,\"skills\":[\"TypeScript\",\"Python\"],\"active\":true}\n",
                         "format": "unknown",
                         "index": 0
                       }
@@ -1173,8 +978,8 @@
               ],
               "usage": {
                 "prompt_tokens": 38,
-                "completion_tokens": 171,
-                "total_tokens": 209,
+                "completion_tokens": 415,
+                "total_tokens": 453,
                 "cost": 0,
                 "is_byok": false,
                 "prompt_tokens_details": {
@@ -1189,7 +994,7 @@
                   "upstream_inference_completions_cost": 0
                 },
                 "completion_tokens_details": {
-                  "reasoning_tokens": 156,
+                  "reasoning_tokens": 418,
                   "image_tokens": 0,
                   "audio_tokens": 0
                 }
@@ -1197,7 +1002,7 @@
             }
           }
         ],
-        "validatedAt": "2026-11-10T14:05:05.455Z"
+        "validatedAt": "2026-11-11T13:22:55.117Z"
       }
     },
     {
@@ -1217,7 +1022,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-11-10T14:04:50.633Z",
+      "discoveredAt": "2026-11-11T13:22:12.499Z",
       "quota": {
         "kind": "daily-reset",
         "amount": 50
@@ -1231,14 +1036,14 @@
             "passed": false,
             "score": 0,
             "details": "HTTP 404: {\"error\":{\"message\":\"poolside/laguna-s-2.1:free is no longer available on OpenRouter: no provider serves this model anymore. See available models at https://openrouter.ai/models\",\"code\":404},\"user_id\"",
-            "latencyMs": 19
+            "latencyMs": 27
           },
           {
             "name": "tool-calling",
             "passed": false,
             "score": 0,
             "details": "0/2 trials returned valid tool_calls — last error: HTTP 404: {\"error\":{\"message\":\"poolside/laguna-s-2.1:free is no longer available on OpenRouter: no provider serves this model anymore. See available models at https://openrouter.ai/models\",\"code\":404},\"user_id\"",
-            "latencyMs": 46
+            "latencyMs": 28
           },
           {
             "name": "structured-output",
@@ -1248,7 +1053,7 @@
             "latencyMs": 47
           }
         ],
-        "validatedAt": "2026-11-10T14:05:05.188Z"
+        "validatedAt": "2026-11-11T13:22:22.867Z"
       }
     },
     {
@@ -1268,7 +1073,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-11-10T14:04:50.633Z",
+      "discoveredAt": "2026-11-11T13:22:12.499Z",
       "quota": {
         "kind": "daily-reset",
         "amount": 50
@@ -1282,24 +1087,24 @@
             "passed": false,
             "score": 0,
             "details": "HTTP 402: {\"error\":{\"message\":\"Insufficient credits. This account never purchased credits. Make sure your key is on the correct account or org, and if so, purchase more at https://openrouter.ai/settings/credits",
-            "latencyMs": 30
+            "latencyMs": 40
           },
           {
             "name": "tool-calling",
             "passed": false,
             "score": 0,
             "details": "0/2 trials returned valid tool_calls — last error: HTTP 402: {\"error\":{\"message\":\"Insufficient credits. This account never purchased credits. Make sure your key is on the correct account or org, and if so, purchase more at https://openrouter.ai/settings/credits",
-            "latencyMs": 46
+            "latencyMs": 60
           },
           {
             "name": "structured-output",
             "passed": false,
             "score": 0,
             "details": "HTTP 402: {\"error\":{\"message\":\"Insufficient credits. This account never purchased credits. Make sure your key is on the correct account or org, and if so, purchase more at https://openrouter.ai/settings/credits",
-            "latencyMs": 28
+            "latencyMs": 24
           }
         ],
-        "validatedAt": "2026-11-10T14:05:05.340Z"
+        "validatedAt": "2026-11-11T13:22:23.056Z"
       }
     },
     {
@@ -1319,7 +1124,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-11-10T14:04:46.141Z",
+      "discoveredAt": "2026-11-11T13:22:05.410Z",
       "raw": {
         "description": "North Mini Code is Cohere's first agentic coding model and the debut of its North family. A sparse mixture-of-experts model with 30B total parameters and 3B active, it is optimized...",
         "architecture": {
@@ -1348,11 +1153,11 @@
             "passed": true,
             "score": 100,
             "details": "OpenAI-compatible response structure",
-            "latencyMs": 171,
+            "latencyMs": 156,
             "rawResponse": {
-              "id": "gen-1794319505-LttZqYrcP1CNurYXv9WL",
+              "id": "gen-1794403343-YF2LOBFddnbXa4CMuiOL",
               "object": "chat.completion",
-              "created": 1794319505,
+              "created": 1794403343,
               "model": "cohere/north-mini-code:free",
               "provider": "Cohere",
               "system_fingerprint": null,
@@ -1409,11 +1214,11 @@
             "passed": true,
             "score": 100,
             "details": "2/2 trials returned valid tool_calls",
-            "latencyMs": 160,
+            "latencyMs": 184,
             "rawResponse": {
-              "id": "gen-1794319506-xgQLuHjrxDY7CC2wROdN",
+              "id": "gen-1794403344-Zj4ahynGyhBkNGvo88nk",
               "object": "chat.completion",
-              "created": 1794319506,
+              "created": 1794403344,
               "model": "cohere/north-mini-code:free",
               "provider": "Cohere",
               "system_fingerprint": null,
@@ -1428,12 +1233,12 @@
                     "role": "assistant",
                     "content": null,
                     "refusal": null,
-                    "reasoning": "The user is asking for the weather in Beijing and specifically mentions using the get_weather tool. I need to call the get_weather function with \"Beijing\" as the location parameter. The function also has an optional \"unit\" parameter, but the user didn't specify a temperature unit, so I'll use the default (which should be celsius based on the function description).",
+                    "reasoning": "The user is asking for the weather in Beijing and specifically mentioned to use the get_weather tool. I need to call this function with the location parameter set to \"Beijing\". The function also has an optional unit parameter, but the user didn't specify a unit, so I'll use the default (which should be celsius based on the function description).",
                     "tool_calls": [
                       {
                         "type": "function",
                         "index": 0,
-                        "id": "get_weather_02n04495ez0v",
+                        "id": "get_weather_gdpepvtt5rfc",
                         "function": {
                           "name": "get_weather",
                           "arguments": "{\"location\": \"Beijing\"}"
@@ -1443,7 +1248,7 @@
                     "reasoning_details": [
                       {
                         "type": "reasoning.text",
-                        "text": "The user is asking for the weather in Beijing and specifically mentions using the get_weather tool. I need to call the get_weather function with \"Beijing\" as the location parameter. The function also has an optional \"unit\" parameter, but the user didn't specify a temperature unit, so I'll use the default (which should be celsius based on the function description).",
+                        "text": "The user is asking for the weather in Beijing and specifically mentioned to use the get_weather tool. I need to call this function with the location parameter set to \"Beijing\". The function also has an optional unit parameter, but the user didn't specify a unit, so I'll use the default (which should be celsius based on the function description).",
                         "format": "unknown",
                         "index": 0
                       }
@@ -1453,8 +1258,8 @@
               ],
               "usage": {
                 "prompt_tokens": 104,
-                "completion_tokens": 78,
-                "total_tokens": 182,
+                "completion_tokens": 74,
+                "total_tokens": 178,
                 "cost": 0,
                 "is_byok": false,
                 "prompt_tokens_details": {
@@ -1469,7 +1274,7 @@
                   "upstream_inference_completions_cost": 0
                 },
                 "completion_tokens_details": {
-                  "reasoning_tokens": 92,
+                  "reasoning_tokens": 87,
                   "image_tokens": 0,
                   "audio_tokens": 0
                 }
@@ -1481,11 +1286,11 @@
             "passed": true,
             "score": 100,
             "details": "Valid JSON matching schema",
-            "latencyMs": 190,
+            "latencyMs": 163,
             "rawResponse": {
-              "id": "gen-1794319507-3O84vb3HmvhgbVxM5jOC",
+              "id": "gen-1794403345-4XJCXD9EuDnkhMgaHYHm",
               "object": "chat.completion",
-              "created": 1794319507,
+              "created": 1794403345,
               "model": "cohere/north-mini-code:free",
               "provider": "Cohere",
               "system_fingerprint": null,
@@ -1500,11 +1305,11 @@
                     "role": "assistant",
                     "content": "{\n  \"name\": \"Alice\",\n  \"age\": 30,\n  \"skills\": [\n    \"TypeScript\",\n    \"Python\"\n  ],\n  \"active\": true\n}",
                     "refusal": null,
-                    "reasoning": "The user asks: \"Generate a JSON object for a person named Alice, age 30, skills [\"TypeScript\", \"Python\"], active true.\"\n\nWe need to output valid JSON only. So we should output something like:\n\n{\n  \"name\": \"Alice\",\n  \"age\": 30,\n  \"skills\": [\"TypeScript\", \"Python\"],\n  \"active\": true\n}\n\nMake sure it's valid JSON. No extra text.",
+                    "reasoning": "The user asks: \"Generate a JSON object for a person named Alice, age 30, skills [\"TypeScript\", \"Python\"], active true.\"\n\nWe need to output valid JSON only. So produce something like:\n\n{\n  \"name\": \"Alice\",\n  \"age\": 30,\n  \"skills\": [\"TypeScript\", \"Python\"],\n  \"active\": true\n}\n\nMake sure it's valid JSON. No extra text.",
                     "reasoning_details": [
                       {
                         "type": "reasoning.text",
-                        "text": "The user asks: \"Generate a JSON object for a person named Alice, age 30, skills [\"TypeScript\", \"Python\"], active true.\"\n\nWe need to output valid JSON only. So we should output something like:\n\n{\n  \"name\": \"Alice\",\n  \"age\": 30,\n  \"skills\": [\"TypeScript\", \"Python\"],\n  \"active\": true\n}\n\nMake sure it's valid JSON. No extra text.",
+                        "text": "The user asks: \"Generate a JSON object for a person named Alice, age 30, skills [\"TypeScript\", \"Python\"], active true.\"\n\nWe need to output valid JSON only. So produce something like:\n\n{\n  \"name\": \"Alice\",\n  \"age\": 30,\n  \"skills\": [\"TypeScript\", \"Python\"],\n  \"active\": true\n}\n\nMake sure it's valid JSON. No extra text.",
                         "format": "unknown",
                         "index": 0
                       }
@@ -1514,8 +1319,8 @@
               ],
               "usage": {
                 "prompt_tokens": 30,
-                "completion_tokens": 126,
-                "total_tokens": 156,
+                "completion_tokens": 124,
+                "total_tokens": 154,
                 "cost": 0,
                 "is_byok": false,
                 "prompt_tokens_details": {
@@ -1530,7 +1335,7 @@
                   "upstream_inference_completions_cost": 0
                 },
                 "completion_tokens_details": {
-                  "reasoning_tokens": 85,
+                  "reasoning_tokens": 83,
                   "image_tokens": 0,
                   "audio_tokens": 0
                 }
@@ -1538,7 +1343,7 @@
             }
           }
         ],
-        "validatedAt": "2026-11-10T14:05:09.068Z"
+        "validatedAt": "2026-11-11T13:22:25.901Z"
       }
     },
     {
@@ -1561,7 +1366,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-11-10T14:04:46.141Z",
+      "discoveredAt": "2026-11-11T13:22:05.410Z",
       "raw": {
         "description": "NVIDIA Nemotron™ 3 Nano Omni is a 30B-A3B open multimodal model designed to function as a perception and context sub-agent in enterprise agent systems. It accepts text, image, video, and...",
         "architecture": {
@@ -1593,11 +1398,11 @@
             "passed": true,
             "score": 100,
             "details": "OpenAI-compatible response structure",
-            "latencyMs": 83,
+            "latencyMs": 53,
             "rawResponse": {
-              "id": "gen-1794319505-5l1ijynkqsCxyf3Mc8fj",
+              "id": "gen-1794403345-KMJvEX0CaLWQKlI4h9DV",
               "object": "chat.completion",
-              "created": 1794319505,
+              "created": 1794403345,
               "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
               "provider": "Nvidia",
               "system_fingerprint": null,
@@ -1654,11 +1459,11 @@
             "passed": true,
             "score": 100,
             "details": "2/2 trials returned valid tool_calls",
-            "latencyMs": 100,
+            "latencyMs": 63,
             "rawResponse": {
-              "id": "gen-1794319508-m9Kzh5Un3eMtRdmxroCD",
+              "id": "gen-1794403351-lHwX5naF9Ur8erNqXQvc",
               "object": "chat.completion",
-              "created": 1794319508,
+              "created": 1794403351,
               "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
               "provider": "Nvidia",
               "system_fingerprint": null,
@@ -1673,12 +1478,12 @@
                     "role": "assistant",
                     "content": null,
                     "refusal": null,
-                    "reasoning": "Okay, the user is asking about the weather in Beijing. Let me check the tools available. There's a get_weather function that requires a location and an optional unit. The location is specified as Beijing, so I need to call that function with \"Beijing\" as the location parameter. The unit isn't mentioned, so maybe I should default to celsius, but the function allows either. Since the user didn't specify, I'll just include the location. Let me make sure the parameters are correct. The required field is location, so that's covered. I'll generate the tool call with the location set to Beijing.",
+                    "reasoning": "Okay, the user is asking about the weather in Beijing. Let me check the tools available. There's a get_weather function that requires a location and an optional unit. The location is specified as Beijing, so I need to call that function with \"Beijing\" as the location parameter. The unit isn't specified, so maybe I should default to celsius, but the function allows either. Since the user didn't specify, I'll just include the location. Let me make sure the parameters are correct. The required field is location, so that's covered. I'll structure the tool call accordingly.",
                     "tool_calls": [
                       {
                         "type": "function",
                         "index": 0,
-                        "id": "call-40fc8714-1ab1-4ffe-982a-ebd4149b0edb",
+                        "id": "call-1990df46-4526-4e61-b15a-3121138edb2a",
                         "function": {
                           "name": "get_weather",
                           "arguments": "{\"location\":\"Beijing\"}"
@@ -1688,7 +1493,7 @@
                     "reasoning_details": [
                       {
                         "type": "reasoning.text",
-                        "text": "Okay, the user is asking about the weather in Beijing. Let me check the tools available. There's a get_weather function that requires a location and an optional unit. The location is specified as Beijing, so I need to call that function with \"Beijing\" as the location parameter. The unit isn't mentioned, so maybe I should default to celsius, but the function allows either. Since the user didn't specify, I'll just include the location. Let me make sure the parameters are correct. The required field is location, so that's covered. I'll generate the tool call with the location set to Beijing.",
+                        "text": "Okay, the user is asking about the weather in Beijing. Let me check the tools available. There's a get_weather function that requires a location and an optional unit. The location is specified as Beijing, so I need to call that function with \"Beijing\" as the location parameter. The unit isn't specified, so maybe I should default to celsius, but the function allows either. Since the user didn't specify, I'll just include the location. Let me make sure the parameters are correct. The required field is location, so that's covered. I'll structure the tool call accordingly.",
                         "format": "unknown",
                         "index": 0
                       }
@@ -1698,8 +1503,8 @@
               ],
               "usage": {
                 "prompt_tokens": 411,
-                "completion_tokens": 153,
-                "total_tokens": 564,
+                "completion_tokens": 148,
+                "total_tokens": 559,
                 "cost": 0,
                 "is_byok": false,
                 "prompt_tokens_details": {
@@ -1714,7 +1519,7 @@
                   "upstream_inference_completions_cost": 0
                 },
                 "completion_tokens_details": {
-                  "reasoning_tokens": 127,
+                  "reasoning_tokens": 122,
                   "image_tokens": 0,
                   "audio_tokens": 0
                 }
@@ -1726,11 +1531,11 @@
             "passed": true,
             "score": 100,
             "details": "Valid JSON matching schema",
-            "latencyMs": 281,
+            "latencyMs": 56,
             "rawResponse": {
-              "id": "gen-1794319510-HJj8nbFDFgXiN0FWNfME",
+              "id": "gen-1794403354-Cvo74II5CRGhkcdp7EQu",
               "object": "chat.completion",
-              "created": 1794319510,
+              "created": 1794403354,
               "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
               "provider": "Nvidia",
               "system_fingerprint": null,
@@ -1745,11 +1550,11 @@
                     "role": "assistant",
                     "content": "{\n  \"name\": \"Alice\",\n  \"age\": 30,\n  \"skills\": [\"TypeScript\", \"Python\"],\n  \"active\": true\n}",
                     "refusal": null,
-                    "reasoning": "We need to output valid JSON only. The user asks: \"Generate a JSON object for a person named Alice, age 30, skills [\"TypeScript\", \"Python\"], active true.\"\n\nWe must output a JSON object. Likely keys: name, age, skills, active. Ensure proper JSON formatting. No extra text. So output:\n\n{\n  \"name\": \"Alice\",\n  \"age\": 30,\n  \"skills\": [\"TypeScript\", \"Python\"],\n  \"active\": true\n}\n\nMake sure it's valid JSON. No trailing commas. Output only that.",
+                    "reasoning": "We need to output valid JSON only. The user asks: \"Generate a JSON object for a person named Alice, age 30, skills [\"TypeScript\", \"Python\"], active true.\"\n\nWe need to output a JSON object with fields: name, age, skills, active. Ensure proper JSON formatting. Probably:\n\n{\n  \"name\": \"Alice\",\n  \"age\": 30,\n  \"skills\": [\"TypeScript\", \"Python\"],\n  \"active\": true\n}\n\nMake sure it's valid JSON. No extra text.",
                     "reasoning_details": [
                       {
                         "type": "reasoning.text",
-                        "text": "We need to output valid JSON only. The user asks: \"Generate a JSON object for a person named Alice, age 30, skills [\"TypeScript\", \"Python\"], active true.\"\n\nWe must output a JSON object. Likely keys: name, age, skills, active. Ensure proper JSON formatting. No extra text. So output:\n\n{\n  \"name\": \"Alice\",\n  \"age\": 30,\n  \"skills\": [\"TypeScript\", \"Python\"],\n  \"active\": true\n}\n\nMake sure it's valid JSON. No trailing commas. Output only that.",
+                        "text": "We need to output valid JSON only. The user asks: \"Generate a JSON object for a person named Alice, age 30, skills [\"TypeScript\", \"Python\"], active true.\"\n\nWe need to output a JSON object with fields: name, age, skills, active. Ensure proper JSON formatting. Probably:\n\n{\n  \"name\": \"Alice\",\n  \"age\": 30,\n  \"skills\": [\"TypeScript\", \"Python\"],\n  \"active\": true\n}\n\nMake sure it's valid JSON. No extra text.",
                         "format": "unknown",
                         "index": 0
                       }
@@ -1759,8 +1564,8 @@
               ],
               "usage": {
                 "prompt_tokens": 47,
-                "completion_tokens": 156,
-                "total_tokens": 203,
+                "completion_tokens": 145,
+                "total_tokens": 192,
                 "cost": 0,
                 "is_byok": false,
                 "prompt_tokens_details": {
@@ -1775,7 +1580,7 @@
                   "upstream_inference_completions_cost": 0
                 },
                 "completion_tokens_details": {
-                  "reasoning_tokens": 120,
+                  "reasoning_tokens": 109,
                   "image_tokens": 0,
                   "audio_tokens": 0
                 }
@@ -1783,7 +1588,7 @@
             }
           }
         ],
-        "validatedAt": "2026-11-10T14:05:12.133Z"
+        "validatedAt": "2026-11-11T13:22:37.724Z"
       }
     },
     {
@@ -1803,7 +1608,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-11-10T14:04:47.249Z",
+      "discoveredAt": "2026-11-11T13:22:06.322Z",
       "raw": {
         "id": "deepseek-ai/DeepSeek-V4.1-Flash",
         "object": "model",
@@ -1823,24 +1628,24 @@
             "passed": false,
             "score": 0,
             "details": "HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}",
-            "latencyMs": 626
+            "latencyMs": 1253
           },
           {
             "name": "tool-calling",
             "passed": false,
             "score": 0,
             "details": "0/2 trials returned valid tool_calls — last error: HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}",
-            "latencyMs": 224
+            "latencyMs": 238
           },
           {
             "name": "structured-output",
             "passed": false,
             "score": 0,
             "details": "HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}",
-            "latencyMs": 228
+            "latencyMs": 244
           }
         ],
-        "validatedAt": "2026-11-10T14:05:13.435Z"
+        "validatedAt": "2026-11-11T13:22:57.090Z"
       }
     },
     {
@@ -1860,7 +1665,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-11-10T14:04:47.249Z",
+      "discoveredAt": "2026-11-11T13:22:06.322Z",
       "raw": {
         "id": "zai-org/GLM-5.3-Flash",
         "object": "model",
@@ -1880,24 +1685,24 @@
             "passed": false,
             "score": 0,
             "details": "HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}",
-            "latencyMs": 621
+            "latencyMs": 1237
           },
           {
             "name": "tool-calling",
             "passed": false,
             "score": 0,
             "details": "0/2 trials returned valid tool_calls — last error: HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}",
-            "latencyMs": 224
+            "latencyMs": 459
           },
           {
             "name": "structured-output",
             "passed": false,
             "score": 0,
             "details": "HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}",
-            "latencyMs": 228
+            "latencyMs": 238
           }
         ],
-        "validatedAt": "2026-11-10T14:05:13.430Z"
+        "validatedAt": "2026-11-11T13:22:57.510Z"
       }
     },
     {
@@ -1917,7 +1722,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-11-10T14:04:47.249Z",
+      "discoveredAt": "2026-11-11T13:22:06.322Z",
       "raw": {
         "id": "deepseek-ai/DeepSeek-V4-Flash",
         "object": "model",
@@ -1937,24 +1742,24 @@
             "passed": false,
             "score": 0,
             "details": "HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}",
-            "latencyMs": 616
+            "latencyMs": 1242
           },
           {
             "name": "tool-calling",
             "passed": false,
             "score": 0,
             "details": "0/2 trials returned valid tool_calls — last error: HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}",
-            "latencyMs": 429
+            "latencyMs": 254
           },
           {
             "name": "structured-output",
             "passed": false,
             "score": 0,
             "details": "HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}",
-            "latencyMs": 227
+            "latencyMs": 233
           }
         ],
-        "validatedAt": "2026-11-10T14:05:13.835Z"
+        "validatedAt": "2026-11-11T13:22:57.102Z"
       }
     },
     {
@@ -1974,7 +1779,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-11-10T14:04:47.249Z",
+      "discoveredAt": "2026-11-11T13:22:06.322Z",
       "raw": {
         "id": "Qwen/Qwen3.5-9B",
         "object": "model",
@@ -1994,24 +1799,24 @@
             "passed": false,
             "score": 0,
             "details": "HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}",
-            "latencyMs": 222
+            "latencyMs": 252
           },
           {
             "name": "tool-calling",
             "passed": false,
             "score": 0,
             "details": "0/2 trials returned valid tool_calls — last error: HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}",
-            "latencyMs": 240
+            "latencyMs": 238
           },
           {
             "name": "structured-output",
             "passed": false,
             "score": 0,
             "details": "HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}",
-            "latencyMs": 227
+            "latencyMs": 240
           }
         ],
-        "validatedAt": "2026-11-10T14:05:14.360Z"
+        "validatedAt": "2026-11-11T13:22:58.059Z"
       }
     },
     {
@@ -2031,7 +1836,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-11-10T14:04:47.249Z",
+      "discoveredAt": "2026-11-11T13:22:06.322Z",
       "raw": {
         "id": "Qwen/Qwen3.5-4B",
         "object": "model",
@@ -2051,24 +1856,24 @@
             "passed": false,
             "score": 0,
             "details": "HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}",
-            "latencyMs": 229
+            "latencyMs": 243
           },
           {
             "name": "tool-calling",
             "passed": false,
             "score": 0,
             "details": "0/2 trials returned valid tool_calls — last error: HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}",
-            "latencyMs": 223
+            "latencyMs": 244
           },
           {
             "name": "structured-output",
             "passed": false,
             "score": 0,
             "details": "HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}",
-            "latencyMs": 228
+            "latencyMs": 234
           }
         ],
-        "validatedAt": "2026-11-10T14:05:14.337Z"
+        "validatedAt": "2026-11-11T13:22:58.067Z"
       }
     },
     {
@@ -2088,7 +1893,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-11-10T14:04:47.249Z",
+      "discoveredAt": "2026-11-11T13:22:06.322Z",
       "raw": {
         "id": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
         "object": "model",
@@ -2108,24 +1913,24 @@
             "passed": false,
             "score": 0,
             "details": "HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}",
-            "latencyMs": 239
+            "latencyMs": 236
           },
           {
             "name": "tool-calling",
             "passed": false,
             "score": 0,
             "details": "0/2 trials returned valid tool_calls — last error: HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}",
-            "latencyMs": 223
+            "latencyMs": 245
           },
           {
             "name": "structured-output",
             "passed": false,
             "score": 0,
             "details": "HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}",
-            "latencyMs": 227
+            "latencyMs": 241
           }
         ],
-        "validatedAt": "2026-11-10T14:05:14.748Z"
+        "validatedAt": "2026-11-11T13:22:58.479Z"
       }
     },
     {
@@ -2145,7 +1950,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-11-10T14:04:47.249Z",
+      "discoveredAt": "2026-11-11T13:22:06.322Z",
       "raw": {
         "id": "Qwen/Qwen3-8B",
         "object": "model",
@@ -2165,7 +1970,7 @@
             "passed": false,
             "score": 0,
             "details": "HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}",
-            "latencyMs": 221
+            "latencyMs": 243
           },
           {
             "name": "tool-calling",
@@ -2179,10 +1984,10 @@
             "passed": false,
             "score": 0,
             "details": "HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}",
-            "latencyMs": 226
+            "latencyMs": 239
           }
         ],
-        "validatedAt": "2026-11-10T14:05:15.258Z"
+        "validatedAt": "2026-11-11T13:22:59.016Z"
       }
     },
     {
@@ -2202,7 +2007,7 @@
       "priceOutput": 0,
       "supportsToolCalling": true,
       "supportsStructuredOutput": true,
-      "discoveredAt": "2026-11-10T14:04:47.249Z",
+      "discoveredAt": "2026-11-11T13:22:06.322Z",
       "raw": {
         "id": "THUDM/GLM-Z1-9B-0414",
         "object": "model",
@@ -2222,35 +2027,92 @@
             "passed": false,
             "score": 0,
             "details": "HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}",
-            "latencyMs": 225
+            "latencyMs": 240
           },
           {
             "name": "tool-calling",
             "passed": false,
             "score": 0,
             "details": "0/2 trials returned valid tool_calls — last error: HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}",
-            "latencyMs": 223
+            "latencyMs": 245
           },
           {
             "name": "structured-output",
             "passed": false,
             "score": 0,
             "details": "HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}",
-            "latencyMs": 222
+            "latencyMs": 234
           }
         ],
-        "validatedAt": "2026-11-10T14:05:15.253Z"
+        "validatedAt": "2026-11-11T13:22:59.030Z"
+      }
+    },
+    {
+      "id": "siliconflow/THUDM/GLM-4-9B-0414",
+      "provider": "siliconflow",
+      "modelId": "THUDM/GLM-4-9B-0414",
+      "name": "THUDM/GLM-4-9B-0414",
+      "contextWindow": 131072,
+      "maxTokens": 65536,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "priceInput": 0,
+      "priceOutput": 0,
+      "supportsToolCalling": true,
+      "supportsStructuredOutput": true,
+      "discoveredAt": "2026-11-11T13:22:06.322Z",
+      "raw": {
+        "id": "THUDM/GLM-4-9B-0414",
+        "object": "model",
+        "created": 0,
+        "owned_by": ""
+      },
+      "quota": {
+        "kind": "daily-reset",
+        "amount": 2000
+      },
+      "validation": {
+        "passed": false,
+        "score": 0,
+        "checks": [
+          {
+            "name": "openai-compat",
+            "passed": false,
+            "score": 0,
+            "details": "HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}",
+            "latencyMs": 234
+          },
+          {
+            "name": "tool-calling",
+            "passed": false,
+            "score": 0,
+            "details": "0/2 trials returned valid tool_calls — last error: HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}",
+            "latencyMs": 242
+          },
+          {
+            "name": "structured-output",
+            "passed": false,
+            "score": 0,
+            "details": "HTTP 402: {\"code\":30001,\"message\":\"Sorry, your account balance is insufficient\",\"data\":null}",
+            "latencyMs": 238
+          }
+        ],
+        "validatedAt": "2026-11-11T13:22:59.436Z"
       }
     }
   ],
   "summary": {
     "totalDiscovered": 20,
     "totalValidated": 20,
-    "passed": 6,
+    "passed": 5,
     "byProvider": {
       "bailian": 3,
-      "openrouter": 9,
-      "siliconflow": 8
+      "openrouter": 8,
+      "siliconflow": 9
     }
   }
 }
