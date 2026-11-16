@@ -1,17 +1,13 @@
 # free-llm-scout generated patch snippet for cordis.patch.yml
 # Paste this into model-fleet config section (replace existing chain:)
-# Generated at: 2026-11-15T13:16:54.308Z
+# Generated at: 2026-11-16T14:29:06.085Z
 #
 # Example:
 # - id: model-fleet
 #   name: "./plugins/model-fleet.mjs"
 #   config:
 #                  - provider: openrouter
-                    model: "inclusionai/ling-3.2-flash:free"
-                  - provider: openrouter
                     model: "nvidia/nemotron-3.5-super-vl:free"
-                  - provider: openrouter
-                    model: "nvidia/nemotron-3.5-lightning:free"
                   - provider: openrouter
                     model: "nvidia/nemotron-3-ultra-550b-a55b:free"
                   - provider: openrouter
@@ -20,13 +16,11 @@
                     model: "cohere/north-mini-code:free"
                   - provider: openrouter
                     model: "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+                  - provider: openrouter
+                    model: "nvidia/nemotron-3.5-lightning:free"
 chain:
           - provider: openrouter
-            model: "inclusionai/ling-3.2-flash:free"
-          - provider: openrouter
             model: "nvidia/nemotron-3.5-super-vl:free"
-          - provider: openrouter
-            model: "nvidia/nemotron-3.5-lightning:free"
           - provider: openrouter
             model: "nvidia/nemotron-3-ultra-550b-a55b:free"
           - provider: openrouter
@@ -35,3 +29,5 @@ chain:
             model: "cohere/north-mini-code:free"
           - provider: openrouter
             model: "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+          - provider: openrouter
+            model: "nvidia/nemotron-3.5-lightning:free"
